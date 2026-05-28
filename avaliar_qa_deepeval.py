@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import logging
 import math
+import os
 import unicodedata
 from collections import Counter
 from dataclasses import dataclass
@@ -12,6 +13,8 @@ from pathlib import Path
 from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parent
+
+os.environ.setdefault("DEEPEVAL_TELEMETRY_OPT_OUT", "1")
 
 INPUT_COLUMNS = [
     "arquivo_fonte",
@@ -108,19 +111,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         type=Path,
-        default=Path("output/todas_execucoes_deepeval.csv"),
+        default=Path("output/duas_questoes.csv"),
         help="Arquivo CSV de entrada com as colunas originais do QA.",
     )
     parser.add_argument(
         "--output",
         type=Path,
-        default=Path("todas_execucoes_deepeval_avaliadas.csv"),
+        default=Path("avaliacao/todas_execucoes_deepeval_avaliadas.csv"),
         help="Arquivo CSV de saida com as colunas originais e as metricas por linha.",
     )
     parser.add_argument(
         "--summary",
         type=Path,
-        default=Path("resumo_metricas_por_execucao.csv"),
+        default=Path("avaliacao/resumo_metricas_por_execucao.csv"),
         help="Arquivo CSV agregado por arquivo_fonte.",
     )
     parser.add_argument(
@@ -132,8 +135,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--save-every",
         type=int,
-        default=10,
-        help="Salva progresso incremental a cada N linhas. Padrao: 10.",
+        default=1,
+        help=(
+            "Registra mensagem de progresso a cada N linhas. "
+            "O CSV de saida e salvo a cada resultado. Padrao: 1."
+        ),
     )
     parser.add_argument(
         "--judge-model",
@@ -586,23 +592,16 @@ def build_results_dataframe(pd: Any, rows: list[dict[str, Any]]) -> Any:
 
 def build_summary_dataframe(pd: Any, results_df: Any) -> Any:
     grouped = results_df.groupby("arquivo_fonte", sort=False)
-    counts = grouped.size().rename("num_linhas")
-    metrics_summary = grouped[NUMERIC_COLUMNS].agg(["mean", "median", "std"])
-    summary_df = counts.to_frame().join(metrics_summary).reset_index()
-
-    flattened_columns: list[str] = []
-    for column in summary_df.columns.to_flat_index():
-        if not isinstance(column, tuple):
-            flattened_columns.append(str(column))
-            continue
-        left, right = column
-        if not right:
-            flattened_columns.append(str(left))
-        else:
-            flattened_columns.append(f"{left}_{right}")
-
-    summary_df.columns = flattened_columns
-    return summary_df
+    counts_df = grouped.size().rename("num_linhas").to_frame()
+    metrics_summary = grouped[NUMERIC_COLUMNS].agg(["mean", "median"])
+    metrics_std = grouped[NUMERIC_COLUMNS].std(ddof=0)
+    metrics_std.columns = pd.MultiIndex.from_product([metrics_std.columns, ["std"]])
+    metrics_summary = metrics_summary.join(metrics_std)
+    metrics_summary.columns = [
+        f"{metric}_{statistic}"
+        for metric, statistic in metrics_summary.columns.to_flat_index()
+    ]
+    return counts_df.join(metrics_summary).reset_index()
 
 
 def save_outputs(
@@ -700,14 +699,15 @@ def main() -> int:
             )
         )
 
+        save_outputs(
+            pd=pd,
+            rows=evaluated_rows,
+            output_path=output_path,
+            summary_path=summary_path,
+        )
+
         if index % args.save_every == 0:
-            logging.info("Salvando progresso parcial em %s linhas...", index)
-            save_outputs(
-                pd=pd,
-                rows=evaluated_rows,
-                output_path=output_path,
-                summary_path=summary_path,
-            )
+            logging.info("Progresso salvo em %s linhas.", index)
 
     logging.info("Salvando arquivos finais...")
     results_df, summary_df = save_outputs(
