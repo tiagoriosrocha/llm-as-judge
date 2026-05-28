@@ -97,14 +97,11 @@ python3 avaliar_qa_deepeval.py \
 - `--limit 20`: processa apenas as 20 primeiras linhas.
 - `--save-every 10`: salva progresso incremental a cada 10 linhas.
 - `--judge-model gpt-5-4-petrobras`: sobrescreve o `LLM_MODEL` do `.env` so para esta execucao.
-- `--no-xlsx`: nao gera a versao `.xlsx`.
-- `--xlsx-output caminho.xlsx`: define um caminho customizado para a planilha.
 - `--log-level DEBUG`: sobrescreve o `LOG_LEVEL` do `.env`.
 
 ## Saidas geradas
 
 - CSV avaliado com metricas por linha.
-- XLSX equivalente ao CSV avaliado, a menos que `--no-xlsx` seja usado.
 - CSV agregado por `arquivo_fonte`, com media, mediana e desvio padrao das metricas numericas.
 
 ## Observacoes

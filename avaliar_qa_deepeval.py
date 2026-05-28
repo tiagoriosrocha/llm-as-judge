@@ -124,20 +124,6 @@ def parse_args() -> argparse.Namespace:
         help="Arquivo CSV agregado por arquivo_fonte.",
     )
     parser.add_argument(
-        "--xlsx-output",
-        type=Path,
-        default=None,
-        help=(
-            "Caminho do arquivo XLSX de saida. Se omitido, usa o mesmo nome do "
-            "CSV de saida com extensao .xlsx."
-        ),
-    )
-    parser.add_argument(
-        "--no-xlsx",
-        action="store_true",
-        help="Nao gerar a planilha XLSX ao final da execucao.",
-    )
-    parser.add_argument(
         "--limit",
         type=int,
         default=None,
@@ -624,8 +610,6 @@ def save_outputs(
     rows: list[dict[str, Any]],
     output_path: Path,
     summary_path: Path,
-    xlsx_output_path: Path | None,
-    save_xlsx: bool,
 ) -> tuple[Any, Any]:
     results_df = build_results_dataframe(pd, rows)
     summary_df = build_summary_dataframe(pd, results_df)
@@ -635,10 +619,6 @@ def save_outputs(
 
     results_df.to_csv(output_path, index=False, encoding="utf-8-sig")
     summary_df.to_csv(summary_path, index=False, encoding="utf-8-sig")
-
-    if save_xlsx and xlsx_output_path is not None:
-        xlsx_output_path.parent.mkdir(parents=True, exist_ok=True)
-        results_df.to_excel(xlsx_output_path, index=False)
 
     return results_df, summary_df
 
@@ -690,15 +670,7 @@ def main() -> int:
         input_path = resolve_existing_input_path(args.input)
         output_path = resolve_output_path(args.output).resolve()
         summary_path = resolve_output_path(args.summary).resolve()
-        xlsx_output_path = None if args.no_xlsx else (
-            resolve_output_path(args.xlsx_output).resolve()
-            if args.xlsx_output is not None
-            else output_path.with_suffix(".xlsx")
-        )
-        distinct_paths = [input_path, output_path, summary_path]
-        if xlsx_output_path is not None:
-            distinct_paths.append(xlsx_output_path)
-        ensure_distinct_paths(*distinct_paths)
+        ensure_distinct_paths(input_path, output_path, summary_path)
     except (FileNotFoundError, ValueError) as exc:
         logging.error("%s", exc)
         return 1
@@ -735,8 +707,6 @@ def main() -> int:
                 rows=evaluated_rows,
                 output_path=output_path,
                 summary_path=summary_path,
-                xlsx_output_path=None,
-                save_xlsx=False,
             )
 
     logging.info("Salvando arquivos finais...")
@@ -745,13 +715,9 @@ def main() -> int:
         rows=evaluated_rows,
         output_path=output_path,
         summary_path=summary_path,
-        xlsx_output_path=xlsx_output_path,
-        save_xlsx=not args.no_xlsx,
     )
 
     logging.info("Arquivo avaliado salvo em: %s", output_path)
-    if xlsx_output_path is not None:
-        logging.info("Planilha XLSX salva em: %s", xlsx_output_path)
     logging.info("Resumo agregado salvo em: %s", summary_path)
     logging.info("Linhas avaliadas: %d", len(results_df))
     logging.info("Execucoes agregadas: %d", len(summary_df))
