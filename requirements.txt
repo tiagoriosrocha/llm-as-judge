@@ -1,0 +1,7 @@
+pandas
+deepeval
+rouge-score
+tqdm
+openpyxl
+openai
+python-dotenv
