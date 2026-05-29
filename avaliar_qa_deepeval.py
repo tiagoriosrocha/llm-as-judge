@@ -18,11 +18,16 @@ os.environ.setdefault("DEEPEVAL_TELEMETRY_OPT_OUT", "1")
 
 INPUT_COLUMNS = [
     "arquivo_fonte",
+    "tipo_resposta",
     "question_id",
     "question",
     "expected_question",
     "context",
     "llm_answer",
+]
+
+REQUIRED_INPUT_COLUMNS = [
+    column for column in INPUT_COLUMNS if column != "tipo_resposta"
 ]
 
 RESULT_COLUMNS = [
@@ -111,7 +116,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--input",
         type=Path,
-        default=Path("output/duas_questoes.csv"),
+        default=Path("output/todas_execucoes_deepeval.csv"),
         help="Arquivo CSV de entrada com as colunas originais do QA.",
     )
     parser.add_argument(
@@ -483,12 +488,12 @@ def evaluate_metric(
 ) -> None:
     if adapter.requires_context and not has_context:
         result_row[adapter.score_column] = math.nan
-        result_row[adapter.reason_column] = "Skipped: context vazio."
+        result_row[adapter.reason_column] = "Skipped: empty context."
         return
 
     if adapter.requires_expected and not has_expected:
         result_row[adapter.score_column] = math.nan
-        result_row[adapter.reason_column] = "Skipped: expected_question vazio."
+        result_row[adapter.reason_column] = "Skipped: empty expected_question."
         return
 
     try:
@@ -573,7 +578,9 @@ def evaluate_row(
 
 
 def validate_input_columns(dataframe: Any) -> None:
-    missing_columns = [column for column in INPUT_COLUMNS if column not in dataframe.columns]
+    missing_columns = [
+        column for column in REQUIRED_INPUT_COLUMNS if column not in dataframe.columns
+    ]
     if missing_columns:
         raise ValueError(
             "O CSV de entrada nao possui todas as colunas esperadas. Faltando: "
@@ -591,7 +598,7 @@ def build_results_dataframe(pd: Any, rows: list[dict[str, Any]]) -> Any:
 
 
 def build_summary_dataframe(pd: Any, results_df: Any) -> Any:
-    grouped = results_df.groupby("arquivo_fonte", sort=False)
+    grouped = results_df.groupby(["arquivo_fonte", "tipo_resposta"], sort=False)
     counts_df = grouped.size().rename("num_linhas").to_frame()
     metrics_summary = grouped[NUMERIC_COLUMNS].agg(["mean", "median"])
     metrics_std = grouped[NUMERIC_COLUMNS].std(ddof=0)
@@ -630,6 +637,9 @@ def read_input_dataframe(pd: Any, input_path: Path, limit: int | None) -> Any:
         encoding="utf-8-sig",
     )
     validate_input_columns(dataframe)
+    for column in INPUT_COLUMNS:
+        if column not in dataframe.columns:
+            dataframe[column] = ""
 
     if limit is not None:
         dataframe = dataframe.head(max(limit, 0)).copy()
@@ -678,6 +688,11 @@ def main() -> int:
     dataframe = read_input_dataframe(pd, input_path, args.limit)
     logging.info("Linhas carregadas para avaliacao: %d", len(dataframe))
     logging.info("Judge Azure configurado com modelo: %s", azure_judge_model.get_model_name())
+    logging.info(
+        "Os CSVs de avaliacao serao atualizados apos cada linha processada: %s e %s",
+        output_path,
+        summary_path,
+    )
     if args.judge_model:
         logging.info("Override de modelo solicitado via CLI: %s", args.judge_model)
 
@@ -705,6 +720,7 @@ def main() -> int:
             output_path=output_path,
             summary_path=summary_path,
         )
+        logging.debug("CSVs de avaliacao atualizados apos a linha %s.", index)
 
         if index % args.save_every == 0:
             logging.info("Progresso salvo em %s linhas.", index)

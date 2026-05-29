@@ -10,6 +10,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 DEFAULT_OUTPUT_FIELDS = [
     "arquivo_fonte",
+    "tipo_resposta",
     "question_id",
     "question",
     "expected_question",
@@ -227,12 +228,14 @@ def build_output_rows(
             output_rows.append(
                 {
                     **base_row,
+                    "tipo_resposta": "rag",
                     "llm_answer": sanitize_text(row.get("answers.rag_answer")),
                 }
             )
             output_rows.append(
                 {
                     **base_row,
+                    "tipo_resposta": "graphrag",
                     "llm_answer": sanitize_text(row.get("answers.graphrag_answer")),
                 }
             )
@@ -242,6 +245,7 @@ def build_output_rows(
             output_rows.append(
                 {
                     **base_row,
+                    "tipo_resposta": "answer",
                     "llm_answer": sanitize_text(row.get("answer")),
                 }
             )
