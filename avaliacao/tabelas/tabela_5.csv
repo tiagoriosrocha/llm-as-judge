@@ -1,9 +1,3 @@
-﻿Modelo,Configuração,Contextual Recall ↑,Contextual Relevancy ↑,Completeness ↑
-Geral,GraphRAG,0.9594,0.2432,0.9301
-Geral,GraphRAG + Ontologia,0.9551,0.2424,0.9284
-GPT-4.1,GraphRAG,0.9615,0.2377,0.924
-GPT-4.1,GraphRAG + Ontologia,0.9487,0.2438,0.9304
-GPT-5.2,GraphRAG,0.9583,0.2454,0.9285
-GPT-5.2,GraphRAG + Ontologia,0.9551,0.2484,0.9174
-GPT-5.4,GraphRAG,0.9583,0.2465,0.9378
-GPT-5.4,GraphRAG + Ontologia,0.9615,0.2352,0.9375
+﻿Configuração,Contextual Recall ↑,Contextual Relevancy ↑,Completeness ↑
+GraphRAG,0.9594,0.2432,0.9301
+GraphRAG + Ontologia,0.9551,0.2424,0.9284

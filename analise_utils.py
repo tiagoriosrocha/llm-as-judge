@@ -51,7 +51,7 @@ def parse_avaliacao_dir() -> Path:
 
 
 def load_summary(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
-    path = avaliacao_dir / "resumo_metricas_por_execucao.csv"
+    path = avaliacao_dir / "resumo_metricas_por_execucao_execucao1.csv"
     if not path.exists():
         raise FileNotFoundError(f"CSV de resumo nao encontrado: {path}")
     dataframe = pd.read_csv(path, encoding="utf-8-sig")
@@ -72,7 +72,7 @@ def load_summary(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
 
 
 def load_details(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
-    path = avaliacao_dir / "todas_execucoes_deepeval_avaliadas.csv"
+    path = avaliacao_dir / "todas_execucoes_deepeval_avaliadas_execucao1.csv"
     if not path.exists():
         raise FileNotFoundError(f"CSV detalhado nao encontrado: {path}")
     dataframe = pd.read_csv(path, encoding="utf-8-sig")

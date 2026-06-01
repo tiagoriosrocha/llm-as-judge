@@ -1,17 +1,5 @@
-﻿Modelo,Métrica,GraphRAG,GraphRAG + Ontologia,Δ (%)
-Geral,Correctness,0.8986,0.898,-0.0644
-Geral,Faithfulness,0.9681,0.9713,0.3278
-Geral,Geological Adequacy,0.8868,0.8801,-0.7488
-Geral,Ontology Alignment,0.9142,0.9109,-0.3598
-GPT-4.1,Correctness,0.8891,0.89,0.0973
-GPT-4.1,Faithfulness,0.9668,0.9693,0.2567
-GPT-4.1,Geological Adequacy,0.8747,0.8731,-0.1761
-GPT-4.1,Ontology Alignment,0.9125,0.9052,-0.8024
-GPT-5.2,Correctness,0.8923,0.8887,-0.3992
-GPT-5.2,Faithfulness,0.9728,0.9814,0.8882
-GPT-5.2,Geological Adequacy,0.8792,0.8656,-1.5437
-GPT-5.2,Ontology Alignment,0.9035,0.9055,0.2148
-GPT-5.4,Correctness,0.9144,0.9154,0.1052
-GPT-5.4,Faithfulness,0.9647,0.9631,-0.1661
-GPT-5.4,Geological Adequacy,0.9064,0.9016,-0.5304
-GPT-5.4,Ontology Alignment,0.9266,0.9221,-0.4843
+﻿Métrica,GraphRAG,GraphRAG + Ontologia,Δ (%)
+Correctness,0.8986,0.898,-0.0644
+Faithfulness,0.9681,0.9713,0.3278
+Geological Adequacy,0.8868,0.8801,-0.7488
+Ontology Alignment,0.9142,0.9109,-0.3598
