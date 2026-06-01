@@ -125,7 +125,11 @@ def detect_analysis_group(arquivo_fonte: str, tipo_resposta: str = "") -> str:
     response_type = str(tipo_resposta).strip().lower()
     if response_type == "answer" or "sem-contexto-sem-ontologia" in lowered:
         return "Answer"
-    if response_type == "rag":
+    if (
+        response_type == "rag"
+        and "sem-ontologia" in lowered
+        and "sem-contexto" not in lowered
+    ):
         return "RAG"
     if response_type == "graphrag" and "com-ontologia" in lowered:
         return "GraphRAG + Ontologia"
@@ -176,8 +180,22 @@ def run_table(table_number: int, builder: Callable[[Path], pd.DataFrame]) -> Non
     save_table(dataframe, table_number, avaliacao_dir)
 
 
+def keep_only_baseline_rag(dataframe: pd.DataFrame) -> pd.DataFrame:
+    source = dataframe["arquivo_fonte"].str.lower()
+    response_type = dataframe["tipo_resposta"].str.lower()
+    is_rag = response_type == "rag"
+    is_baseline_rag = (
+        is_rag
+        & source.str.contains("sem-ontologia", na=False)
+        & ~source.str.contains("sem-contexto", na=False)
+    )
+    return dataframe[~is_rag | is_baseline_rag].copy()
+
+
 def filter_rag(dataframe: pd.DataFrame) -> pd.DataFrame:
-    return dataframe[dataframe["tipo_resposta"].str.lower() == "rag"].copy()
+    return keep_only_baseline_rag(
+        dataframe[dataframe["tipo_resposta"].str.lower() == "rag"]
+    )
 
 
 def filter_answer(dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -294,13 +312,17 @@ def analysis_group_sort_key(value: str) -> int:
         return len(ANALYSIS_GROUP_ORDER)
 
 
+def filter_known_analysis_groups(dataframe: pd.DataFrame) -> pd.DataFrame:
+    return dataframe[dataframe["grupo_analise"].isin(ANALYSIS_GROUP_ORDER)].copy()
+
+
 def build_analysis_group_metrics(
     avaliacao_dir: Path,
     display_columns: list[str],
     by_model: bool,
     include_delta_rows: bool = False,
 ) -> pd.DataFrame:
-    summary = load_summary(avaliacao_dir)
+    summary = filter_known_analysis_groups(load_summary(avaliacao_dir))
     require_metric_columns(summary, display_columns)
     group_columns = ["grupo_analise"]
     output_columns = ["Grupo", *display_columns]
@@ -375,7 +397,7 @@ def build_all_variant_metrics(
     by_model: bool,
     include_delta_rows: bool = False,
 ) -> pd.DataFrame:
-    summary = load_summary(avaliacao_dir)
+    summary = keep_only_baseline_rag(load_summary(avaliacao_dir))
     require_metric_columns(summary, display_columns)
     group_columns = ["configuracao", "tipo_resposta", "metodo"]
     output_columns = ["Configuração", "Tipo resposta", "Método", *display_columns]

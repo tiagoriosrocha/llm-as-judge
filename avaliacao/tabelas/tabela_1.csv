@@ -1,7 +1,7 @@
 ﻿Grupo,Correctness ↑,Faithfulness ↑,Completeness ↑,Geological Adequacy ↑
 Answer,0.1787,0.6753,0.1909,0.3146
-RAG,0.9141,0.9674,0.9382,0.896
+RAG,0.9166,0.9717,0.9402,0.8935
 GraphRAG,0.8986,0.9681,0.9301,0.8868
 GraphRAG + Ontologia,0.898,0.9713,0.9284,0.8801
-Δ GraphRAG vs RAG (%),-1.6963,0.0744,-0.8555,-1.0304
+Δ GraphRAG vs RAG (%),-1.9583,-0.3673,-1.0682,-0.7533
 Δ GraphRAG + Ontologia vs GraphRAG (%),-0.0644,0.3278,-0.1828,-0.7488

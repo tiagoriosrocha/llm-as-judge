@@ -1,5 +1,5 @@
 ﻿Grupo,Contextual Recall ↑,Contextual Relevancy ↑,Answer Relevancy ↑
 Answer,0.9567,0.2492,0.9517
-RAG,0.9562,0.2387,0.9839
+RAG,0.9573,0.2399,0.9829
 GraphRAG,0.9594,0.2432,0.9747
 GraphRAG + Ontologia,0.9551,0.2424,0.977
