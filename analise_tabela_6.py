@@ -1,12 +1,14 @@
+#igual a 4
+
 from __future__ import annotations
 
 from pathlib import Path
 
-from analise_utils import build_ontology_comparison_by_model_scopes, run_table
+from analise_utils import build_ontology_comparison, run_table
 
 
 def build_table(avaliacao_dir: Path):
-    return build_ontology_comparison_by_model_scopes(
+    return build_ontology_comparison(
         avaliacao_dir,
         [
             "Correctness ↑",
