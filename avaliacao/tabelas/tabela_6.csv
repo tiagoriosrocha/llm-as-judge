@@ -1,4 +1,13 @@
-﻿Configuração,Correctness ↑,Faithfulness ↑,Geological Adequacy ↑,Ontology Alignment ↑
-GraphRAG,0.8986,0.9681,0.8868,0.9142
-GraphRAG + Ontologia,0.898,0.9713,0.8801,0.9109
-Δ (%),-0.0644,0.3278,-0.7488,-0.3598
+﻿Modelo,Configuração,Correctness ↑,Faithfulness ↑,Geological Adequacy ↑,Ontology Alignment ↑
+Geral,GraphRAG,0.8986,0.9681,0.8868,0.9142
+Geral,GraphRAG + Ontologia,0.898,0.9713,0.8801,0.9109
+Geral,Δ (%),-0.0644,0.3278,-0.7488,-0.3598
+GPT-4.1,GraphRAG,0.8891,0.9668,0.8747,0.9125
+GPT-4.1,GraphRAG + Ontologia,0.89,0.9693,0.8731,0.9052
+GPT-4.1,Δ (%),0.0973,0.2567,-0.1761,-0.8024
+GPT-5.2,GraphRAG,0.8923,0.9728,0.8792,0.9035
+GPT-5.2,GraphRAG + Ontologia,0.8887,0.9814,0.8656,0.9055
+GPT-5.2,Δ (%),-0.3992,0.8882,-1.5437,0.2148
+GPT-5.4,GraphRAG,0.9144,0.9647,0.9064,0.9266
+GPT-5.4,GraphRAG + Ontologia,0.9154,0.9631,0.9016,0.9221
+GPT-5.4,Δ (%),0.1052,-0.1661,-0.5304,-0.4843

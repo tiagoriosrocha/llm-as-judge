@@ -1,7 +1,15 @@
-﻿Modelo,Método,Correctness ↑,Faithfulness ↑,Completeness ↑
-GPT-4.1,RAG,0.9069,0.9705,0.9352
-GPT-4.1,GraphRAG,0.8891,0.9668,0.924
-GPT-5.2,RAG,0.9088,0.9615,0.931
-GPT-5.2,GraphRAG,0.8923,0.9728,0.9285
-GPT-5.4,RAG,0.9266,0.9702,0.9482
-GPT-5.4,GraphRAG,0.9144,0.9647,0.9378
+﻿Modelo,Configuração,Tipo resposta,Método,Correctness ↑,Faithfulness ↑,Completeness ↑
+GPT-4.1,GraphRAG,rag,RAG,0.9067,0.9712,0.9391
+GPT-4.1,GraphRAG,graphrag,GraphRAG,0.8891,0.9668,0.924
+GPT-4.1,GraphRAG + Ontologia,rag,RAG,0.9071,0.9698,0.9314
+GPT-4.1,GraphRAG + Ontologia,graphrag,GraphRAG,0.89,0.9693,0.9304
+GPT-5.2,Answer,answer,Answer,0.1724,0.6305,0.1772
+GPT-5.2,GraphRAG,rag,RAG,0.9109,0.9696,0.9324
+GPT-5.2,GraphRAG,graphrag,GraphRAG,0.8923,0.9728,0.9285
+GPT-5.2,GraphRAG + Ontologia,rag,RAG,0.9068,0.9534,0.9296
+GPT-5.2,GraphRAG + Ontologia,graphrag,GraphRAG,0.8887,0.9814,0.9174
+GPT-5.4,Answer,answer,Answer,0.1849,0.7201,0.2045
+GPT-5.4,GraphRAG,rag,RAG,0.9321,0.9743,0.949
+GPT-5.4,GraphRAG,graphrag,GraphRAG,0.9144,0.9647,0.9378
+GPT-5.4,GraphRAG + Ontologia,rag,RAG,0.9212,0.9661,0.9474
+GPT-5.4,GraphRAG + Ontologia,graphrag,GraphRAG,0.9154,0.9631,0.9375

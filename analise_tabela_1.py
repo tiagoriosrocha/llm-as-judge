@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from analise_utils import build_method_comparison, run_table
+from analise_utils import build_all_variant_metrics, run_table
 
 
 def build_table(avaliacao_dir: Path):
-    return build_method_comparison(
+    return build_all_variant_metrics(
         avaliacao_dir,
         [
             "Correctness ↑",
@@ -14,7 +14,8 @@ def build_table(avaliacao_dir: Path):
             "Completeness ↑",
             "Geological Adequacy ↑",
         ],
-        include_delta=True,
+        by_model=False,
+        include_delta_rows=True,
     )
 
 

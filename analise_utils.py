@@ -12,6 +12,8 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_AVALIACAO_DIR = PROJECT_ROOT / "avaliacao"
 DEFAULT_OUTPUT_DIR_NAME = "tabelas"
 MODEL_ORDER = ["GPT-4.1", "GPT-5.2", "GPT-5.4"]
+CONFIGURATION_ORDER = ["Answer", "GraphRAG", "GraphRAG + Ontologia"]
+TYPE_ORDER = ["answer", "rag", "graphrag"]
 
 METRIC_COLUMNS = {
     "Correctness ↑": "correctness_score_mean",
@@ -60,6 +62,7 @@ def load_summary(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
         lambda row: detect_configuration(row["arquivo_fonte"], row["tipo_resposta"]),
         axis=1,
     )
+    dataframe["metodo"] = dataframe["tipo_resposta"].map(detect_method)
     return dataframe
 
 
@@ -76,11 +79,11 @@ def load_details(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
 
 def detect_model(arquivo_fonte: str) -> str:
     lowered = str(arquivo_fonte).lower()
-    if "4-1" in lowered:
+    if "petrobras-4-1" in lowered:
         return "GPT-4.1"
-    if "5-2" in lowered:
+    if "petrobras-5-2" in lowered:
         return "GPT-5.2"
-    if "5-4" in lowered:
+    if "petrobras-5-4" in lowered:
         return "GPT-5.4"
     return "Desconhecido"
 
@@ -99,6 +102,17 @@ def detect_configuration(arquivo_fonte: str, tipo_resposta: str = "") -> str:
     if response_type == "graphrag":
         return "GraphRAG"
     return "Desconhecido"
+
+
+def detect_method(tipo_resposta: str) -> str:
+    response_type = str(tipo_resposta).strip().lower()
+    if response_type == "rag":
+        return "RAG"
+    if response_type == "graphrag":
+        return "GraphRAG"
+    if response_type == "answer":
+        return "Answer"
+    return response_type or "Desconhecido"
 
 
 def require_columns(dataframe: pd.DataFrame, columns: list[str], source_name: str) -> None:
@@ -143,6 +157,29 @@ def run_table(table_number: int, builder: Callable[[Path], pd.DataFrame]) -> Non
 
 def filter_rag(dataframe: pd.DataFrame) -> pd.DataFrame:
     return dataframe[dataframe["tipo_resposta"].str.lower() == "rag"].copy()
+
+
+def filter_answer(dataframe: pd.DataFrame) -> pd.DataFrame:
+    return dataframe[dataframe["tipo_resposta"].str.lower() == "answer"].copy()
+
+
+def filter_rag_without_ontology(dataframe: pd.DataFrame) -> pd.DataFrame:
+    source = dataframe["arquivo_fonte"].str.lower()
+    response_type = dataframe["tipo_resposta"].str.lower()
+    return dataframe[
+        (response_type == "rag")
+        & source.str.contains("sem-ontologia", na=False)
+        & ~source.str.contains("sem-contexto", na=False)
+    ].copy()
+
+
+def filter_rag_with_ontology(dataframe: pd.DataFrame) -> pd.DataFrame:
+    source = dataframe["arquivo_fonte"].str.lower()
+    response_type = dataframe["tipo_resposta"].str.lower()
+    return dataframe[
+        (response_type == "rag")
+        & source.str.contains("com-ontologia", na=False)
+    ].copy()
 
 
 def filter_graphrag_without_ontology(dataframe: pd.DataFrame) -> pd.DataFrame:
@@ -197,7 +234,7 @@ def build_method_comparison(
     include_delta: bool,
 ) -> pd.DataFrame:
     summary = load_summary(avaliacao_dir)
-    rag_metrics = mean_metrics(filter_rag(summary), display_columns)
+    rag_metrics = mean_metrics(filter_rag_without_ontology(summary), display_columns)
     graphrag_metrics = mean_metrics(filter_graphrag_without_ontology(summary), display_columns)
     rows = [
         row_from_metrics("Método", "RAG", rag_metrics),
@@ -206,6 +243,97 @@ def build_method_comparison(
     if include_delta:
         rows.append(delta_row("Método", rag_metrics, graphrag_metrics, display_columns))
     return pd.DataFrame(rows, columns=["Método", *display_columns])
+
+
+def configuration_sort_key(value: str) -> int:
+    try:
+        return CONFIGURATION_ORDER.index(value)
+    except ValueError:
+        return len(CONFIGURATION_ORDER)
+
+
+def type_sort_key(value: str) -> int:
+    try:
+        return TYPE_ORDER.index(str(value).lower())
+    except ValueError:
+        return len(TYPE_ORDER)
+
+
+def model_sort_key(value: str) -> int:
+    try:
+        return MODEL_ORDER.index(value)
+    except ValueError:
+        return len(MODEL_ORDER)
+
+
+def build_all_variant_metrics(
+    avaliacao_dir: Path,
+    display_columns: list[str],
+    by_model: bool,
+    include_delta_rows: bool = False,
+) -> pd.DataFrame:
+    summary = load_summary(avaliacao_dir)
+    require_metric_columns(summary, display_columns)
+    group_columns = ["configuracao", "tipo_resposta", "metodo"]
+    output_columns = ["Configuração", "Tipo resposta", "Método", *display_columns]
+    if by_model:
+        group_columns = ["modelo", *group_columns]
+        output_columns = ["Modelo", *output_columns]
+
+    metric_source_columns = [METRIC_COLUMNS[column] for column in display_columns]
+    grouped = (
+        summary.groupby(group_columns, dropna=False, as_index=False)[metric_source_columns]
+        .mean()
+    )
+
+    rows: list[dict[str, object]] = []
+    for _, row in grouped.iterrows():
+        output_row: dict[str, object] = {}
+        if by_model:
+            output_row["Modelo"] = row["modelo"]
+        output_row["Configuração"] = row["configuracao"]
+        output_row["Tipo resposta"] = row["tipo_resposta"]
+        output_row["Método"] = row["metodo"]
+        for display_column in display_columns:
+            output_row[display_column] = row[METRIC_COLUMNS[display_column]]
+        rows.append(output_row)
+
+    dataframe = pd.DataFrame(rows, columns=output_columns)
+    if dataframe.empty:
+        return dataframe
+
+    sort_columns = ["Configuração", "Tipo resposta"]
+    dataframe["_config_order"] = dataframe["Configuração"].map(configuration_sort_key)
+    dataframe["_type_order"] = dataframe["Tipo resposta"].map(type_sort_key)
+    if by_model:
+        dataframe["_model_order"] = dataframe["Modelo"].map(model_sort_key)
+        sort_columns = ["_model_order", "_config_order", "_type_order"]
+    else:
+        sort_columns = ["_config_order", "_type_order"]
+    dataframe = dataframe.sort_values(sort_columns).drop(
+        columns=[column for column in ["_model_order", "_config_order", "_type_order"] if column in dataframe.columns]
+    )
+
+    if include_delta_rows and not by_model:
+        rag_metrics = mean_metrics(filter_rag_without_ontology(summary), display_columns)
+        graphrag_metrics = mean_metrics(filter_graphrag_without_ontology(summary), display_columns)
+        ontology_metrics = mean_metrics(filter_graphrag_with_ontology(summary), display_columns)
+        delta_graphrag = {
+            "Configuração": "Δ GraphRAG vs RAG (sem ontologia)",
+            "Tipo resposta": "",
+            "Método": "Δ (%)",
+        }
+        delta_ontology = {
+            "Configuração": "Δ Ontologia vs GraphRAG",
+            "Tipo resposta": "",
+            "Método": "Δ (%)",
+        }
+        for column in display_columns:
+            delta_graphrag[column] = safe_delta_percent(graphrag_metrics[column], rag_metrics[column])
+            delta_ontology[column] = safe_delta_percent(ontology_metrics[column], graphrag_metrics[column])
+        dataframe = pd.concat([dataframe, pd.DataFrame([delta_graphrag, delta_ontology])], ignore_index=True)
+
+    return dataframe[output_columns]
 
 
 def build_ontology_comparison(
@@ -225,18 +353,46 @@ def build_ontology_comparison(
     return pd.DataFrame(rows, columns=["Configuração", *display_columns])
 
 
+def iter_model_scopes(summary: pd.DataFrame) -> list[tuple[str, pd.DataFrame]]:
+    scopes = [("Geral", summary)]
+    for model in MODEL_ORDER:
+        model_df = summary[summary["modelo"] == model]
+        if not model_df.empty:
+            scopes.append((model, model_df))
+    return scopes
+
+
+def build_ontology_comparison_by_model_scopes(
+    avaliacao_dir: Path,
+    display_columns: list[str],
+    include_delta: bool,
+) -> pd.DataFrame:
+    summary = load_summary(avaliacao_dir)
+    rows: list[dict[str, object]] = []
+    for scope_name, scope_df in iter_model_scopes(summary):
+        graphrag_metrics = mean_metrics(filter_graphrag_without_ontology(scope_df), display_columns)
+        ontology_metrics = mean_metrics(filter_graphrag_with_ontology(scope_df), display_columns)
+        rows.append({"Modelo": scope_name, **row_from_metrics("Configuração", "GraphRAG", graphrag_metrics)})
+        rows.append({"Modelo": scope_name, **row_from_metrics("Configuração", "GraphRAG + Ontologia", ontology_metrics)})
+        if include_delta:
+            rows.append({"Modelo": scope_name, **delta_row("Configuração", graphrag_metrics, ontology_metrics, display_columns)})
+    return pd.DataFrame(rows, columns=["Modelo", "Configuração", *display_columns])
+
+
 def build_ontology_gain_rows(
     avaliacao_dir: Path,
     display_columns: list[str],
+    by_model: bool = False,
 ) -> pd.DataFrame:
     summary = load_summary(avaliacao_dir)
-    graphrag_metrics = mean_metrics(filter_graphrag_without_ontology(summary), display_columns)
-    ontology_metrics = mean_metrics(filter_graphrag_with_ontology(summary), display_columns)
     rows = []
-    for display_column in display_columns:
-        metric_name = display_column.replace(" ↑", "")
-        rows.append(
-            {
+    scopes = iter_model_scopes(summary) if by_model else [("Geral", summary)]
+    for scope_name, scope_df in scopes:
+        graphrag_metrics = mean_metrics(filter_graphrag_without_ontology(scope_df), display_columns)
+        ontology_metrics = mean_metrics(filter_graphrag_with_ontology(scope_df), display_columns)
+        for display_column in display_columns:
+            metric_name = display_column.replace(" ↑", "")
+            row = {
                 "Métrica": metric_name,
                 "GraphRAG": graphrag_metrics[display_column],
                 "GraphRAG + Ontologia": ontology_metrics[display_column],
@@ -245,28 +401,22 @@ def build_ontology_gain_rows(
                     graphrag_metrics[display_column],
                 ),
             }
-        )
-    return pd.DataFrame(rows, columns=["Métrica", "GraphRAG", "GraphRAG + Ontologia", "Δ (%)"])
+            if by_model:
+                row = {"Modelo": scope_name, **row}
+            rows.append(row)
+    columns = ["Métrica", "GraphRAG", "GraphRAG + Ontologia", "Δ (%)"]
+    if by_model:
+        columns = ["Modelo", *columns]
+    return pd.DataFrame(rows, columns=columns)
 
 
 def build_rag_vs_graphrag_by_model(avaliacao_dir: Path) -> pd.DataFrame:
     display_columns = ["Correctness ↑", "Faithfulness ↑", "Completeness ↑"]
-    summary = load_summary(avaliacao_dir)
-    rows = []
-    for model in MODEL_ORDER:
-        model_df = summary[summary["modelo"] == model]
-        for method, subset in [
-            ("RAG", filter_rag(model_df)),
-            ("GraphRAG", filter_graphrag_without_ontology(model_df)),
-        ]:
-            rows.append(
-                {
-                    "Modelo": model,
-                    "Método": method,
-                    **mean_metrics(subset, display_columns),
-                }
-            )
-    return pd.DataFrame(rows, columns=["Modelo", "Método", *display_columns])
+    return build_all_variant_metrics(
+        avaliacao_dir=avaliacao_dir,
+        display_columns=display_columns,
+        by_model=True,
+    )
 
 
 def build_ontology_delta_by_model(

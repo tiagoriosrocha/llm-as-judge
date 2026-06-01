@@ -14,6 +14,7 @@ def build_table(avaliacao_dir: Path):
             "Geological Adequacy ↑",
             "Ontology Alignment ↑",
         ],
+        by_model=True,
     )
 
 
