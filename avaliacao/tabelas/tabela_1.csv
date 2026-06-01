@@ -1,0 +1,4 @@
+﻿Método,Correctness ↑,Faithfulness ↑,Completeness ↑,Geological Adequacy ↑
+RAG,0.9141,0.9674,0.9382,0.896
+GraphRAG,0.8986,0.9681,0.9301,0.8868
+Δ (%),-1.6963,0.0744,-0.8555,-1.0304

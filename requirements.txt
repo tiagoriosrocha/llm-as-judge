@@ -4,3 +4,5 @@ rouge-score
 tqdm
 openai
 python-dotenv
+openpyxl
+tabulate

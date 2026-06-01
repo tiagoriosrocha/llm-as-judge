@@ -1,0 +1,7 @@
+﻿Modelo,Método,Correctness ↑,Faithfulness ↑,Completeness ↑
+GPT-4.1,RAG,0.9303,0.9672,0.9648
+GPT-4.1,GraphRAG,0.918,0.9669,0.9541
+GPT-5.2,RAG,,,
+GPT-5.2,GraphRAG,,,
+GPT-5.4,RAG,,,
+GPT-5.4,GraphRAG,,,

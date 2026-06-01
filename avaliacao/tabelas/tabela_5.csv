@@ -1,0 +1,3 @@
+﻿Configuração,Contextual Recall ↑,Contextual Relevancy ↑,Completeness ↑
+GraphRAG,0.9594,0.2432,0.9301
+GraphRAG + Ontologia,0.9551,0.2424,0.9284

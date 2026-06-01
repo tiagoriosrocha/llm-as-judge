@@ -1,0 +1,3 @@
+﻿Método,Contextual Recall ↑,Contextual Relevancy ↑,Answer Relevancy ↑
+RAG,0.9562,0.2387,0.9839
+GraphRAG,0.9594,0.2432,0.9747
