@@ -14,6 +14,7 @@ DEFAULT_OUTPUT_DIR_NAME = "tabelas"
 MODEL_ORDER = ["GPT-4.1", "GPT-5.2", "GPT-5.4"]
 CONFIGURATION_ORDER = ["Answer", "GraphRAG", "GraphRAG + Ontologia"]
 TYPE_ORDER = ["answer", "rag", "graphrag"]
+ANALYSIS_GROUP_ORDER = ["Answer", "RAG", "GraphRAG", "GraphRAG + Ontologia"]
 
 METRIC_COLUMNS = {
     "Correctness ↑": "correctness_score_mean",
@@ -63,6 +64,10 @@ def load_summary(avaliacao_dir: Path = DEFAULT_AVALIACAO_DIR) -> pd.DataFrame:
         axis=1,
     )
     dataframe["metodo"] = dataframe["tipo_resposta"].map(detect_method)
+    dataframe["grupo_analise"] = dataframe.apply(
+        lambda row: detect_analysis_group(row["arquivo_fonte"], row["tipo_resposta"]),
+        axis=1,
+    )
     return dataframe
 
 
@@ -113,6 +118,22 @@ def detect_method(tipo_resposta: str) -> str:
     if response_type == "answer":
         return "Answer"
     return response_type or "Desconhecido"
+
+
+def detect_analysis_group(arquivo_fonte: str, tipo_resposta: str = "") -> str:
+    lowered = str(arquivo_fonte).lower()
+    response_type = str(tipo_resposta).strip().lower()
+    if response_type == "answer" or "sem-contexto-sem-ontologia" in lowered:
+        return "Answer"
+    if response_type == "rag":
+        return "RAG"
+    if response_type == "graphrag" and "com-ontologia" in lowered:
+        return "GraphRAG + Ontologia"
+    if response_type == "graphrag" and "sem-ontologia" in lowered:
+        return "GraphRAG"
+    if response_type == "graphrag":
+        return "GraphRAG"
+    return "Desconhecido"
 
 
 def require_columns(dataframe: pd.DataFrame, columns: list[str], source_name: str) -> None:
@@ -264,6 +285,88 @@ def model_sort_key(value: str) -> int:
         return MODEL_ORDER.index(value)
     except ValueError:
         return len(MODEL_ORDER)
+
+
+def analysis_group_sort_key(value: str) -> int:
+    try:
+        return ANALYSIS_GROUP_ORDER.index(value)
+    except ValueError:
+        return len(ANALYSIS_GROUP_ORDER)
+
+
+def build_analysis_group_metrics(
+    avaliacao_dir: Path,
+    display_columns: list[str],
+    by_model: bool,
+    include_delta_rows: bool = False,
+) -> pd.DataFrame:
+    summary = load_summary(avaliacao_dir)
+    require_metric_columns(summary, display_columns)
+    group_columns = ["grupo_analise"]
+    output_columns = ["Grupo", *display_columns]
+    if by_model:
+        group_columns = ["modelo", *group_columns]
+        output_columns = ["Modelo", *output_columns]
+
+    metric_source_columns = [METRIC_COLUMNS[column] for column in display_columns]
+    grouped = summary.groupby(group_columns, dropna=False, as_index=False)[
+        metric_source_columns
+    ].mean()
+
+    rows: list[dict[str, object]] = []
+    for _, row in grouped.iterrows():
+        output_row: dict[str, object] = {}
+        if by_model:
+            output_row["Modelo"] = row["modelo"]
+        output_row["Grupo"] = row["grupo_analise"]
+        for display_column in display_columns:
+            output_row[display_column] = row[METRIC_COLUMNS[display_column]]
+        rows.append(output_row)
+
+    dataframe = pd.DataFrame(rows, columns=output_columns)
+    if dataframe.empty:
+        return dataframe
+
+    dataframe["_group_order"] = dataframe["Grupo"].map(analysis_group_sort_key)
+    sort_columns = ["_group_order"]
+    if by_model:
+        dataframe["_model_order"] = dataframe["Modelo"].map(model_sort_key)
+        sort_columns = ["_model_order", "_group_order"]
+    dataframe = dataframe.sort_values(sort_columns).drop(
+        columns=[
+            column
+            for column in ["_model_order", "_group_order"]
+            if column in dataframe.columns
+        ]
+    )
+
+    if include_delta_rows and not by_model:
+        def group_metrics(group_name: str) -> dict[str, float]:
+            return mean_metrics(
+                summary[summary["grupo_analise"] == group_name],
+                display_columns,
+            )
+
+        rag_metrics = group_metrics("RAG")
+        graphrag_metrics = group_metrics("GraphRAG")
+        ontology_metrics = group_metrics("GraphRAG + Ontologia")
+        delta_graphrag = {"Grupo": "Δ GraphRAG vs RAG (%)"}
+        delta_ontology = {"Grupo": "Δ GraphRAG + Ontologia vs GraphRAG (%)"}
+        for column in display_columns:
+            delta_graphrag[column] = safe_delta_percent(
+                graphrag_metrics[column],
+                rag_metrics[column],
+            )
+            delta_ontology[column] = safe_delta_percent(
+                ontology_metrics[column],
+                graphrag_metrics[column],
+            )
+        dataframe = pd.concat(
+            [dataframe, pd.DataFrame([delta_graphrag, delta_ontology])],
+            ignore_index=True,
+        )
+
+    return dataframe[output_columns]
 
 
 def build_all_variant_metrics(

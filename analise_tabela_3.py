@@ -2,11 +2,11 @@ from __future__ import annotations
 
 from pathlib import Path
 
-from analise_utils import build_all_variant_metrics, run_table
+from analise_utils import build_analysis_group_metrics, run_table
 
 
 def build_table(avaliacao_dir: Path):
-    return build_all_variant_metrics(
+    return build_analysis_group_metrics(
         avaliacao_dir,
         [
             "Contextual Recall ↑",
