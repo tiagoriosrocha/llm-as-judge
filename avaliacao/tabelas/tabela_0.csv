@@ -1,0 +1,25 @@
+﻿modelo,grupo_analise,configuracao,tipo_resposta,num_linhas,num_perguntas_distintas,arquivo_fonte,arquivo_origem_contagem
+GPT-4o,Answer,Answer,answer,312,312,resultados/petrobras-4-0-sem-contexto-sem-ontologia/sem_contexto_deepeval_01-06-2026-13-47-03.csv,todas_avaliadas.csv
+GPT-4o,RAG,GraphRAG,rag,312,312,resultados/petrobras-4-0-sem-ontologia/batch_3c43a79b-46f4-493b-9d1c-0877b59f8e91-completo.csv,todas_avaliadas.csv
+GPT-4o,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-4-0-sem-ontologia/batch_3c43a79b-46f4-493b-9d1c-0877b59f8e91-completo.csv,todas_avaliadas.csv
+GPT-4.1,Answer,Answer,answer,312,312,resultados/petrobras-4-1-sem-contexto-sem-ontologia/sem_contexto_deepeval_01-06-2026-11-34-32.csv,todas_avaliadas.csv
+GPT-4.1,RAG,GraphRAG,rag,312,312,resultados/petrobras-4-1-sem-ontologia/batch_6216f63d-7efa-49ad-b85e-42ddd91d94ca-completo.csv,todas_avaliadas.csv
+GPT-4.1,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-4-1-sem-ontologia/batch_6216f63d-7efa-49ad-b85e-42ddd91d94ca-completo.csv,todas_avaliadas.csv
+GPT-4.1,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-4-1-com-ontologia/batch_d0f7eb82-b364-4481-acfb-0c34fa1e8410-completo.csv,todas_avaliadas.csv
+GPT-4.1,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-4-1-com-ontologia/batch_d0f7eb82-b364-4481-acfb-0c34fa1e8410-completo.csv,todas_avaliadas.csv
+GPT-5.2,Answer,Answer,answer,312,312,resultados/petrobras-5-2-sem-contexto-sem-ontologia/sem_contexto_deepeval_25-05-2026-15-56-13.csv,todas_avaliadas.csv
+GPT-5.2,RAG,GraphRAG,rag,312,312,resultados/petrobras-5-2-sem-ontologia/batch_88394d97-d425-424d-b673-45bce1fea654-completo.csv,todas_avaliadas.csv
+GPT-5.2,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-5-2-sem-ontologia/batch_88394d97-d425-424d-b673-45bce1fea654-completo.csv,todas_avaliadas.csv
+GPT-5.2,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
+GPT-5.2,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
+GPT-5.4,Answer,Answer,answer,312,312,resultados/petrobras-5-4-sem-contexto-sem-ontologia/sem_contexto_deepeval_28-05-2026-09-50-29.csv,todas_avaliadas.csv
+GPT-5.4,RAG,GraphRAG,rag,312,312,resultados/petrobras-5-4-sem-ontologia/batch_03e32f0c-2f76-4270-acdd-300680761ce7-completo.csv,todas_avaliadas.csv
+GPT-5.4,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-5-4-sem-ontologia/batch_03e32f0c-2f76-4270-acdd-300680761ce7-completo.csv,todas_avaliadas.csv
+GPT-5.4,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-5-4-com-ontologia/batch_c74bf462-a766-47cf-9119-7b3381ad30d8-completo.csv,todas_avaliadas.csv
+GPT-5.4,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-5-4-com-ontologia/batch_c74bf462-a766-47cf-9119-7b3381ad30d8-completo.csv,todas_avaliadas.csv
+GPT-o3,Answer,Answer,answer,312,312,resultados/petrobras-0-3-sem-contexto-sem-ontologia/sem_contexto_deepeval_02-06-2026-11-11-07.csv,todas_avaliadas.csv
+GPT-o3,RAG,GraphRAG,rag,312,312,resultados/petrobras-0-3-sem-ontologia/batch_c74bf462-a766-47cf-9119-7b3381ad30d8-completo.csv,todas_avaliadas.csv
+GPT-o3,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-0-3-sem-ontologia/batch_c74bf462-a766-47cf-9119-7b3381ad30d8-completo.csv,todas_avaliadas.csv
+GPT-o3,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-0-3-com-ontologia/batch_ae3b085b-4e55-401f-8eda-0118cda89f27-completo.csv,todas_avaliadas.csv
+GPT-o3,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-0-3-com-ontologia/batch_ae3b085b-4e55-401f-8eda-0118cda89f27-completo.csv,todas_avaliadas.csv
+Desconhecido,Desconhecido,Desconhecido,tipo_resposta,1,1,arquivo_fonte,todas_avaliadas.csv

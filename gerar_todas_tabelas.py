@@ -11,7 +11,7 @@ PROJECT_ROOT = Path(__file__).resolve().parent
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
-        description="Executa analise_tabela_1.py ate analise_tabela_14.py."
+        description="Executa analise_tabela_0.py ate analise_tabela_14.py."
     )
     parser.add_argument(
         "--avaliacao-dir",
@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    for table_number in range(1, 15):
+    for table_number in range(0, 15):
         script_path = PROJECT_ROOT / f"analise_tabela_{table_number}.py"
         print(f"Gerando tabela {table_number}...", flush=True)
         completed = subprocess.run(
