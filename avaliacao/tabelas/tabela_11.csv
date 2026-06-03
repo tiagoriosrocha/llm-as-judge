@@ -1,4 +1,6 @@
 ﻿Modelo,Δ Correctness ↑,Δ Faithfulness ↑,Δ Geological Adequacy ↑,Δ Ontology Alignment ↑
+GPT-4o,,,,
 GPT-4.1,0.0973,0.2567,-0.1761,-0.8024
 GPT-5.2,-0.3992,0.8882,-1.5437,0.2148
 GPT-5.4,0.1052,-0.1661,-0.5304,-0.4843
+GPT-o3,2.4561,0.3317,2.0057,2.1195
