@@ -1,5 +1,5 @@
 ﻿Métrica,GraphRAG,GraphRAG + Ontologia,Δ (%)
-Correctness,0.8969,0.9075,1.1791
-Faithfulness,0.9651,0.9708,0.5892
-Geological Adequacy,0.8809,0.8883,0.8391
-Ontology Alignment,0.9119,0.9187,0.7417
+Correctness,0.8969,0.9046,0.8613
+Faithfulness,0.9651,0.9685,0.344
+Geological Adequacy,0.8809,0.8855,0.521
+Ontology Alignment,0.9119,0.9162,0.4729

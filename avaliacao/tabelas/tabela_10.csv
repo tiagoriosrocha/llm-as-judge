@@ -1,5 +1,5 @@
 ﻿Modelo,GraphRAG,GraphRAG + Ontologia,Δ Correctness ↑,Δ Faithfulness ↑,Δ Geological Adequacy ↑,Δ Ontology Alignment ↑
-GPT-4o,0.8753,,,,,
+GPT-4o,0.8753,0.8932,2.0481,0.4057,2.9337,1.328
 GPT-4.1,0.8891,0.89,0.0973,0.2567,-0.1761,-0.8024
 GPT-5.2,0.8923,0.8887,-0.3992,0.8882,-1.5437,0.2148
 GPT-5.4,0.9144,0.9154,0.1052,-0.1661,-0.5304,-0.4843

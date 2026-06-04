@@ -1,7 +1,7 @@
 ﻿modelo,Answer,RAG,GraphRAG,GraphRAG + Ontologia,tem_rag,tem_graphrag,tem_graphrag_ontologia,comparacao_h1_ok,comparacao_ontologia_ok
 Desconhecido,0,0,0,0,False,False,False,False,False
 GPT-4.1,312,312,312,312,True,True,True,True,True
-GPT-4o,312,312,312,0,True,True,False,True,False
+GPT-4o,312,312,312,312,True,True,True,True,True
 GPT-5.2,312,312,312,312,True,True,True,True,True
 GPT-5.4,312,312,312,312,True,True,True,True,True
 GPT-o3,312,312,312,312,True,True,True,True,True
