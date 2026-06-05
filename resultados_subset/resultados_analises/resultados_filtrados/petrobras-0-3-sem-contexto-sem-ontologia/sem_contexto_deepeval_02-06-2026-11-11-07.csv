@@ -11,7 +11,6 @@
 • Cada coluna (ou linha) normalmente soma 1 (ou 100 %), garantindo que a composição total da amostra esteja fechada.
 
 Essa matriz é a base para cálculos de balanço de massa, modelagem de mistura, estatística composicional ou algoritmos de “unmixing” espectral, porque transforma a descrição qualitativa dos litotipos em números comparáveis entre si e adequados a processos matemáticos.",input\georegis\dataset.json,
-1310,O que é interpretado como arenitos muito porosos na região que domina o amarelo?,a curva vertical de proporções é guiada pela respectiva fácies sísmica,"São arenitos da Formação Botucatu, caracterizados por granulação fina-média, alta porosidade e permeabilidade, que funcionam como o principal reservatório aquífero da área representada em amarelo.",input\georegis\dataset.json,
 1320,Qual é a área da Bacia do Espírito Santo?,41.500 km2,A Bacia do Espírito Santo tem área aproximada de 220 mil km² (somando as partes onshore e offshore).,input\georegis\dataset.json,
 1325,Qual é o limite leste da Bacia do Espírito Santo?,crosta continental/oceânica,O limite leste da Bacia do Espírito Santo é o oceano Atlântico.,input\georegis\dataset.json,
 1327,Qual é a largura da plataforma continental?,240 km na porção centro-norte,"Em termos físicos, a plataforma continental costuma ter cerca de 70–80 km de largura em média, embora possa variar de poucos quilômetros até mais de 1 500 km, dependendo da região costeira.",input\georegis\dataset.json,

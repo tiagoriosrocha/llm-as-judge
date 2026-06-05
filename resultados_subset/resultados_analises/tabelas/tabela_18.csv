@@ -1,6 +1,6 @@
 ﻿Configuração,ROUGE-L Precision ↑,ROUGE-L Recall ↑,ROUGE-L F1 ↑
-RAG,0.3404,0.8827,0.4507
-GraphRAG,0.3027,0.8627,0.4116
-GraphRAG + Ontologia,0.2993,0.8644,0.4093
-Δ GraphRAG vs RAG (%),-11.056,-2.2688,-8.6762
-Δ Ontologia vs GraphRAG (%),-1.1332,0.2018,-0.5629
+RAG,0.3411,0.887,0.4521
+GraphRAG,0.304,0.8677,0.4136
+GraphRAG + Ontologia,0.2992,0.8689,0.4105
+Δ GraphRAG vs RAG (%),-10.8667,-2.1804,-8.5284
+Δ Ontologia vs GraphRAG (%),-1.5919,0.1383,-0.751

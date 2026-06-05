@@ -1,6 +1,6 @@
 Subset de avaliacao
-question_ids: 140
-linhas_todas_avaliadas: 4200
+question_ids: 139
+linhas_todas_avaliadas: 4170
 linhas_resumo_avaliadas: 30
 arquivos_resultados_filtrados: 19
 
@@ -10,7 +10,6 @@ question_ids_usados:
 1305
 1306
 1309
-1310
 1320
 1325
 1327
