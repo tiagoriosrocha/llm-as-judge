@@ -24,7 +24,7 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> int:
     args = parse_args()
-    for table_number in range(0, 15):
+    for table_number in range(0, 19):
         script_path = PROJECT_ROOT / f"analise_tabela_{table_number}.py"
         print(f"Gerando tabela {table_number}...", flush=True)
         completed = subprocess.run(
