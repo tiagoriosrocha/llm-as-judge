@@ -11,7 +11,7 @@ import pandas as pd
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEFAULT_AVALIACAO_DIR = PROJECT_ROOT / "avaliacao"
 DEFAULT_OUTPUT_DIR_NAME = "tabelas"
-MODEL_ORDER = ["GPT-4o", "GPT-4.1", "GPT-5.2", "GPT-5.4", "GPT-o3"]
+MODEL_ORDER = ["GPT-4o", "GPT-4.1", "GPT-5-mini", "GPT-5.2", "GPT-5.4", "GPT-o3"]
 CONFIGURATION_ORDER = ["Answer", "GraphRAG", "GraphRAG + Ontologia"]
 TYPE_ORDER = ["answer", "rag", "graphrag"]
 ANALYSIS_GROUP_ORDER = ["Answer", "RAG", "GraphRAG", "GraphRAG + Ontologia"]
@@ -94,6 +94,8 @@ def detect_model(arquivo_fonte: str) -> str:
         return "GPT-4o"
     if "petrobras-0-3" in lowered:
         return "GPT-o3"
+    if "petrobras-5-mini" in lowered:
+        return "GPT-5-mini"
     return "Desconhecido"
 
 

@@ -24,4 +24,9 @@ GPT-o3,RAG,GraphRAG,rag,312,312,resultados/petrobras-0-3-sem-ontologia/batch_c74
 GPT-o3,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-0-3-sem-ontologia/batch_c74bf462-a766-47cf-9119-7b3381ad30d8-completo.csv,todas_avaliadas.csv
 GPT-o3,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-0-3-com-ontologia/batch_ae3b085b-4e55-401f-8eda-0118cda89f27-completo.csv,todas_avaliadas.csv
 GPT-o3,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-0-3-com-ontologia/batch_ae3b085b-4e55-401f-8eda-0118cda89f27-completo.csv,todas_avaliadas.csv
+GPT-5-mini,Answer,Answer,answer,312,312,resultados/petrobras-5-mini-sem-contexto-sem-ontologia/sem_contexto_deepeval_02-06-2026-13-51-58.csv,todas_avaliadas.csv
+GPT-5-mini,RAG,GraphRAG,rag,312,312,resultados/petrobras-5-mini-sem-ontologia/batch_51ee2c57-4aab-4371-98c1-4998ae120218-completo.csv,todas_avaliadas.csv
+GPT-5-mini,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-5-mini-sem-ontologia/batch_51ee2c57-4aab-4371-98c1-4998ae120218-completo.csv,todas_avaliadas.csv
+GPT-5-mini,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-5-mini-com-ontologia/batch_b90cb524-548f-476d-889b-1a51975717b1-completo.csv,todas_avaliadas.csv
+GPT-5-mini,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-5-mini-com-ontologia/batch_b90cb524-548f-476d-889b-1a51975717b1-completo.csv,todas_avaliadas.csv
 Desconhecido,Desconhecido,Desconhecido,tipo_resposta,1,1,arquivo_fonte,todas_avaliadas.csv
