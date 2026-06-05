@@ -1,0 +1,6 @@
+﻿Configuração,ROUGE-1 F1 ↑,ROUGE-2 F1 ↑,ROUGE-L F1 ↑
+RAG,0.4567,0.3444,0.4489
+GraphRAG,0.4204,0.3127,0.413
+GraphRAG + Ontologia,0.4241,0.3161,0.4151
+Δ GraphRAG vs RAG (%),-7.934,-9.2016,-7.9892
+Δ Ontologia vs GraphRAG (%),0.8815,1.1029,0.5073
