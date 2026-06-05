@@ -2,9 +2,9 @@
 
 ## 1. Resumo executivo
 
-- Conclusao: AUDITORIA OK
+- Conclusao: AUDITORIA COM ALERTAS
 - Tabela 9 pode ser usada com seguranca: sim
-- Dados prontos para gerar as tabelas finais do artigo: sim
+- Dados prontos para gerar as tabelas finais do artigo: nao
 - Erros de leitura/processamento registrados: 0
 
 ## 2. Quantidade de modelos encontrados
@@ -17,20 +17,20 @@
 
 ## 4. Cobertura por modelo
 
-| modelo     |   Answer |   RAG |   GraphRAG |   GraphRAG + Ontologia |   total_linhas | comparacao_h1_ok   | comparacao_ontologia_ok   | status   |
-|:-----------|---------:|------:|-----------:|-----------------------:|---------------:|:-------------------|:--------------------------|:---------|
-| GPT-4o     |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
-| GPT-4.1    |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
-| GPT-5-mini |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
-| GPT-5.2    |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
-| GPT-5.4    |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
-| GPT-o3     |      146 |   146 |        146 |                    146 |            730 | True               | True                      | OK       |
+| modelo     |   Answer |   RAG |   GraphRAG |   GraphRAG + Ontologia |   total_linhas | comparacao_h1_ok   | comparacao_ontologia_ok   | status     |
+|:-----------|---------:|------:|-----------:|-----------------------:|---------------:|:-------------------|:--------------------------|:-----------|
+| GPT-4o     |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-4.1    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5-mini |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5.2    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5.4    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-o3     |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
 
 ## 5. Alertas criticos
 
 - Batches duplicados: 0
 - Hashes duplicados: 0
-- Modelos incompletos: 0
+- Modelos incompletos: 6
 - Metricas ausentes: 0
 - Divergencias entre resumo e detalhado: 0
 - Matching estrutural suspeito: 0
@@ -38,7 +38,14 @@
 
 ### Modelos incompletos
 
-_Sem registros._
+| modelo     |   Answer |   RAG |   GraphRAG |   GraphRAG + Ontologia |   total_linhas | comparacao_h1_ok   | comparacao_ontologia_ok   | status     |
+|:-----------|---------:|------:|-----------:|-----------------------:|---------------:|:-------------------|:--------------------------|:-----------|
+| GPT-4o     |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-4.1    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5-mini |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5.2    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-5.4    |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
+| GPT-o3     |      140 |   140 |        140 |                    140 |            700 | False              | False                     | INCOMPLETO |
 
 ### Batches duplicados
 
@@ -91,6 +98,6 @@ _Nenhum erro registrado._
 
 ## 8. Conclusao
 
-AUDITORIA OK
+AUDITORIA COM ALERTAS
 
-Todos os criterios criticos passaram; os dados estao prontos para as tabelas finais do artigo.
+Ha alertas criticos a revisar antes de usar a Tabela 9 e antes de gerar as tabelas finais do artigo.
