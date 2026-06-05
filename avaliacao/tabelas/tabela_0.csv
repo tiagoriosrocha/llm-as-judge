@@ -12,10 +12,8 @@ GPT-4.1,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-4-1-c
 GPT-5.2,Answer,Answer,answer,312,312,resultados/petrobras-5-2-sem-contexto-sem-ontologia/sem_contexto_deepeval_25-05-2026-15-56-13.csv,todas_avaliadas.csv
 GPT-5.2,RAG,GraphRAG,rag,312,312,resultados/petrobras-5-2-sem-ontologia/batch_88394d97-d425-424d-b673-45bce1fea654-completo.csv,todas_avaliadas.csv
 GPT-5.2,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-5-2-sem-ontologia/batch_88394d97-d425-424d-b673-45bce1fea654-completo.csv,todas_avaliadas.csv
-GPT-5.2,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,1,1,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49ad-b85e-42ddd91d94ca-completo.csv,todas_avaliadas.csv
-GPT-5.2,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,311,311,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
-GPT-5.2,Desconhecido,GraphRAG + Ontologia,rag,1,1,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49ad-b85e-42ddd91d94ca-completo.csv,todas_avaliadas.csv
-GPT-5.2,Desconhecido,GraphRAG + Ontologia,rag,311,311,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
+GPT-5.2,GraphRAG + Ontologia,GraphRAG + Ontologia,graphrag,312,312,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
+GPT-5.2,Desconhecido,GraphRAG + Ontologia,rag,312,312,resultados/petrobras-5-2-com-ontologia-adaptatado/batch_bf41e0dd-3e3d-49b8-b066-6a1bb34353b0-completo.csv,todas_avaliadas.csv
 GPT-5.4,Answer,Answer,answer,312,312,resultados/petrobras-5-4-sem-contexto-sem-ontologia/sem_contexto_deepeval_28-05-2026-09-50-29.csv,todas_avaliadas.csv
 GPT-5.4,RAG,GraphRAG,rag,312,312,resultados/petrobras-5-4-sem-ontologia/batch_03e32f0c-2f76-4270-acdd-300680761ce7-completo.csv,todas_avaliadas.csv
 GPT-5.4,GraphRAG,GraphRAG,graphrag,312,312,resultados/petrobras-5-4-sem-ontologia/batch_03e32f0c-2f76-4270-acdd-300680761ce7-completo.csv,todas_avaliadas.csv

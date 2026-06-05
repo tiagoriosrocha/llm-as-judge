@@ -1,7 +1,7 @@
 ﻿Modelo,Configuração,Ontology Alignment ↑,Geological Adequacy ↑,Faithfulness ↑
 Geral,GraphRAG,0.9141,0.8817,0.9671
-Geral,GraphRAG + Ontologia,0.7858,0.7604,0.8293
-Geral,Δ (%),-14.04,-13.7578,-14.2545
+Geral,GraphRAG + Ontologia,0.9162,0.8867,0.967
+Geral,Δ (%),0.2338,0.5634,-0.0178
 GPT-4o,GraphRAG,0.8946,0.8494,0.9551
 GPT-4o,GraphRAG + Ontologia,0.9035,0.8715,0.9559
 GPT-4o,Δ (%),1.0032,2.6038,0.0839
@@ -12,8 +12,8 @@ GPT-5-mini,GraphRAG,0.925,0.8859,0.9792
 GPT-5-mini,GraphRAG + Ontologia,0.9308,0.9067,0.9749
 GPT-5-mini,Δ (%),0.6237,2.3517,-0.4318
 GPT-5.2,GraphRAG,0.9035,0.8792,0.9728
-GPT-5.2,GraphRAG + Ontologia,0.4527,0.4328,0.4907
-GPT-5.2,Δ (%),-49.8926,-50.7719,-49.5559
+GPT-5.2,GraphRAG + Ontologia,0.9026,0.8628,0.9783
+GPT-5.2,Δ (%),-0.1064,-1.8593,0.5648
 GPT-5.4,GraphRAG,0.9266,0.9064,0.9647
 GPT-5.4,GraphRAG + Ontologia,0.9221,0.9016,0.9631
 GPT-5.4,Δ (%),-0.4843,-0.5304,-0.1661
