@@ -1,0 +1,4 @@
+﻿Configuração,ROUGE-1 F1 ↑,ROUGE-2 F1 ↑,ROUGE-L F1 ↑,Exact Match ↑,Token F1 ↑
+GraphRAG,0.4114,0.318,0.4023,0.0228,0.3922
+GraphRAG + Ontologia,0.4137,0.3219,0.4018,0.0217,0.3935
+Δ (%),0.5715,1.2093,-0.1256,-5.0,0.3413

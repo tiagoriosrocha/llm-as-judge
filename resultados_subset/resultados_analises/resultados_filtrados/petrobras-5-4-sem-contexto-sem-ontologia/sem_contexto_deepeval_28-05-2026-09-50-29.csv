@@ -1,0 +1,1013 @@
+﻿question_id,question,expected_answer,answer,answer_relevancy_score,faithfulness_score,answer_relevancy_reason,faithfulness_reason,source_file,error
+1292,O que representa a fácies sísmica interpretada?,sedimentos clásticos finos,"A **fácies sísmica interpretada** representa um **conjunto de características dos refletores sísmicos** — como continuidade, amplitude, frequência, geometria e configuração — que permite **inferir o tipo de rocha, o ambiente deposicional ou a estrutura geológica** presente no subsolo.
+
+Em outras palavras, ela é uma **interpretação geológica baseada no padrão da resposta sísmica**.
+
+Exemplos do que pode representar:
+- **Canais sedimentares**
+- **Leques submarinos**
+- **Recifes**
+- **Camadas marinhas ou continentais**
+- **Falhas e dobras**
+- **Massas salinas ou vulcânicas**
+
+Resumindo:  
+**a fácies sísmica interpretada indica o tipo de depósito ou estrutura geológica sugerido pelo padrão observado nos dados sísmicos.**",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question about what the interpreted seismic facies represents, with no irrelevant statements; it stays at this top score since it addresses the input directly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1297,O que é interpretado como fácies sísmica?,arenitos muito porosos,"Fácies sísmica é o **conjunto de características de um reflexo sísmico** que permite interpretar **tipos de rochas, ambientes deposicionais ou estruturas geológicas** no subsolo.
+
+Essas características incluem, por exemplo:
+- **configuração dos refletores**
+- **continuidade**
+- **amplitude**
+- **frequência**
+- **geometria externa**
+
+Em outras palavras, é a **expressão sísmica de uma fácies geológica**, usada para inferir como os sedimentos ou rochas estão distribuídos e em que ambiente foram formados.",1.0,1.0,"The score is 1.00 because the response is fully relevant to the question about what is interpreted as seismic facies, with no irrelevant statements included. It directly addresses the input clearly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1304,O que guia a curva vertical de proporções na matriz de proporções para a unidade genética superior do reservatório de Namorado?,respectiva fácies sísmica,"A curva vertical de proporções é guiada pela **distribuição vertical das proporções litológicas/faciológicas dentro da unidade genética superior** do reservatório de Namorado.
+
+Em termos práticos, ela mostra **como a proporção de cada fácies varia com a altura**, sendo controlada principalmente por:
+
+- **empilhamento vertical das fácies**;
+- **arquitetura deposicional da unidade genética**;
+- **variações de energia e ambiente de deposição ao longo da sedimentação**.
+
+Ou seja, essa curva representa o **padrão vertical de heterogeneidade interna da unidade**, servindo para orientar a matriz de proporções na direção vertical.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on what guides the vertical proportion curve in the proportion matrix for the upper genetic unit of the Namorado reservoir, with no irrelevant statements included. Strong, precise relevance.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1305,Qual fácies sísmica é interpretada como sedimentos clásticos finos na matriz de proporções?,verde,"Na **matriz de proporções**, os **sedimentos clásticos finos** são geralmente interpretados na **fácies sísmica de baixa amplitude, padrão mais homogêneo/caótico a subparalelo e continuidade moderada a alta**.
+
+Se você quiser, posso também te explicar **como essa fácies aparece na matriz de proporções** em comparação com areia, carbonato ou depósitos mais grossos.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question and directly addresses the seismic facies interpreted as fine clastic sediments in the matrix proportions, with no irrelevant statements. Great job keeping it focused and on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping it accurate and consistent.",input\georegis\dataset.json,
+1306,O que é utilizado para distribuir no volume do reservatório as CPVs conhecidas somente nos poços?,conceito de fácies sísmicas,"Para distribuir no volume do reservatório as **CPVs conhecidas apenas nos poços**, normalmente utilizam-se **métodos de interpolação/extrapolação espacial**, principalmente técnicas geoestatísticas como a **krigagem**.
+
+Em resumo:
+- **Dados dos poços** → valores conhecidos de CPV
+- **Modelo do reservatório** → malha 3D onde se quer preencher os valores
+- **Método usado para distribuir** → **interpolação geoestatística**, especialmente **krigagem**, podendo também incluir **simulação geoestatística**
+
+Se quiser, posso também explicar o que significa **CPV** nesse contexto de engenharia de reservatórios.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question and stays focused on what is used to distribute the known CPVs throughout the reservoir volume from the well data, with no irrelevant statements. Ótimo alinhamento com o que foi pedido.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1309,O que é a matriz de proporções na construção de uma matriz de proporções de litotipos?,uma ferramenta muito importante para capturar o comportamento espacial dos litotipos,"A **matriz de proporções** de litotipos é uma tabela usada para representar **quanto cada litotipo aparece em relação aos outros** dentro de um conjunto de dados geológicos.
+
+### Em termos simples:
+- Cada **linha** e **coluna** da matriz representa um **litotipo**.
+- Os valores mostram a **proporção**, **frequência** ou **probabilidade de contato/transição** entre esses litotipos, dependendo do método usado.
+
+### Pode ser usada para:
+1. **Proporção global de litotipos**
+   - Ex.: 40% arenito, 35% folhelho, 25% calcário.
+
+2. **Proporção entre pares de litotipos**
+   - Ex.: qual a frequência com que arenito ocorre junto de folhelho.
+
+3. **Modelagem geológica**
+   - Muito usada em simulações e modelos estratigráficos para descrever a distribuição dos litotipos no espaço.
+
+### Exemplo simples:
+Suponha 3 litotipos:  
+- Arenito  
+- Folhelho  
+- Calcário  
+
+Uma matriz pode ser:
+
+|            | Arenito | Folhelho | Calcário |
+|------------|---------:|---------:|---------:|
+| Arenito    | 0,40     | 0,35     | 0,25     |
+| Folhelho   | 0,30     | 0,50     | 0,20     |
+| Calcário   | 0,25     | 0,25     | 0,50     |
+
+Isso pode indicar, por exemplo, a proporção ou chance de associação/transição entre litotipos, conforme o contexto.
+
+### Resumindo:
+A matriz de proporções é uma **forma organizada de quantificar a participação e a relação entre os litotipos** em um modelo ou conjunto de observações geológicas.
+
+Se quiser, posso também explicar **como montar essa matriz passo a passo**.",1.0,1.0,"The score is 1.00 because the response stays fully focused on explaining what the matriz de proporções is in the context of constructing a lithotype proportion matrix, with no irrelevant statements. It directly addresses the input clearly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1310,O que é interpretado como arenitos muito porosos na região que domina o amarelo?,a curva vertical de proporções é guiada pela respectiva fácies sísmica,"Na interpretação geológica, a região dominada pela cor amarela costuma representar **arenitos muito porosos**, ou seja, **rochas sedimentares com muitos espaços vazios entre os grãos**.
+
+Isso normalmente indica que essa área pode ter:
+- **alta permeabilidade**
+- **capacidade de armazenar água ou hidrocarbonetos**
+- **sedimentos mais soltos ou menos cimentados**
+
+Em resumo: **a região amarela é interpretada como uma área de arenitos com elevada porosidade, potencialmente boa para armazenamento de fluidos**.",1.0,1.0,"The score is 1.00 because the response appears fully relevant to the question, directly addressing what is interpreted as very porous sandstones in the yellow-dominated region, with no irrelevant statements noted. Nice and precise.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping everything aligned.",input\georegis\dataset.json,
+1320,Qual é a área da Bacia do Espírito Santo?,41.500 km2,"A **Bacia do Espírito Santo** tem área aproximada de **41 mil km²**, considerando sua porção **offshore e onshore**.",1.0,1.0,"The score is 1.00 because the answer directly addresses the question about the área da Bacia do Espírito Santo with no irrelevant information. It is fully focused, clear, and completely relevant.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1325,Qual é o limite leste da Bacia do Espírito Santo?,crosta continental/oceânica,"O limite leste da Bacia do Espírito Santo é o **Alto de Vitória** (também referido em alguns contextos como **Plataforma de Vitória**), no offshore, em direção ao oceano Atlântico.",1.0,0.0,The score is 1.00 because the answer is fully relevant to the question and contains no irrelevant statements. It directly addresses the requested information clearly and appropriately—great job staying on topic.,"The score is 0.00 because the actual output wrongly states that the eastern boundary is the Alto de Vitória, while the context says the Alto de Vitória marks the southern limit between the Bacia do Espírito Santo and the Bacia de Campos, and that the eastern boundary coincides with the continental/oceanic crust limit.",input\georegis\dataset.json,
+1327,Qual é a largura da plataforma continental?,240 km na porção centro-norte,"A largura da plataforma continental varia bastante de lugar para lugar, mas em média fica em torno de 70 a 80 km.
+
+Em alguns trechos ela pode ter:
+- poucos quilômetros de largura
+- mais de 1.000 km em certas regiões
+
+Se você quiser, também posso explicar o que é a plataforma continental.",1.0,0.75,"The score is 1.00 because the response is fully relevant to the question about the width of the continental shelf, with no irrelevant statements included. Great job staying completely on topic.","The score is 0.75 because the actual output is mostly faithful, but it incorrectly says that, na porção centro-norte, a plataforma continental tem mais de 1.000 km de largura, while the contexto afirma que ela alcança cerca de 240 km.",input\georegis\dataset.json,
+1333,A que se refere a fronteira leste da Bacia do Espírito Santo?,crosta continental/oceânica,"A fronteira leste da Bacia do Espírito Santo refere-se ao **alto oceânico/vulcânico de Vitória-Trindade**, que marca o limite da bacia em direção ao oceano Atlântico.
+
+Se quiser, posso também explicar os limites norte, sul e oeste da bacia.",1.0,0.5,"The score is 1.00 because the answer is fully relevant to the question, directly addressing what the eastern boundary of the Espírito Santo Basin refers to without adding irrelevant information. Great job keeping it precise and on-topic.","The score is 0.50 because the actual output misstates the eastern boundary of the Bacia do Espírito Santo: the context says it is considered coincident with the continental/oceanic crust limit and mentions Banco de Abrolhos to the east, but it does not say the eastern boundary is the Vitória-Trindade oceanic/volcanic high.",input\georegis\dataset.json,
+1338,Quantos quilômetros de área a Bacia do Espírito Santo tem a ver com a bacia terrestre?,3.000,"A **Bacia do Espírito Santo** tem uma área total de cerca de **120 mil km²**, somando porções **terrestres e marítimas**.
+
+Se você está perguntando **quanto dessa área corresponde à parte terrestre**, ela é de aproximadamente **20 mil km²**, enquanto a parte marítima representa a maior parcela.
+
+Se quiser, posso também explicar **onde ela fica** e **qual a diferença entre bacia sedimentar terrestre e marítima**.",1.0,0.5,"The score is 1.00 because the answer stayed fully focused on the question and did not include any irrelevant statements. It directly addressed the topic asked, so this is a strong and fully relevant response.","The score is 0.50 because the actual output conflicts with key figures from the context: it says the Bacia do Espírito Santo has about 120 mil km2 of área explorável, but the context states approximately 41.500 km2, and it claims about 20 mil km2 are from the bacia terrestre, while the context says 3.000 km2.",input\georegis\dataset.json,
+1339,O que evidencia a fisiografia do Banco de Abrolhos?,alargamento da plataforma continental,"A fisiografia do Banco de Abrolhos evidencia principalmente:
+
+- **uma ampla plataforma continental rasa e alargada**,  
+- **presença de recifes de coral**, incluindo os característicos **“chapeirões”**,  
+- **bancos e parceles submersos**,  
+- **ilhas e formações carbonáticas**,  
+- e **relevo marinho pouco profundo**, favorável à alta biodiversidade.
+
+Em resumo, ela mostra que o Banco de Abrolhos é uma região de **grande complexidade geomorfológica marinha**, marcada por formações recifais e sedimentares únicas no Atlântico Sul.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on what evidencia a fisiografia do Banco de Abrolhos, with no irrelevant statements distracting from the request. It is at the maximum score since everything included is directly relevant and on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1346,O que atribui à bacia uma fisiografia particular?,"A existência do Banco de Abrolhos,","A bacia adquire uma **fisiografia particular** por causa do conjunto de características físicas que a definem, principalmente:
+
+- **relevo**
+- **geologia**
+- **tipo de solo**
+- **clima**
+- **cobertura vegetal**
+- **rede de drenagem**
+
+Esses elementos determinam a forma, o funcionamento e o comportamento hidrológico da bacia, tornando-a única.",1.0,0.6666666666666666,"The score is 1.00 because the response appears fully relevant to the question, with no irrelevant statements identified. It directly addresses the input well, so this is a strong and complete relevancy score.","The score is 0.67 because the actual output misstates why a Bacia do Espírito Santo tem uma fisiografia particular: the context says this is specifically due to the existência do Banco de Abrolhos a leste da bacia, not due to a general set of physical characteristics.",input\georegis\dataset.json,
+1349,O que este trabalho enfatiza em relação à Bacia do Espírito Santo?,a cronoestratigrafia,"Ele enfatiza a **caracterização e a importância geológica/petrolífera da Bacia do Espírito Santo**, destacando seus **aspectos estruturais, estratigráficos e potencial exploratório**.
+
+Se você quiser, posso também reformular isso em linguagem mais simples ou mais acadêmica.",0.8571428571428571,1.0,"The score is 0.86 because the answer appears to address what the work emphasizes about the Bacia do Espírito Santo, but it is not higher since it includes an extra offer to help reformulate the text, which is irrelevant to the question itself.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1352,Onde a Bacia do Espírito Santo está situada?,no Estado do Espírito Santo,"A **Bacia do Espírito Santo** está situada na **margem continental leste do Brasil**, abrangendo principalmente o **litoral do estado do Espírito Santo** e parte do **sul da Bahia**, tanto em áreas **terrestres quanto marítimas**.",1.0,1.0,"The score is 1.00 because the answer directly addresses where the Bacia do Espírito Santo is located, with no irrelevant statements. It is fully relevant and on point.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1353,Quais são os limites da Bacia do Espírito Santo?,"a sul com a Bacia de Campos, através do Alto de Vitória, e a norte com a Bacia de Mucuri","A **Bacia do Espírito Santo** é uma bacia sedimentar localizada na margem continental brasileira, abrangendo áreas **terrestres e marítimas**. Seus limites são, em geral:
+
+- **Ao norte:** Bacia de **Mucuri**
+- **Ao sul:** Bacia de **Campos**
+- **A oeste:** embasamento cristalino do continente
+- **A leste:** oceano Atlântico, avançando até a porção offshore da margem continental
+
+Ela se estende principalmente ao longo do litoral do **Espírito Santo** e parte do sul da **Bahia**.
+
+Se quiser, também posso te passar os **limites geológicos mais detalhados** ou um **resumo com mapa esquemático**.",0.9,1.0,"The score is 0.90 because the answer appears to address the question about the limites da Bacia do Espírito Santo, but it includes an extra suggestion about response format that is not relevant to explaining those limits. So it is still highly relevant overall, just not fully focused.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1390,O que poderia ser considerado compatível com a cinemática definida pelos outros elementos estruturais?,a condição de obliqüidade constante,"Algo “compatível com a cinemática definida pelos outros elementos estruturais” é aquilo que **não impõe deformações ou deslocamentos impossíveis** ao conjunto.
+
+Em termos mais diretos, seria uma configuração ou movimento que:
+
+- **respeita os vínculos** já existentes;
+- **mantém a continuidade** entre os elementos conectados;
+- **não gera interpenetração ou separação indevida** entre partes ligadas;
+- **produz deslocamentos e rotações coerentes** com o comportamento global da estrutura.
+
+Exemplo:
+se uma viga e um pilar estão rigidamente ligados, a cinemática compatível exige que, no nó entre eles, os deslocamentos e rotações sejam consistentes com essa ligação.
+
+Se quiser, posso também explicar isso no contexto de **mecânica estrutural**, **método dos elementos finitos** ou **análise de mecanismos**.",1.0,1.0,"The score is 1.00 because the response appears fully aligned with the input and does not include irrelevant statements. It directly stays on topic, so this is a strong, fully relevant answer.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1391,O que sugere que a evolução direcional posterior à nucleação frontal da zona de falha desenvolva uma evolução direcional posterior à nucleação frontal?,secciona-mento da zona de falha de Perimbó,"A frase está redundante/repetitiva: ela repete “evolução direcional posterior à nucleação frontal”.
+
+Se a sua pergunta for **“o que indica/sugere esse tipo de evolução em uma zona de falha?”**, a resposta direta é:
+
+**Sugere que, após a nucleação inicial na frente da falha, a zona de falha continuou a se propagar e a se reorganizar estruturalmente de modo preferencial em uma direção específica**, controlada por fatores como:
+
+- **campo de tensões**
+- **anisotropias da rocha**
+- **heterogeneidades preexistentes**
+- **variação de pressão de fluidos**
+- **reativação de estruturas anteriores**
+
+Se você quiser, posso também:
+1. **reescrever a frase de forma correta e mais clara**, ou  
+2. **explicar o significado geológico em linguagem simples**.",1.0,1.0,"The score is 1.00 because the answer appears fully relevant to the input and no irrelevant statements were identified. It directly addresses the question, so this is a strong, on-target response.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1398,Quais regimes produziriam uma rotação progressiva dos indicadores cinemáticos?,oblíquo ou transpressivo,"A **rotação progressiva dos indicadores cinemáticos** costuma ocorrer em **regimes de deformação não coaxiais**, especialmente em:
+
+- **Cisalhamento simples**
+- **Transpressão**
+- **Transtensão**
+- Zonas de cisalhamento com **deformação progressiva e componente rotacional**
+
+Nesses casos, elementos como lineações, foliações oblíquas, porfiroclastos e sombras de pressão podem ir **girando com o fluxo deformacional** ao longo do tempo.
+
+Já em regimes **coaxiais** (como achatamento puro), essa rotação progressiva é muito menor ou ausente, porque os eixos principais de deformação mantêm orientação fixa.
+
+Se quiser, posso também explicar a diferença entre **rotação progressiva em regime coaxial e não coaxial**.",1.0,1.0,"The score is 1.00 because the response is fully relevant to the question, directly addressing the requested topic without introducing any irrelevant statements. Great job keeping it focused and on point.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1401,Qual é a base para quantificar o encurtamento?,"um marcador linear, paralelo à direção de compressão máxima","A base para quantificar o encurtamento depende do contexto, mas em geral é a comparação entre:
+
+- o comprimento inicial/original
+e
+- o comprimento final/após a alteração
+
+A medida costuma ser expressa como:
+
+- encurtamento absoluto:
+  ΔL = L inicial − L final
+
+- encurtamento percentual:
+  (L inicial − L final) / L inicial × 100%
+
+Se você quiser, posso explicar isso no contexto de:
+- músculos
+- materiais/engenharia
+- cromossomos/DNA
+- linguística/fonética",1.0,1.0,"The score is 1.00 because the answer appears fully focused on the question about the basis for quantifying the shortening, with no irrelevant statements identified. It is at the highest score since it stayed directly on topic and addressed the input cleanly.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1402,Quais são os dois regimes que produziriam uma rotação progressiva dos indicadores cinemáticos?,oblíquo ou transpressivo,"Os dois regimes são:
+
+1. **Cisalhamento simples progressivo**  
+2. **Cisalhamento puro (coaxial) progressivo**
+
+Em estudos estruturais, a **rotação progressiva dos indicadores cinemáticos** é mais típica quando há deformação contínua, especialmente em **cisalhamento simples**, mas ambos os regimes podem gerar rotação dependendo da geometria e da evolução da deformação. Se quiser, posso também explicar a diferença entre eles no contexto da geologia estrutural.",0.8,1.0,"The score is 0.80 because the answer appears to address the request about identifying the two regimes that would produce a progressive rotation of the kinematic indicators, but it is not higher because it includes an additional offer of explanation that does not help identify those two regimes.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1406,Qual é a direção do vetor tectônico na primeira fase de deformação?,de SE para NW,"Não é possível determinar sem o contexto específico — por exemplo, o mapa estrutural, a figura, o afloramento ou o enunciado original que define a “primeira fase de deformação”.
+
+Se você me enviar a imagem ou o trecho do exercício, eu digo diretamente a direção do vetor tectônico.",1.0,0.5,"The score is 1.00 because the answer directly addresses the requested tectonic vector direction in the first deformation phase with no irrelevant statements, making it fully relevant and nicely focused.","The score is 0.50 because the actual output contradicts the context by claiming that it is not possible to determine the direction, while the context explicitly concludes that the tectonic convergence vector was directed from SE to NW.",input\georegis\dataset.json,
+1407,O que sugere o seccionamento da zona de falha de Perimbó pelas falhas transcorrentes?,uma evolução direcional posterior à nucleação frontal da referida zona de falha,"O seccionamento da zona de falha de Perimbó por falhas transcorrentes sugere que ela foi afetada por uma fase tectônica posterior, com movimentação lateral, que fragmentou e deslocou sua continuidade original.
+
+Em termos geológicos, isso indica provavelmente:
+
+- reativação estrutural da região;
+- superposição de eventos tectônicos;
+- deformação mais jovem cortando uma estrutura mais antiga;
+- possível compartimentação dos blocos rochosos.
+
+Ou seja, a falha de Perimbó não permaneceu como uma estrutura única e contínua, mas foi interrompida e deslocada por falhas transcorrentes posteriores.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on what was asked about the seccionamento da zona de falha de Perimbó pelas falhas transcorrentes, with no irrelevant statements distracting from the topic. Excelente alinhamento com a pergunta.","The score is 1.00 because there are no contradictions listed, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1412,O que a hipótese b sugere que deveria ocorrer também?,uma dispersão dos valores de acamamento,"Sem o contexto da “hipótese b”, não dá para saber com precisão.
+
+Em geral, se alguém pergunta “o que a hipótese b sugere que deveria ocorrer também?”, isso quer dizer:
+- a hipótese b prevê um efeito principal, e
+- além disso, prevê outro acontecimento ou consequência associada.
+
+Se você me enviar o texto da hipótese b, eu digo exatamente o que ela sugere.",1.0,1.0,"The score is 1.00 because the response directly addresses what the question asks, with no irrelevant statements. It is fully relevant and on-topic—great job.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1413,Qual é a condição que a hipótese c considera constante em toda a área?,a condição de obliqüidade,"A hipótese **c** considera **constante em toda a área a intensidade da carga/pressão distribuída** — isto é, assume que o valor é o mesmo em todos os pontos da área.
+
+Se você quiser, posso responder com base no contexto específico da questão (por exemplo, mecânica dos solos, estatística, física etc.).",0.75,1.0,"The score is 0.75 because the answer appears partially relevant to the question about which condition hypothesis c assumes constant across the whole area, but it loses points for listing possible context areas instead of directly identifying that constant condition. It is not lower because it still seems connected to the topic, but not higher because it does not clearly and directly answer what the constant condition is.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1414,Qual é o nome da descontinuidade crustal?,"Arco de São Mateus,","A principal **descontinuidade crustal** é a **Descontinuidade de Mohorovičić**, também chamada de **Moho**.
+
+Ela marca o limite entre a **crosta terrestre** e o **manto**.",1.0,1.0,"The score is 1.00 because the answer directly addresses the question about the name of the crustal discontinuity with no irrelevant content, making it fully relevant and accurate.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1415,Qual é a idade do fragmento máfico?,"69,4 ± 1,3 Ma, geocro-nologicamente compatível","Não dá para determinar a idade do fragmento máfico apenas com essa pergunta, sem mais contexto.
+
+Para responder corretamente, eu precisaria de pelo menos um destes dados:
+- local ou unidade geológica do fragmento
+- amostra ou afloramento de onde ele veio
+- método de datação usado
+- descrição do contexto geológico
+
+Se quiser, posso te ajudar a estimar ou interpretar a idade se você enviar mais informações.",1.0,0.3333333333333333,"The score is 1.00 because the answer stayed fully focused on the question about the age of the mafic fragment, with no irrelevant statements. It directly addressed the input clearly and appropriately.","The score is 0.33 because the actual output incorrectly says the age of the mafic fragment could not be determined without additional data, but the context explicitly provides an Ar-Ar dating of 69,4 ± 1,3 Ma and even notes geochronological compatibility with well 1-ESS-4 near the mouth of the Rio São Mateus.",input\georegis\dataset.json,
+1416,Qual é a sequência vulcanoclástica da Fm. Rio Doce?,Abrolhos,"A **sequência vulcanoclástica da Formação Rio Doce** é geralmente descrita como um pacote de **rochas piroclásticas e vulcanossedimentares**, incluindo principalmente:
+
+- **tufos**
+- **lapilli-tufos**
+- **brechas vulcânicas**
+- **aglomerados vulcânicos**
+- níveis retrabalhados de material vulcanoclástico
+
+Em termos gerais, ela representa depósitos gerados por **atividade explosiva vulcânica**, com posterior **retrabalhamento sedimentar** em alguns níveis.
+
+Se quiser, posso também te passar a **posição estratigráfica da Fm. Rio Doce** dentro da bacia/grupo a que ela pertence.",0.8888888888888888,0.875,"The score is 0.89 because the answer appears mostly focused on the sequência vulcanoclástica da Formação Rio Doce, but it is not higher since it includes additional information about posição estratigráfica that does not directly answer the question asked.","The score is 0.88 because the output is mostly faithful, but it incorrectly describes a Formação Rio Doce como uma sequência vulcanoclástica ou como um pacote de rochas piroclásticas e vulcanossedimentares. Segundo o contexto, a Formação Rio Doce corresponde a arenitos médios a muito grossos, quartzosos e feldspáticos, com apenas uma interrelação com a sequência vulcanoclástica da Formação Abrolhos.",input\georegis\dataset.json,
+1426,Qual foi a data de um fragmento mafico de uma rocha?,"69,4 ± 1,3 Ma","Não dá para determinar a data de um fragmento máfico de uma rocha sem mais contexto.
+
+Para responder, eu precisaria de pelo menos um destes dados:
+- nome da rocha ou formação geológica;
+- local onde foi encontrada;
+- método de datação usado;
+- resultado laboratorial ou idade estimada.
+
+Se quiser, posso te ajudar a interpretar uma datação geológica específica.",1.0,0.3333333333333333,"The score is 1.00 because the answer appears fully relevant to the question, with no irrelevant statements listed. It directly addresses the input, so this is a strong, complete result.","The score is 0.33 because the actual output wrongly claims the date was not determined, but the context explicitly states that Ar-Ar dating of a mafic fragment yielded an age of 69,4 ± 1,3 Ma and even provides related geochronological compatibility with well 1-ESS-4 near the mouth of the Rio São Mateus.",input\georegis\dataset.json,
+1429,Como é chamada a descontinuidade crustal?,Arco de São Mateus,"A descontinuidade crustal é chamada de **Descontinuidade de Mohorovičić**, ou simplesmente **Moho**.
+
+Ela marca o limite entre a **crosta terrestre** e o **manto**.",1.0,0.5,"The score is 1.00 because the response directly addresses the question about the name of the crustal discontinuity with no irrelevant information, making it fully relevant and on point.","The score is 0.50 because the actual output incorrectly identifies the crustal discontinuity as the Descontinuidade de Mohorovičić (Moho), while the context states that the mentioned discontinuity is the Arco de São Mateus.",input\georegis\dataset.json,
+1430,Qual é a área das rochas piroclásticas ácidas encontradas na região nordeste de Minas Gerais?,75km de comprimento por 25km de largura,As **rochas piroclásticas ácidas** no **nordeste de Minas Gerais** ocupam uma área de aproximadamente **200 km²**.,1.0,0.0,"The score is 1.00 because the answer is fully relevant to the question about the area of acidic pyroclastic rocks in the northeast region of Minas Gerais, with no irrelevant statements included. It directly addresses the requested information clearly and appropriately.","The score is 0.00 because the actual output contradicts the context by stating that the rocks cover an area of approximately 200 km², while the context says they occupy a 75 km by 25 km area with NE-SW direction.",input\georegis\dataset.json,
+1436,Qual a idade geocronológica indicada pela datação Ar-Ar de um fragmento máfico?,"69,4 ± 1,3 Ma","A datação **Ar-Ar** de um **fragmento máfico** indica a **idade de cristalização ou de resfriamento** do mineral analisado, isto é, o momento em que ele passou a reter argônio no seu retículo cristalino.
+
+Em termos práticos:
+
+- se o mineral máfico analisado cristalizou em uma rocha ígnea, a idade Ar-Ar costuma refletir a **idade do resfriamento abaixo da temperatura de fechamento**;
+- em alguns casos, pode registrar um **evento térmico posterior** (como metamorfismo ou alteração), se o sistema foi parcialmente ou totalmente reiniciado.
+
+Ou seja, **não existe uma idade única só por ser “fragmento máfico”** — a idade geocronológica depende do **valor obtido na análise** e do **mineral datado** (por exemplo, hornblenda, biotita, plagioclásio etc.).
+
+Se quiser, posso também explicar **como interpretar uma idade Ar-Ar em um relatório geológico**.",0.8888888888888888,1.0,"The score is 0.89 because the answer appears to address the geochronological age indicated by Ar-Ar dating of a mafic fragment, but it is not higher because it also includes an additional offer to help interpret a geological report, which is not directly relevant to the specific question asked.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1439,"O que controlaria os fenômenos neotectônicos, o padrão de drenagem e a circulação de fluidos na região?","a uma descontinuidade crustal denominada Arco de São Mateus,","Em geral, quem controla esses três aspectos é a **estrutura geológica da região**, principalmente:
+
+- **Falhas, fraturas e lineamentos tectônicos** → controlam os **fenômenos neotectônicos** e servem como zonas de fraqueza reativáveis.
+- **Relevo e litologia** → influenciam o **padrão de drenagem**, mas esse padrão costuma ser fortemente guiado pelas descontinuidades estruturais.
+- **Permeabilidade das rochas e zonas fraturadas** → controlam a **circulação de fluidos**, porque os fluidos tendem a migrar por falhas, fraturas e contatos litológicos.
+
+Assim, de forma direta, o principal controle na região seria o **arcabouço estrutural tectônico**, associado à **reativação de falhas/fraturas** e às características litológicas.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to what was asked, directly addressing what controls the neotectonic phenomena, drainage pattern, and fluid circulation in the region, with no irrelevant statements. Ótima aderência ao tema.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping it consistent and accurate.",input\georegis\dataset.json,
+1440,Qual é a idade do fragmento máfico mencionado no texto?,"69,4 ± 1,3 Ma","Não dá para determinar a idade do fragmento máfico sem o texto mencionado.
+
+Se você colar o trecho aqui, eu identifico a idade para você.",1.0,0.5,"The score is 1.00 because the answer directly addresses the question about the age of the fragmento máfico with no irrelevant information, making it fully relevant and on point.","The score is 0.50 because the actual output conflicts with the retrieval context by implying that the age of the mafic fragment could not be determined, even though the context explicitly states that its age can be determined: an Ar-Ar dating indicated 69.4 ± 1.3 Ma.",input\georegis\dataset.json,
+1441,O que é a Fm. Rio Doce?,"arenitos médios a muito grossos, quartzozos, feldspáticos, com cores cinza-esverdeadas, maciços ou com estratificações cruzadas","A **Fm. Rio Doce** é a abreviação de **Formação Rio Doce**, uma unidade **estratigráfica/geológica** — ou seja, um conjunto de rochas sedimentares reconhecido e nomeado dentro de uma bacia ou região geológica.
+
+Em termos simples:
+- **“Fm.”** = **Formação**
+- **“Rio Doce”** = nome dado a essa formação
+
+Uma **formação geológica** é um corpo de rocha com características próprias, que pode ser mapeado e distinguido de outros.
+
+Se você quiser, posso explicar:
+1. **em que estado/região ela ocorre**,  
+2. **qual sua idade geológica**, ou  
+3. **que tipos de rochas a compõem**.",0.7,1.0,"The score is 0.70 because the answer appears somewhat related to the question about what the Fm. Rio Doce is, but it loses relevance by only mentioning that additional details like geological age and lithology could be explained without actually giving those details or clearly identifying the formation. So it is not completely off-topic, but it is not higher because it does not directly and fully answer the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1442,Como são os sedimentos da Fm. Rio Doce?,"mal selecionados, pouco lamosos e extremamente litificados, com os grãos cimentados por sílica criptocristalina","Os sedimentos da **Formação Rio Doce** são, em geral:
+
+- **Predominantemente siliciclásticos**
+- Compostos principalmente por **arenitos**, **siltitos**, **argilitos** e níveis de **conglomerados**
+- Normalmente de **granulação fina a média**, com variação local para mais grossa
+- Frequentemente com **estratificação** bem desenvolvida, indicando deposição em ambientes continentais a transicionais
+
+Dependendo da bacia e do uso do nome estratigráfico, a Fm. Rio Doce pode registrar depósitos associados a **sistemas fluviais, deltaicos ou lacustres**.
+
+Se quiser, posso te passar uma descrição **sedimentológica mais técnica** (textura, estruturas e ambiente deposicional).",1.0,0.6666666666666666,The score is 1.00 because the answer stayed fully focused on describing the sediments of the Formação Rio Doce and did not include any irrelevant information. It is at the maximum score since nothing in the output strayed from the question.,"The score is 0.67 because the actual output conflicts with the context on key geological details: it says the Formação Rio Doce has arenitos normalmente de granulação fina a média, but the context states they are médios a muito grossos. It also claims they frequentemente exibem estratificação bem desenvolvida and mentions ambientes continentais a transicionais, whereas the context says the arenitos are maciços ou apresentam estratificações cruzadas and does not provide those environmental settings.",input\georegis\dataset.json,
+1443,Qual é a direção das rochas piroclásticas ácidas mencionadas por Raposo et al.?,NE-SW,Raposo et al. mencionam que as **rochas piroclásticas ácidas** têm direção **NW–SE**.,1.0,0.0,"The score is 1.00 because the answer appears fully focused on the question and includes no irrelevant statements, directly addressing the direction of the acidic pyroclastic rocks mentioned by Raposo et al. Great job keeping it precise and on-topic.","The score is 0.00 because the actual output states that the area occupied by these acidic pyroclastic rocks has a NW-SE direction, but the context says it is described with a NE-SW direction.",input\georegis\dataset.json,
+1445,Qual é a coluna de hidrocarbonetos constatada?,"255 m,","A expressão “coluna de hidrocarbonetos” geralmente se refere à **sequência ou série homologada dos hidrocarbonetos** na Química Orgânica, organizada conforme o tipo de ligação entre carbonos. As principais são:
+
+- **Alcanos**: ligações simples  
+- **Alcenos**: pelo menos uma ligação dupla  
+- **Alcinos**: pelo menos uma ligação tripla  
+- **Aromáticos**: com anel benzênico ou estrutura aromática
+
+Se você quis dizer **“coluna” em outro contexto** — por exemplo, geologia, perfuração, cromatografia ou tabela periódica — posso responder de forma mais exata.",1.0,0.8571428571428571,"The score is 1.00 because the answer directly addresses the question about which hydrocarbon column was identified, with no irrelevant statements. It is fully on-topic and appropriately focused.","The score is 0.86 because the output is mostly faithful, but it appears to misinterpret “coluna de hidrocarbonetos”: the context uses it in a geological/petroleum sense and only states that the confirmed column was 255 m, with no indication that it refers to the homologated series of Organic Chemistry.",input\georegis\dataset.json,
+1446,O que foi adotado para identificar a constância dos reservatórios?,a subdivisão em zonas produtoras diferenciadas,"Para identificar a **constância dos reservatórios**, foi adotada a **análise da variação do nível e da vazão ao longo do tempo**, observando se o reservatório mantém comportamento regular mesmo em diferentes períodos.
+
+Se você quiser, posso também explicar isso no contexto de **hidrologia, saneamento ou petróleo**, porque “constância dos reservatórios” pode mudar conforme a área.",0.6666666666666666,1.0,"The score is 0.67 because the answer appears somewhat related to reservatórios, but it does not directly say what was adopted to identify their constancy. It loses relevance by bringing in sanitation and petroleum contexts that do not answer the specific question, yet it still deserves this score for staying partially within the broader topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1449,Qual é o tamanho da coluna de hidrocarbonetos constatada?,255 m,"A “coluna de hidrocarbonetos” é a espessura/altura vertical do intervalo da rocha-reservatório preenchido por hidrocarbonetos, normalmente medida em metros.
+
+Sem mais contexto, não dá para informar um valor constatado. Se você me passar o dado do poço, perfil, teste ou relatório, eu posso identificar o tamanho exato.",1.0,0.6666666666666666,"The score is 1.00 because the answer appears fully relevant to the question asked, with no irrelevant statements identified. It directly addresses the input, so this is an excellent result.","The score is 0.67 because the actual output conflicts with the context by implying there was no confirmed value, while the contradiction states that the contexto fornece sim um valor constatado: a coluna de hidrocarbonetos constatada foi de 255 m.",input\georegis\dataset.json,
+1451,Qual foi o valor preditivo de porosidade previsto?,7%,"Não tenho contexto suficiente para identificar o valor preditivo de porosidade.
+
+Se você me enviar a tabela, relatório, gráfico ou trecho onde isso aparece, eu posso apontar o valor exato.",1.0,0.5,"The score is 1.00 because the response directly addressed the predicted porosity value asked in the input, with no irrelevant statements. Great job staying fully on topic and precise.","The score is 0.50 because the actual output conflicts with the retrieval context on a key detail: o contexto informa explicitamente que os valores preditivos de porosidade deveriam situar-se em torno de 7%, portanto havia contexto suficiente para identificar esse valor corretamente.",input\georegis\dataset.json,
+1454,O que a PETROBRÁS descobriu com o poço pioneiro 1 - PRS - 4?,a acumulação de hidrocarbonetos do Campo de Tubarão,"A PETROBRÁS descobriu, com o poço pioneiro **1-PRS-4**, a **primeira acumulação comercial de petróleo no pré-sal da Bacia de Santos**.
+
+Esse poço está associado à descoberta da área de **Parati**, que ajudou a confirmar o enorme potencial petrolífero do **pré-sal brasileiro**.",1.0,1.0,"The score is 1.00 because the answer directly addresses what a PETROBRÁS discovered with the poço pioneiro 1 - PRS - 4 and includes no irrelevant information. It fully stays on topic, so this is an excellent, highly relevant response.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1456,Onde as rochas do reservatório de Tubarão se encontram?,Guarujá Inferior,"As rochas do **reservatório de Tubarão** estão localizadas na **Bacia de Campos**, na margem continental do sudeste do Brasil, **ao largo do litoral do estado do Rio de Janeiro**.
+
+Se quiser, também posso explicar **em que profundidade** elas ocorrem ou **qual é a idade geológica** dessas rochas.",0.8,1.0,"The score is 0.80 because the answer likely addressed where as rochas do reservatório de Tubarão se encontram, but included an irrelevant mention of the geological age of the rocks, which does not help answer their location. It still deserves a fairly high score because it appears to remain mostly on topic and useful overall.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1458,Qual foi o valor preditivo de porosidade?,7%,"Não dá para determinar sem mais contexto.
+
+“Valor preditivo de porosidade” pode significar coisas diferentes, por exemplo:
+- a porosidade estimada por um modelo,
+- o poder preditivo da porosidade sobre outra variável,
+- ou um valor numérico de porosidade previsto em um estudo/relatório.
+
+Se você me enviar a tabela, gráfico, equação ou o trecho onde isso aparece, eu digo exatamente qual foi o valor.",1.0,1.0,"The score is 1.00 because the response appears fully relevant to the question about the predictive value of porosity, with no irrelevant statements listed. Great job staying focused and directly on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1464,O que a continuidade do processo de exploração permitiu identificar a constância?,reservatórios,"A continuidade do processo de exploração permitiu identificar a **constância de certos elementos, padrões ou características ao longo do tempo**.
+
+Se quiser, posso também reformular isso em uma linguagem mais simples ou mais específica ao contexto.",0.3333333333333333,1.0,"The score is 0.33 because the response barely addresses the question and mainly offers to reformulate instead of saying what the ongoing exploration allowed to identify about constancy. It is not lower because it still appears tied to the topic, but it cannot be higher since it does not provide the requested information.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1468,A que profundidade foram identificadas as rochas-reservatório do Campo de Tubarão?,a partir de -4 540 m,As rochas-reservatório do Campo de Tubarão foram identificadas a cerca de **1.500 metros de profundidade**.,1.0,0.0,The score is 1.00 because the response directly addresses the asked depth of the reservoir rocks in the Tubarão Field and includes no irrelevant information. It is fully relevant and on point—great job.,"The score is 0.00 because the actual output directly contradicts the context by stating that the Guarujá Inferior carbonate sequence in the Tubarão Field was identified at about 1,500 m depth, while the context says it was identified from 4,540 m depth.",input\georegis\dataset.json,
+1469,Qual foi a coluna de hidrocarbonetos constatada no Campo de Tubarão?,255 m,"No Campo de Tubarão, foi constatada uma **coluna de hidrocarbonetos de cerca de 72 metros**.",1.0,0.0,"The score is 1.00 because the answer directly addressed the question about a coluna de hidrocarbonetos no Campo de Tubarão and stayed fully on topic, with no irrelevant statements. Ótima relevância e foco na resposta.","The score is 0.00 because the actual output directly contradicts the retrieval context by stating that no Campo de Tubarão a coluna de hidrocarbonetos foi cerca de 72 m, when the context says it was 255 m.",input\georegis\dataset.json,
+1471,"Quais códigos foram utilizados para os reservatórios da porção superior, média e inferior da acumulação no Campo de Tubarão?","B1, B2 e B3","Os códigos utilizados foram:
+
+- **Porção superior:** **TUB-1**
+- **Porção média:** **TUB-2**
+- **Porção inferior:** **TUB-3**",1.0,0.0,"The score is 1.00 because the answer is fully relevant to the question, directly addressing the reservoir codes for the upper, middle, and lower portions of the accumulation in the Campo de Tubarão with no irrelevant statements. Excelente foco e precisão.","The score is 0.00 because the actual output states that the reservoirs in the upper, middle, and lower portions were coded as TUB-1, TUB-2, and TUB-3, but the context explicitly says the adopted codes were B1, B2, and B3, respectively.",input\georegis\dataset.json,
+1473,Em que profundidade foi identificada a seqüência carbonática Guarujá Inferior?,-4 540 m,A seqüência carbonática **Guarujá Inferior** foi identificada em profundidades de aproximadamente **5.300 a 5.500 metros**.,1.0,0.0,The score is 1.00 because the answer directly addresses the asked depth of the seqüência carbonática Guarujá Inferior with no irrelevant statements. It is fully on topic and appropriately focused.,"The score is 0.00 because the actual output incorrectly states that the sequência carbonática Guarujá Inferior was identified at approximately 5.300 to 5.500 m, while the context says it was identified from 4.540 m de profundidade.",input\georegis\dataset.json,
+1474,Qual é a extensão da coluna de hidrocarbonetos encontrada no Campo de Tubarão?,255 m,A coluna de hidrocarbonetos encontrada no Campo de Tubarão tem **cerca de 70 metros**.,1.0,0.0,"The score is 1.00 because the answer directly addresses the question about the extensão da coluna de hidrocarbonetos no Campo de Tubarão, with no irrelevant statements. It is fully relevant and on point.","The score is 0.00 because the actual output directly conflicts with the context by claiming a hydrocarbon column of about 70 m, while the context states it was 255 m.",input\georegis\dataset.json,
+1475,Quais são os valores preditivos de porosidade para as rochas-reservatório do Campo de Tubarão?,em torno de 7%,"Os **valores preditivos de porosidade** para as rochas-reservatório do **Campo de Tubarão** são geralmente reportados na faixa de **10% a 20%**, com valores mais comuns em torno de **12% a 18%**, dependendo da litologia e do nível de cimentação/compactação.
+
+Se você quiser, também posso te passar os **valores típicos de permeabilidade** e a **formação geológica associada** desse campo.",0.6,0.5,"The score is 0.60 because the answer is somewhat related to the Campo de Tubarão and reservoir rock properties, but it does not directly provide the predictive porosity values requested. Instead, it shifts to permeability and associated geological formation details, which makes it only partially relevant rather than fully responsive.","The score is 0.50 because the actual output places the predicted porosity in the 10%–20% range, including around 12%–18%, while the context says the predictive porosity values should be around 7%.",input\georegis\dataset.json,
+1476,Como os reservatórios do Campo de Tubarão foram subdivididos?,"Utilizaram-se os códigos B1, B2 e B3,","Os reservatórios do Campo de Tubarão foram subdivididos em **três blocos estruturais principais**, separados por falhas. Em geral, essa compartimentação é descrita como:
+
+- **Bloco alto**
+- **Bloco intermediário**
+- **Bloco baixo**
+
+Essa subdivisão reflete a compartimentação tectônica do campo e influencia o acúmulo e a produção de hidrocarbonetos. Se quiser, posso também explicar **em qual bacia fica o Campo de Tubarão** e **quais são seus principais reservatórios**.",0.9090909090909092,1.0,"The score is 0.91 because the answer addresses how os reservatórios do Campo de Tubarão foram subdivididos, staying mostly focused on the question. It is not higher because it also offers to explain em qual bacia fica o campo, which is not relevant to the requested subdivision.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1477,Qual é o termo usado para descrever a geologia das seqüências fanerozóicas ocorrentes dentro das fronteiras da Bacia do São Francisco?,Bacia Sanfranciscana,"O termo usado é **cobertura fanerozóica da Bacia do São Francisco**.
+
+Em alguns contextos, também pode aparecer como **sequências fanerozóicas da Bacia do São Francisco**.",1.0,1.0,"The score is 1.00 because the answer appears fully relevant to the question, directly addressing the term used for the geology of the Phanerozoic sequences within the São Francisco Basin boundaries, with no irrelevant statements. Ótimo foco e alinhamento com o pedido.","The score is 1.00 because there are no contradictions listed, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1479,Quantas unidades cretácicas formam chapadas e tabuleiros na Bacia do São Francisco?,Três,"Na Bacia do São Francisco, **duas unidades cretácicas** formam **chapadas e tabuleiros**.",1.0,0.0,"The score is 1.00 because the answer is fully relevant to the question, directly addressing how many Cretaceous units form chapadas and tabuleiros in the Bacia do São Francisco, with no irrelevant statements. Excelente foco and alignment with the input.","The score is 0.00 because the actual output contradicts the context by stating that two continental Cretaceous units form chapadas e tabuleiros in the Bacia do São Francisco, while the context clearly says there are three.",input\georegis\dataset.json,
+1482,Qual é o termo usado para descrever o registro geológico fanerozóico da Bacia do São Francisco?,Bacia Sanfranciscana,"O termo usado é cobertura fanerozóica da Bacia do São Francisco. Em muitos contextos geológicos, também pode ser referido como registro sedimentar fanerozóico da bacia.",1.0,1.0,The score is 1.00 because the answer is fully relevant to the question and contains no irrelevant statements. It directly addresses the requested term clearly and accurately—great job.,"The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1485,Qual é a única seqüência erosional paleozóica que existe em toda a bacia?,O Grupo Santa Fé,A única **seqüência erosional paleozóica** reconhecida **em toda a bacia** é a **Seqüência Siluro-Devoniana**.,1.0,0.0,"The score is 1.00 because the answer directly addresses the question with no irrelevant statements, staying fully focused on identifying the única seqüência erosional paleozóica na bacia. Excelente relevância.","The score is 0.00 because the actual output conflicts directly with the context by claiming that the only sequence is the Seqüência Siluro-Devoniana, while the contradiction states that the context identifies the Grupo Santa Fé as the único remanescente erosional paleozóico de coberturas intracratônicas mais amplas na Bacia do São Francisco, with no support for the claim made in the output.",input\georegis\dataset.json,
+1487,Qual é o nome da seqüência fanerozóica da Bacia do São Francisco?,Bacia Sanfranciscana,"A sequência fanerozóica da Bacia do São Francisco é chamada de **Sequência Bambuí**.
+
+Se quiser, também posso explicar a divisão estratigráfica completa da bacia.",1.0,0.5,"The score is 1.00 because the answer directly addresses the question about the nome da seqüência fanerozóica da Bacia do São Francisco, with no irrelevant statements. It is fully on-topic and appropriately focused.","The score is 0.50 because the actual output misidentifies the term used by Sgarbi et al.: the context says they use 'Bacia Sanfranciscana' for the fanerozoic sedimentary/volcanic record of the São Francisco Basin, not 'Sequência Bambuí'.",input\georegis\dataset.json,
+1489,Que tipo de ambiente tectônico prevalecia durante a sedimentação do Grupo Areado?,distensional,"Durante a sedimentação do **Grupo Areado**, prevalecia um **ambiente tectônico distensivo**, ligado à **formação de riftes intracontinentais**.
+
+Em termos simples:
+- havia **estiramento da crosta**;
+- formaram-se **bacias tectônicas alongadas**;
+- essas depressões controlaram o acúmulo dos sedimentos.
+
+Esse contexto está associado à fase inicial de abertura do **Atlântico Sul**, no **Cretáceo Inferior**.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on identifying the tectonic environment during the sedimentation of the Grupo Areado, with no irrelevant statements reducing its relevance. It is at the maximum score since nothing in the response strays from the question asked.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1493,Qual é o termo para o registro sedimentar fanerozóico da Bacia do São Francisco?,Bacia Sanfranciscana,O termo é **Supergrupo São Francisco**.,1.0,0.0,"The score is 1.00 because the answer directly addresses the question with no irrelevant statements, staying fully focused on the requested geological term. Excellent relevance and precision.","The score is 0.00 because the actual output contradicts the context by saying Sgarbi et al. use the term 'Supergrupo São Francisco', while the context states they use 'Bacia Sanfranciscana' for the registro sedimentar-vulcânico fanerozoico da Bacia do São Francisco.",input\georegis\dataset.json,
+1495,Qual foi o ambiente tectônico prevalente durante a sedimentação do Grupo Areado?,distensional,"O ambiente tectônico prevalente durante a sedimentação do **Grupo Areado** foi um **contexto distensivo intracratônico**, associado à **reativação tectônica ligada à abertura do Atlântico Sul** no Cretáceo Inferior.
+
+Em termos mais diretos:
+- ocorreu em uma **bacia continental de rifte a pós-rifte inicial**;
+- com **subsidência tectônica** controlando a deposição;
+- em um cenário de **falhamentos normais** e acomodação sedimentar.
+
+Se quiser, posso também resumir o **ambiente deposicional** do Grupo Areado.",0.8333333333333334,1.0,"The score is 0.83 because the answer appears to address the pergunta sobre o ambiente tectônico prevalente durante a sedimentação do Grupo Areado, but it includes an extra offer of additional help that is irrelevant to identifying that tectonic setting. So it is fairly relevant overall, just not fully focused.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1497,Qual é o único remanescente erosional paleozóico de coberturas intracratônicas mais amplas que eventualmente existiu na Bacia do São Francisco?,O Grupo Santa Fé,"O único remanescente erosional paleozóico de coberturas intracratônicas mais amplas na Bacia do São Francisco é a **Bacia do Parnaíba?**  
+
+Mas, **dentro da própria Bacia do São Francisco**, o remanescente reconhecido é o **Grupo Santa Fé**, de idade paleozóica.",0.6666666666666666,0.5,"The score is 0.67 because the response was partly relevant to the question about the único remanescente erosional paleozóico na Bacia do São Francisco, but it is not higher since it introduced 'Bacia do Parnaíba,' which is an irrelevant and incorrect alternative that does not answer the specific prompt.","The score is 0.50 because the actual output wrongly treats a Bacia do Parnaíba as the único remanescente erosional paleozóico de coberturas intracratônicas mais amplas, while the context states that this role belongs to o Grupo Santa Fé; a Bacia do Parnaíba is mentioned only as one of the basins those coverings could have connected to the Bacia do Paraná.",input\georegis\dataset.json,
+1500,O que o Grupo Santa Fé representa na geologia da Bacia do São Francisco?,o único remanescente erosional paleozóico de coberturas intracratônicas mais amplas,"O **Grupo Santa Fé** representa um **registro glaciogênico neopaleozoico** na **Bacia do São Francisco**.
+
+Em termos diretos:
+- é uma **unidade estratigráfica sedimentar**;
+- foi formada em contexto de **glaciação**, provavelmente ligada à **Glaciação Gondwânica**;
+- reúne sedimentos como **diamictitos, arenitos, siltitos e folhelhos**, típicos de ambientes influenciados por gelo;
+- é importante porque marca uma fase climática muito fria na evolução da bacia.
+
+Ou seja, o Grupo Santa Fé é interpretado como o principal **testemunho de sedimentação glacial/periglacial** dentro da Bacia do São Francisco.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on what the Grupo Santa Fé represents in the geology of the Bacia do São Francisco, with no irrelevant statements. It directly addressed the input clearly and appropriately—great relevance overall.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1501,Qual a natureza das três unidades cretácicas que formam chapadas e tabuleiros na Bacia do São Francisco?,de natureza continental,"As três unidades cretácicas da Bacia do São Francisco que formam **chapadas e tabuleiros** têm natureza **sedimentar continental**, em geral compostas por **arenitos, conglomerados e argilitos**.
+
+Essas unidades correspondem a depósitos formados principalmente em ambientes **fluviais e lacustres**, e seu relevo tabular resulta da resistência dessas camadas sedimentares à erosão.",0.75,1.0,"The score is 0.75 because the answer stayed on the topic of chapadas e tabuleiros na Bacia do São Francisco, but it lost relevance by explaining the erosive origin of relevo tabular instead of directly identifying the nature of the three Cretaceous units asked about. So it is partially relevant, but not fully focused on the specific information requested.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1502,Qual o ambiente tectônico prevalente durante a sedimentação do Grupo Areado na Bacia do São Francisco?,distensional,"O ambiente tectônico prevalente durante a sedimentação do **Grupo Areado** na **Bacia do São Francisco** foi um **contexto distensivo a transtensional intracratônico**, associado à **reativação de estruturas do embasamento** durante a abertura do Atlântico Sul no Cretáceo.
+
+Em termos mais simples: tratava-se de uma **bacia continental interior**, com subsidência controlada por falhas, em um cenário tectônico de **rifteamento incipiente a pós-rifte inicial**.",1.0,1.0,"The score is 1.00 because the response is fully relevant to the question about the prevailing tectonic setting during the sedimentation of the Grupo Areado in the São Francisco Basin, with no irrelevant statements present. Excelente foco e aderência ao tema.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1506,O que os diamictitos/tilitos/fácies tilóides e folhelhos com dropstones basais do Grupo Santa Fé apontam?,para uma unidade crono-correlata aos sedimentos permocarboníferos glaciais do Grupo Itararé da Bacia do Paraná,"Eles apontam para **deposição glaciogênica**, ou seja, evidenciam a atuação de geleiras no início da sedimentação do **Grupo Santa Fé**.
+
+Em termos mais específicos:
+
+- **Diamictitos / tilitos / fácies tilóides** → indicam sedimentos mal selecionados associados a **transporte e deposição por gelo**.
+- **Folhelhos com dropstones basais** → sugerem **ambiente aquoso influenciado por gelo flutuante**, no qual clastos caem de icebergs ou blocos de gelo para sedimentos finos.
+
+Portanto, essas rochas apontam para um **episódio glacial neopaleozoico (Permo-Carbonífero)**, com deposição em ambiente **glacioterrestre a glaciomarinho/glaciolacustre**.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on what the Santa Fé Group diamictites/tillites/tilloid facies and basal shales with dropstones indicate, with no irrelevant statements. Great relevance and alignment with the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1508,Em que ambiente tectônico ocorreu a sedimentação do Grupo Areado?,"distensional, provável reflexo intracontinental do quebramento do Supercontinente Gondwana","A sedimentação do **Grupo Areado** ocorreu em um **ambiente tectônico de bacia continental rifte a pós-rifte**, ligado à abertura do Atlântico Sul no Cretáceo.
+
+De forma mais direta:
+- **Inicialmente**: em contexto **extensional (rifte)**, com subsidência controlada por falhas.
+- **Depois**: evolução para fase **pós-rifte**, com sedimentação continental mais ampla.
+
+Ou seja, o Grupo Areado se formou em uma **bacia intracontinental associada à tectônica extensional**.",1.0,1.0,"The score is 1.00 because the answer directly addresses the asked tectonic environment for the sedimentation of the Grupo Areado, with no irrelevant statements. It is fully relevant and focused—great job.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1542,O que não permite discriminar padrões de terminação de refletores sísmicos na 4a e 5a ordens?,as seções sísmicas disponíveis,"Na interpretação sísmica, **não é possível discriminar padrões de terminação de refletores na 4ª e 5ª ordens** porque, nesses níveis, a **escala e a resolução sísmica ficam insuficientes** para reconhecer com clareza terminações como *onlap, downlap, toplap* e truncamento.
+
+Em outras palavras, o que não permite essa discriminação é principalmente:
+
+- **baixa resolução dos dados sísmicos**;
+- **escala muito detalhada/fina dessas ordens**;
+- **limitação do poder de separação vertical e lateral** dos refletores.
+
+Assim, na 4ª e 5ª ordens, os refletores tendem a aparecer de forma mais contínua ou indistinta, dificultando identificar seus padrões de terminação.",1.0,1.0,The score is 1.00 because the response is fully relevant to the question and does not include any irrelevant statements. It stays at the maximum score since it directly addresses the input in a focused and appropriate way.,"The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1543,Quais são as duas ordens que não apresentam conteúdo de resolução suficientemente alto para permitir discriminar padrões de terminação de refletores sísmicos?,4a e 5a,"As duas ordens são:
+
+- **Primeira ordem**
+- **Segunda ordem**
+
+Elas **não têm resolução sísmica alta o suficiente** para distinguir com clareza os **padrões de terminação dos refletores sísmicos**.",1.0,0.5,"The score is 1.00 because the answer is fully focused on identifying the two ordens asked about, with no irrelevant statements. It directly addresses the input clearly and completely—great job.","The score is 0.50 because the actual output incorrectly says the issue involves the first and second orders, while the context states it is the 4th and 5th orders, and it also ignores that the available seismic sections do not have sufficiently high resolution to discriminate the termination patterns in those 4th and 5th orders.",input\georegis\dataset.json,
+1544,"Qual foi a dificuldade de rastrear os refletores e marcadores de um rollover para outro, principalmente no sentido dlp?",intensa halocinese,"A principal dificuldade em rastrear os refletores e marcadores de um rollover para outro, especialmente no sentido **DLP** (ou no deslocamento longitudinal, dependendo do contexto), costuma ser a **perda de correspondência consistente entre os pontos rastreados**.
+
+Em termos diretos, isso acontece por alguns motivos:
+
+- **Mudança de posição e orientação** do rollover entre uma passagem e outra.
+- **Ocultação parcial** de refletores/marcadores, fazendo com que alguns desapareçam ou reapareçam em outro frame/coleta.
+- **Semelhança entre marcadores**, o que dificulta saber qual ponto em uma coleta corresponde ao ponto da coleta seguinte.
+- **Ruído de medição** e variações de iluminação/sensor, que afetam a detecção.
+- No sentido **DLP**, a dificuldade pode aumentar porque pequenos deslocamentos nessa direção podem parecer ambíguos ou menos evidentes, prejudicando a associação correta entre um rollover e outro.
+
+Resumindo: o maior problema foi **manter a identificação correta dos mesmos marcadores entre rollovers consecutivos**, sobretudo no eixo/direção DLP, onde a distinção do movimento era mais difícil.",1.0,1.0,"The score is 1.00 because the response stayed fully focused on the question about the difficulty of tracking reflectors and markers from one rollover to another, especially in the DLP direction, with no irrelevant statements. It is at the maximum score since it appears directly aligned with the input.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1547,O que as seções sísmicas disponíveis não permitiram discriminar?,padrões de terminação de refletores sísmicos,"As seções sísmicas disponíveis **não permitiram discriminar com clareza os diferentes tipos de depósitos ou fácies sedimentares**, nem **definir com precisão os limites internos e a arquitetura detalhada das unidades**.  
+
+Se quiser, posso reformular isso em linguagem mais técnica ou mais simples.",0.6666666666666666,1.0,"The score is 0.67 because the response appears related to the conversation, but it does not actually answer what the available seismic sections failed to discriminate; instead, it offers to reformulate the answer. So it has some contextual relevance, but it is not higher because it avoids addressing the specific requested content.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1549,O que foi responsável pelo rastreamento dos refletores e marcadores de um rollover para outro?,intensa halocinese,"O **rastreamento dos refletores e marcadores de um rollover para outro** foi normalmente responsabilidade do **sistema de registro/controle de posição da máquina**, em especial:
+
+- **Sensores ópticos ou fotoelétricos**, que detectavam os marcadores/refletores;
+- **Encoders e controle de avanço**, que acompanhavam o deslocamento entre uma volta (“rollover”) e outra;
+- Em sistemas mais modernos, isso podia ser gerenciado por um **controlador eletrônico/computador de bordo**.
+
+Se você quiser, posso também explicar isso no contexto específico de **impressão, topografia, motion capture ou máquinas industriais**, porque “rollover” e “marcadores” podem mudar de significado conforme a área.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on the question, with no irrelevant statements listed, so it is completely relevant—great job staying on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1551,O que foi dificultado para rastrear refletores e marcadores de um rollover para outro?,arcabouço estratigráfico de alta frequência,"Foi dificultado o **rastreamento contínuo/consistente dos refletores e marcadores entre um rollover e o seguinte** — ou seja, **manter a identificação correta dos mesmos pontos de um evento para outro**. Isso normalmente acontece por fatores como:
+
+- **oclusão** dos marcadores/refletores,
+- **mudança de posição/orientação** após o capotamento,
+- **perda de visibilidade** nas imagens,
+- e **semelhança entre marcadores**, que pode causar troca de identidade.
+
+Se quiser, posso também reformular isso em linguagem mais técnica ou mais simples.",0.8571428571428571,1.0,"The score is 0.86 because the answer appears mostly relevant to the question, but it is not higher since it includes an offer to reformulate the response instead of directly explaining what made tracking reflectors and markers difficult from one rollover to another.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1552,O que as seções sísmicas disponíveis não permitem discriminar?,padrões de terminação de refletores sísmicos,"As seções sísmicas disponíveis não permitem discriminar, com segurança, detalhes finos da geologia, como:
+
+- pequenas variações litológicas;
+- espessuras muito reduzidas de camadas;
+- propriedades petrofísicas específicas;
+- fluidos ou conteúdos internos de forma inequívoca;
+- estruturas muito sutis abaixo da resolução sísmica.
+
+Em resumo: elas mostram bem a geometria geral e grandes estruturas, mas não permitem distinguir com precisão características geológicas muito detalhadas.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question and stays focused on what the available seismic sections do not allow to discriminate, with no irrelevant statements. Great job keeping it precise and on-topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1555,O que foi dificultado para traçar sequências de alta frequência?,rastreamento dos refletores e marcadores,"Traçar sequências de alta frequência foi dificultado principalmente por:
+
+- **Limitações instrumentais**: aparelhos e sensores não conseguiam registrar eventos muito rápidos com precisão.
+- **Baixa resolução temporal**: os métodos de medição não separavam bem sinais que ocorriam em intervalos muito curtos.
+- **Ruído/interferência**: sinais de alta frequência eram mais facilmente distorcidos ou mascarados.
+- **Capacidade de processamento**: analisar e organizar grandes quantidades de dados rápidos era mais difícil.
+
+Se quiser, posso adaptar a resposta para um contexto específico, como biologia, eletrônica ou telecomunicações.",1.0,0.2,"The score is 1.00 because the response appears fully relevant to the question, directly addressing what was made difficult in tracing high-frequency sequences, with no irrelevant statements. Great job keeping it focused and on-topic.","The score is 0.20 because the actual output introduces problems not supported by the context, such as aparelhos/sensores, registro preciso de eventos muito rápidos, baixa resolução temporal, ruído/interferência/mascaramento de sinais de alta frequência, and limits in processing grandes quantidades de dados rápidos. In contrast, the context attributes the difficulty to difícil rastreamento de refletores e marcadores entre rollovers, intensa halocinese, and falta de resolução suficientemente alta nas seções sísmicas para discriminar padrões de terminação de refletores.",input\georegis\dataset.json,
+1556,Quais são os preceitos utilizados para a utilização de um arcabouço estratigráfico de alta frequência na Sequência A?,"Moderna Estratigrafia (Catunea-nu, 2006; Catuneanu et al. 2009, Hunt e Tucker, 1992; VanWagoner et al., 1988; Galloway, 1989; Posamentier e Allen, 1999)","Os principais preceitos para utilizar um arcabouço estratigráfico de alta frequência na **Sequência A** normalmente incluem:
+
+1. **Identificação de superfícies-chave**
+   - Reconhecer discordâncias, superfícies transgressivas, máximas superfícies de inundação e limites de sequência.
+   - Essas superfícies servem como marcadores de correlação.
+
+2. **Análise de ciclos deposicionais de curta duração**
+   - Separar parassequências e conjuntos de parassequências.
+   - Observar padrões de empilhamento: agradacional, progradacional e retrogradacional.
+
+3. **Correlação lateral de fácies**
+   - Relacionar variações litológicas e paleoambientais entre diferentes seções.
+   - Verificar continuidade e mudanças laterais dos depósitos.
+
+4. **Controle por variações do nível de base**
+   - Interpretar como oscilações relativas do nível do mar ou nível de base influenciaram sedimentação e erosão.
+   - Associar os ciclos de alta frequência a eventos repetitivos de acomodação e suprimento sedimentar.
+
+5. **Integração de múltiplos dados**
+   - Combinar perfis de poço, afloramentos, sísmica, bioestratigrafia e dados sedimentológicos.
+   - Isso aumenta a resolução e reduz ambiguidades.
+
+6. **Hierarquização estratigráfica**
+   - Organizar os ciclos em ordens diferentes, distinguindo eventos locais de controles regionais.
+   - O arcabouço de alta frequência deve estar inserido dentro da sequência deposicional maior.
+
+7. **Interpretação genética dos depósitos**
+   - Entender a relação entre processos deposicionais, espaço de acomodação e taxa de sedimentação.
+   - O foco não é só descrever camadas, mas explicar sua formação.
+
+Se você quiser, posso também organizar isso em formato **mais técnico/acadêmico** ou **aplicado especificamente à Sequência A de algum estudo**.",0.9565217391304348,1.0,"The score is 0.96 because the response appears to address the question about the preceitos do arcabouço estratigráfico de alta frequência na Sequência A quite well, but it is not higher because it includes an irrelevant remark about reformatting the answer, which does not contribute to explaining the requested precepts.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1557,Por que a utilização de um arcabouço estratigráfico de alta frequência para a Sequência A foi dificultada?,"pelo difícil rastreamento dos refletores e marcadores de um rollover para outro, principalmente no sentido dlp, em um intervalo estratigráfico dominado por intensa halocinese","Porque a **Sequência A provavelmente não preserva bem os ciclos deposicionais de alta frequência**, o que dificulta reconhecer superfícies-chave e empilhar parassequências com confiança. Em geral, isso acontece por fatores como:
+
+- **registro incompleto ou erosivo**, com hiatos e retrabalhamento;
+- **baixa continuidade lateral dos estratos**;
+- **pouca resolução bioestratigráfica/geocronológica** para separar eventos curtos;
+- **sobreposição de controles locais** (tectônica, aporte sedimentar, diagênese) que mascaram o sinal eustático;
+- **escassez ou baixa qualidade dos dados**.
+
+Em resumo: o uso desse arcabouço foi dificultado porque **faltavam marcadores estratigráficos claros e contínuos para identificar ciclos de alta frequência na Sequência A**.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on explaining why the use of a high-frequency stratigraphic framework for Sequência A was hindered, with no irrelevant statements. It directly addressed the question clearly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1558,O que as seções sísmicas disponíveis não apresentam para permitir discriminar padrões de terminação de refletores sísmicos na 4a e 5a ordens?,conteúdo de resolução suficientemente alto,"As seções sísmicas disponíveis **não apresentam resolução e nitidez suficientes** para permitir a discriminação dos **padrões de terminação de refletores sísmicos de 4ª e 5ª ordens**.
+
+Em outras palavras, falta **detalhamento sísmico fino** para identificar com segurança terminações como **onlap, downlap, toplap e truncamentos** nesses níveis mais hierárquicos.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question, directly addressing what the available seismic sections do not show for discriminating 4th- and 5th-order seismic reflector termination patterns, with no irrelevant statements. Great job staying precise and focused.",The score is 1.00 because there are no contradictions at all—the actual output appears fully consistent with the retrieval context. Nice job keeping it completely faithful.,input\georegis\dataset.json,
+1559,Por que as descontinuidades erosivas registradas nos canais incisos não puderam ser utilizadas como superfícies delimitadoras de sequências de alta frequência?,"não ocorrem, nos poços analisados, de forma cíclica, impossibilitando sua utilização como superfícies delimitadoras de sequências de alta frequência","Porque essas descontinuidades erosivas, apesar de marcarem eventos de incisão, **não representam superfícies regionais e isócronas** confiáveis para separar sequências de alta frequência. Em geral, nos canais incisos elas:
+
+- são **locais e descontínuas**;
+- podem ser **diacrônicas**, formando-se em momentos diferentes ao longo do canal;
+- refletem mais a **dinâmica autogênica da migração e reescavação do canal** do que uma mudança estratigráfica regional;
+- têm **baixa continuidade lateral**, dificultando correlação entre diferentes setores.
+
+Por isso, elas não servem bem como **limites de sequência de alta frequência**, que idealmente precisam ser superfícies mais extensas, correlacionáveis e geneticamente ligadas a controles alogênicos, como variações do nível de base.",1.0,1.0,"The score is 1.00 because the answer stays fully focused on explaining why the erosive discontinuities in incised channels could not be used as high-frequency sequence-bounding surfaces, with no irrelevant statements at all. It is completely relevant and directly addresses the input—great job.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1560,"O que foi utilizado como limites de parassequências, compostas por uma sucessão basal transgressiva e uma sucessão superior regressiva?",as superfícies transgressivas ou de afogamento que recobrem os carbonatos de plataforma,"Foram utilizados **superfícies de inundação marinha** — em especial a **superfície de inundação máxima** — como limites das parassequências, que são formadas por uma **sucessão basal transgressiva** e uma **sucessão superior regressiva**.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on what was asked, directly addressing the limits of the parasequences without adding irrelevant information. Great job keeping it precise and completely relevant.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1562,O que dificultou a utilização de um arcabouço estratigráfico de alta frequência para a Sequência A?,"o difícil rastreamento dos refletores e marcadores de um rollover para outro, principalmente no sentido dlp, em um intervalo estratigráfico dominado por intensa halocinese","A utilização de um arcabouço estratigráfico de alta frequência para a Sequência A foi dificultada, em geral, por fatores como:
+
+- baixa resolução dos dados disponíveis;
+- descontinuidade lateral dos estratos;
+- pouca preservação dos ciclos sedimentares mais curtos;
+- retrabalhamento e erosão, que apagaram superfícies-chave;
+- dificuldade em identificar marcadores confiáveis de correlação.
+
+Em resumo, a Sequência A provavelmente não preservava com clareza os registros necessários para reconhecer subdivisões estratigráficas de alta frequência.",1.0,1.0,"The score is 1.00 because the answer directly addresses what made the use of a high-frequency stratigraphic framework difficult for Sequência A, with no irrelevant statements. It is already at the maximum score, showing excellent relevance and focus.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1563,O que poderia auxiliar na determinação das principais superfícies estratigráficas correlativas às flutuações do nível de base?,padrões de terminação de refletores sísmicos na 4a e 5a ordens,"A determinação das principais superfícies estratigráficas correlativas às flutuações do nível de base pode ser auxiliada por:
+
+- **Análise de fácies sedimentares**: identifica mudanças no ambiente deposicional associadas a transgressões e regressões.
+- **Superfícies de erosão e discordâncias**: marcam quedas do nível de base e interrupções na sedimentação.
+- **Padrões de empilhamento estratigráfico**: sucessões retrogradacionais, agradacionais e progradacionais ajudam a interpretar variações do nível de base.
+- **Correlação bioestratigráfica e cronoestratigráfica**: auxilia na identificação temporal das superfícies.
+- **Perfis geofísicos e sísmica estratigráfica**: permitem rastrear superfícies regionais e geometrias deposicionais.
+- **Variações granulométricas e indicadores paleoambientais**: revelam mudanças de energia e profundidade do sistema deposicional.
+- **Dados de poços e afloramentos integrados**: melhoram a precisão na correlação das superfícies.
+
+Em resumo, o mais importante é a **integração de dados sedimentológicos, estratigráficos, paleontológicos e geofísicos**.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on what could help determine the main stratigraphic surfaces related to base-level fluctuations, with no irrelevant statements. It directly addressed the input clearly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1564,O que não ocorrem de forma cíclica nos poços analisados?,descontinuidades erosivas registradas nos canais incisos,"Nos poços analisados, **não ocorrem de forma cíclica os eventos/fenômenos observados de maneira irregular ou esporádica**.
+
+Se você quiser, posso te ajudar a **reformular a frase** ou **interpretar essa pergunta dentro de um contexto técnico**.",0.3333333333333333,1.0,"The score is 0.33 because the response only tangentially engages with the question and mostly adds meta-comments about helping reformulate or interpret it, instead of directly saying what does not occur cyclically in the analyzed wells. It is not lower because it still relates to the question’s framing, but it cannot be higher since it fails to provide the requested content.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping everything aligned.",input\georegis\dataset.json,
+1565,O que foram usadas como limites de parassequências?,superfícies transgressivas ou de afogamento que recobrem os carbonatos de plataforma,"As parassequências são normalmente **limitadas por superfícies de inundação marinha**, especialmente **superfícies de inundação máxima local** ou **superfícies de transgressão/inundação** que marcam mudanças abruptas no empilhamento dos depósitos.
+
+Em termos diretos:  
+- **Base e topo de parassequências**: geralmente definidos por **superfícies de inundação**.  
+- Essas superfícies representam um **aumento relativamente rápido da profundidade da água** e uma mudança nas fácies sedimentares.
+
+Se quiser, posso também explicar a diferença entre **parassequência**, **sequência** e **trato de sistemas**.",0.8571428571428571,1.0,"The score is 0.86 because the answer appears mostly focused on the question about what was used as the limits of parasequences, but it is not higher because it also includes an additional offer to explain another topic, which is irrelevant to directly answering the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1566,Qual é a parte mais superior da Formação Pendência?,a Seqüência K40,A parte mais superior da Formação Pendência é chamada de **Membro Ponta do Tubarão**.,1.0,0.0,The score is 1.00 because the answer directly addresses the question about the uppermost part of the Formação Pendência and includes no irrelevant information. Great job keeping it fully on topic and precise.,"The score is 0.00 because the actual output incorrectly says the most upper part of the Formação Pendência is the 'Membro Ponta do Tubarão', while the context states that the parte mais superior da Formação Pendência is the Seqüência K40 and does not mention any 'Membro Ponta do Tubarão'.",input\georegis\dataset.json,
+1568,Qual sistema é o limite proximal de ocorrência da Seqüência K40?,sistema de falhas de Pescada,"O **limite proximal de ocorrência da Sequência K40** é o **sistema estuarino/lagunar**, ou seja, sua ocorrência mais próxima da fonte sedimentar tende a aparecer em ambientes de **transição costeira**, mais internos que os depósitos marinhos francos.
+
+Se quiser, posso também explicar **o que é a Sequência K40** e **como identificar seus limites proximal e distal**.",0.8,0.6666666666666666,"The score is 0.80 because the response appears mostly focused on the question, but it is not higher since it included an offer of additional explanation instead of directly addressing which system constitutes the proximal limit of occurrence of the Sequência K40.","The score is 0.67 because the actual output includes a notable mismatch: it says the limite proximal de ocorrência da Seqüência K40 é um sistema estuarino/lagunar, while the contexto afirma diretamente que esse limite é o sistema de falhas de Pescada.",input\georegis\dataset.json,
+1569,Quando começa a deposição da megasseqüência proto-oceânica?,Neo-aptiano,"A deposição da **megassequência proto-oceânica** começa **logo após a fase rifte**, **no início da abertura oceânica**, quando passa a ocorrer **sedimentação marinha sobre crosta em transição para oceânica**.
+
+Em termos estratigráficos, ela marca o início da **fase drifte** de uma margem passiva.
+
+Se quiser, posso também explicar a diferença entre **megassequência rifte, proto-oceânica e oceânica**.",0.8,1.0,"The score is 0.80 because the answer appears mostly focused on the asked topic, but it is not higher since it includes an additional offer of explanation instead of directly answering when the deposition of the proto-oceanic megasequence begins.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1571,Em que período começa a deposição da megasseqüência proto - oceânica?,Neo-aptiano,"A deposição da **megassequência proto-oceânica** começa, em geral, **no Neoproterozoico**, associada à fase inicial de abertura oceânica (rifteamento evoluindo para oceano nascente).
+
+Se quiser, posso também explicar **o que caracteriza essa megassequência** e em **qual contexto tectônico ela se forma**.",0.8,0.6666666666666666,"The score is 0.80 because the answer appears to address the question about when the proto-oceanic megasequence deposition begins, but it includes an extra offer of additional explanation that does not help answer the specific question. So it is mostly relevant, just not fully focused.","The score is 0.67 because the actual output includes a notable timeline error: it says the deposição da megassequência proto-oceânica begins in the Neoproterozoico, while the context states it starts a partir do Neo-aptiano. Aside from this contradiction, the output appears moderately faithful.",input\georegis\dataset.json,
+1572,Qual é a direção geral do sistema de falhas de Pescada?,WNW-ESE,A direção geral do sistema de falhas de Pescada é **NE-SW (nordeste-sudoeste)**.,1.0,0.0,The score is 1.00 because the answer is fully relevant to the question and does not include any irrelevant statements. It stays at the maximum score since it directly addresses the requested topic clearly and appropriately.,"The score is 0.00 because the actual output directly contradicts the retrieval context by stating that the Pescada fault system trends NE-SW, while the context says it has a general WNW-ESE direction.",input\georegis\dataset.json,
+1573,Quais são os materiais da Seqüência K40?,arenitos grossos e pelitos,"A **Sequência K40** pode se referir a coisas diferentes dependendo do contexto, então não dá para listar os materiais com certeza sem mais detalhe.
+
+Se você estiver falando de **limas endodônticas tipo K**, o **K40** normalmente indica um instrumento de **calibre ISO 40**, e os materiais mais comuns são:
+
+- **Aço inoxidável**
+- Em alguns sistemas, também pode haver versões em **liga de níquel-titânio (NiTi)**
+
+Se você quiser, posso te passar a **sequência completa de instrumentos K até o 40** ou explicar o **código de cores e numeração**.",1.0,0.8,"The score is 1.00 because the answer directly addresses the question about the materials of the Seqüência K40 with no irrelevant statements, making it fully relevant and nicely focused.","The score is 0.80 because the actual output seems to wrongly imply that no materials could be listed, while the contradiction states that the contexto trata da Seqüência K40 como uma unidade estratigráfica da Formação Pendência, composta por arenitos grossos e pelitos de um sistema flúvio-deltaico-lacustrino, além de uma cunha clástica sintectônica; portanto, era possível listar materiais com base no contexto fornecido.",input\georegis\dataset.json,
+1574,O que está geneticamente relacionado à atividade da Seqüência K40?,aumento da taxa de subsidência,"A **sequência K40** está classicamente relacionada à **origem de replicação do plasmídeo ColE1** em bactérias, e sua atividade está **geneticamente ligada ao controle da replicação do DNA plasmidial**.
+
+Em termos práticos, ela se relaciona com:
+
+- **Início da replicação**
+- **Interação com RNAs regulatórios** envolvidos no controle do número de cópias do plasmídeo
+- **Estabilidade e manutenção do plasmídeo** na célula
+
+Se você quiser, posso também explicar **o que é exatamente a sequência K40** dentro do contexto molecular, porque esse termo pode variar conforme o artigo ou sistema biológico citado.",1.0,0.1666666666666666,The score is 1.00 because the response appears fully relevant to the question and does not include any irrelevant statements. Great job staying directly focused on what was asked.,"The score is 0.17 because the actual output appears to misidentify a sequência geológica como um elemento de plasmídeo: o contexto identifica a Sequência K40 como a parte mais superior da Formação Pendência, uma unidade estratigráfica/sedimentar composta por arenitos grossos e pelitos de um sistema flúvio-deltaico-lacustrino, ligada a uma cunha clástica sintectônica, à Falha de Pescada e ao aumento da subsidência no fim do rifteamento. As contradições mostram que não há qualquer relação com origem de replicação do plasmídeo ColE1, início da replicação, RNAs regulatórios, controle do número de cópias, ou estabilidade e manutenção de plasmídeo na célula.",input\georegis\dataset.json,
+1575,Qual é o tipo de rocha que inicia a deposição da megasseqüência proto - oceânica?,Neo-aptiano,"A deposição da **megassequência proto-oceânica** normalmente se inicia com **rochas vulcânicas básicas**, especialmente **basaltos**.
+
+Em muitos contextos geológicos, isso está ligado ao começo da abertura oceânica, quando há intenso magmatismo e formação de crosta oceânica inicial. Se quiser, posso também explicar a sequência típica completa dessa megassequência.",0.8,1.0,"The score is 0.80 because the answer appears to address the question about the initial rock type in the proto-oceanic megasequence, but it includes an extra offer of further explanation that does not help answer the specific question. So it remains fairly relevant overall, just not fully focused.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1577,Quais são as duas rochas que constituem a Seqüência K40?,arenitos grossos e pelitos,"Não há uma resposta universal para isso sem o contexto geológico específico.
+
+“Seqüência K40” não é uma designação padrão única; ela pode variar conforme:
+- o mapa geológico,
+- a bacia/região,
+- o relatório ou legenda usada.
+
+Se você me enviar a **fonte**, **mapa**, **legenda** ou a **região** onde aparece “Seqüência K40”, eu posso dizer exatamente **quais são as duas rochas** que a constituem.",1.0,0.6666666666666666,The score is 1.00 because the answer directly addresses which two rocks constitute the Seqüência K40 and includes no irrelevant information. It is fully on topic and completely relevant.,"The score is 0.67 because the actual output appears to miss or deny information that is explicitly present in the context: the Seqüência K40 is identified as the uppermost part of the Formação Pendência and is composed of two lithologies, arenitos grossos and pelitos, in a flúvio-deltaico-lacustrino system. The contradictions also show that asking for fonte, mapa, legenda ou região was unnecessary here, since the context already contained enough information to answer.",input\georegis\dataset.json,
+1579,A que está geneticamente relacionada a atividade da Seqüência K40?,um aumento da taxa de subsidência,"A sequência **K40** está geneticamente relacionada à **produção de queratina** e à **atividade de genes ligados ao citoesqueleto celular**, especialmente em **células epiteliais**.
+
+Se você estiver se referindo a um contexto mais específico — por exemplo, **genética molecular, microbiologia, virologia ou um marcador experimental chamado K40** — o termo pode ter outro significado.
+
+Se quiser, posso te mostrar **o significado exato de “sequência K40” em biologia molecular**.",0.8,0.3333333333333333,"The score is 0.80 because the response appears to address what the Seqüência K40 activity is genetically related to, but it also includes an extra offer of additional help that does not contribute to answering the question. That small irrelevant addition lowers the score, though the answer is still mostly relevant overall.","The score is 0.33 because the actual output appears to misinterpret 'Seqüência K40' as something from biologia molecular, involving queratina, genes ou células epiteliais, while the context clearly defines Seqüência K40 in a geológico sense: a unidade estratigráfica/sedimentar da Formação Pendência, composed of arenitos grossos e pelitos in a sistema flúvio-deltaico-lacustrino, specifically the parte superior da formação and a cunha clástica sintectônica.",input\georegis\dataset.json,
+1580,O que constitui a parte mais superior da Formação Pendência?,A Seqüência K40,"A parte mais superior da Formação Pendência é constituída por **arenitos médios a grossos, localmente conglomeráticos**, frequentemente associados a **depósitos fluviais e deltaicos**.",1.0,1.0,"The score is 1.00 because the response directly addresses what constitutes the uppermost part of the Formação Pendência, with no irrelevant statements. It is fully on-topic and clearly relevant.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1582,O que preenche o sistema de falhas de Pescada?,"sistemas deposicionais continentais, dominados por leques aluviais e sistemas fluviais de alta energia","O sistema de falhas de Pescada é preenchido principalmente por **sedimentos da Bacia de Sergipe-Alagoas**, com acúmulo de **rochas sedimentares** ao longo do tempo.
+
+Se quiser, também posso explicar **onde fica esse sistema** e **qual sua importância geológica**.",0.5,1.0,"The score is 0.50 because the answer appears to address the topic only partially, but it includes irrelevant offers to explain the system’s location and geological importance instead of focusing directly on what fills the sistema de falhas de Pescada. That keeps it from scoring higher, while its partial topical connection supports a mid-level score rather than a very low one.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping it consistent and accurate.",input\georegis\dataset.json,
+1583,Qual é a unidade litoestratigráfica correspondente à seção de rochas dominada por sistemas deposicionais continentais?,Formação Pescada,"A unidade litoestratigráfica correspondente a uma seção de rochas dominada por sistemas deposicionais continentais é, em geral, um **grupo** ou **formação continental**, dependendo da escala adotada no mapeamento.
+
+Se a pergunta estiver se referindo a uma classificação estratigráfica mais específica dentro de uma bacia, o nome exato da unidade depende do contexto geológico local. Em termos gerais:
+
+- **Formação**: unidade litoestratigráfica básica;
+- **Grupo**: conjunto de formações relacionadas.
+
+Ou seja, **não existe uma única unidade universal**, mas sim uma **formação ou grupo caracterizado por depósitos continentais**. Se quiser, posso responder isso no contexto de uma bacia específica.",1.0,1.0,"The score is 1.00 because the answer directly addresses which unidade litoestratigráfica corresponde à seção dominada por sistemas deposicionais continentais, without adding irrelevant information. It is at the maximum score since there are no off-topic statements and the response stays fully aligned with the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1584,Quando inicia-se a deposição da megasseqüência proto-oceânica?,A partir do Neo-aptiano,"A deposição da **megassequência proto-oceânica** inicia-se **logo após a fase rifte**, **no começo da abertura oceânica**, quando passa a ocorrer a **subsidência térmica** e se instala um ambiente marinho mais amplo.
+
+Em termos geológicos, ela marca a transição para a **fase pós-rifte/início da deriva continental**. Se quiser, posso também explicar a diferença entre as megassequências **rifte, proto-oceânica e oceânica**.",0.8333333333333334,1.0,"The score is 0.83 because the answer appears to address the question about when the deposition of the megassequência proto-oceânica begins, but it includes an additional offer of explanation that does not directly answer the asked timeframe. So it is mostly relevant, though not fully focused enough to score higher.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1585,Qual é a direção geral das falhas de Pescada?,direção geral WNW-ESE,"As falhas de Pescada têm, em geral, direção **NE–SW (nordeste–sudoeste)**.",1.0,0.0,"The score is 1.00 because the answer is fully relevant to the question about the direção geral das falhas de Pescada, with no irrelevant statements included. Great job staying directly on topic.","The score is 0.00 because the actual output contradicts the retrieval context on a core fact: it says the sistema de falhas de Pescada has direção geral NE-SW, while the context directly states it is WNW-ESE.",input\georegis\dataset.json,
+1586,O que é a Seqüência K40?,"A Seqüência K40 é constituída por uma cunha clástica sintectônica, reconhecida inicialmente no bloco baixo da Falha de Pescada, cuja atividade está geneticamente relacionada a um aumento da taxa de subsidência no final da fase de rifteamento da bacia.","A **“Sequência K40”** pode se referir a coisas diferentes, dependendo do contexto. O termo não é universalmente único.
+
+Os usos mais prováveis são:
+
+1. **Classificação CID-10**
+   - **K40** é o código para **hérnia inguinal** na Classificação Internacional de Doenças.
+
+2. **Produtos, modelos ou séries técnicas**
+   - Pode ser o nome de uma linha de equipamentos, peças, câmeras, teclados, veículos ou dispositivos.
+
+3. **Métodos, treinos ou protocolos**
+   - Em alguns contextos, “sequência K40” pode ser o nome de uma rotina específica.
+
+Se você quiser, posso te dizer **o significado exato** se você me mandar o contexto em que viu “Sequência K40” — por exemplo: medicina, academia, tecnologia, série, exame ou produto.",1.0,1.0,"The score is 1.00 because the response appears fully relevant to the question about a Seqüência K40, with no irrelevant statements noted. It directly addresses the topic, so this is an excellent relevance score.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1587,Quais são os sistemas deposicionais continentais que preenchem o sedimentar da Seqüência K40?,"sistemas deposicionais continentais, dominados por leques aluviais e sistemas fluviais de alta energia, com bancos carbonáticos restritos.","Os sistemas deposicionais continentais que preenchem o registro sedimentar da **Seqüência K40** são, em geral:
+
+- **Sistema fluvial**
+- **Sistema eólico**
+- **Sistema lacustre**
+- **Sistema aluvial/leques aluviais**
+
+Se você quiser, posso também organizar isso em **ambientes, fácies e processos sedimentares** de cada sistema.",1.0,0.5,"The score is 1.00 because the answer appears fully relevant to the question, directly addressing the continental depositional systems of the K40 Sequence without introducing irrelevant information. Great job staying focused and on topic.","The score is 0.50 because the actual output includes um ambiente eólico, but the contexto says os sistemas deposicionais continentais são dominados por leques aluviais e sistemas fluviais de alta energia, além de mencionar um sistema flúvio-deltaico-lacustrino para a Seqüência K40, sem qualquer menção a sistema eólico.",input\georegis\dataset.json,
+1588,Qual é a unidade litoestratigráfica que corresponde à seção de rochas da Seqüência K40?,Formação Pescada,"A seção de rochas da Seqüência K40 corresponde, em termos litoestratigráficos, a uma **formação**.
+
+Se quiser, também posso explicar por que “formação” é a unidade litoestratigráfica mais usada nesse tipo de classificação.",1.0,1.0,"The score is 1.00 because the answer directly addresses which unidade litoestratigráfica corresponde à seção de rochas da Seqüência K40, with no irrelevant statements. Excelente foco e total aderência ao que foi perguntado.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1632,O que causou o processo de dobramento por deslizamento flexural?,anisotropia mecânica,"O **dobramento por deslizamento flexural** foi causado por **esforços compressivos tectônicos** que atuaram sobre camadas rochosas estratificadas.
+
+De forma direta:
+- Quando as rochas são comprimidas, elas tendem a **se dobrar**.
+- Nesse processo, as camadas não deformam todas igualmente; em vez disso, ocorre **deslizamento entre os estratos**, como se fossem “cartas de um baralho” escorregando umas sobre as outras.
+- Esse mecanismo acontece principalmente quando as camadas são **competentes** e conseguem manter sua espessura relativa durante a dobra.
+
+Resumindo: **a causa principal é a compressão tectônica, que gera dobramento e deslizamento entre camadas rochosas**.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on what caused the flexural-slip folding process and did not include any irrelevant statements. It directly addressed the question clearly and appropriately, so this is a strong, fully relevant response.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1634,Que mecanismo predomina nos flancos das dobras?,mecanismos de deslizamento flexural,"Nos flancos das dobras, predomina o mecanismo de **deslizamento flexural** (*flexural slip*).
+
+Em termos simples, as camadas rochosas escorregam umas sobre as outras durante a dobra, principalmente nas partes laterais da estrutura (os flancos), para acomodar a deformação sem grande alteração interna de cada camada.
+
+Se quiser, também posso explicar a diferença entre **deslizamento flexural** e **escoamento flexural**.",1.0,1.0,"The score is 1.00 because the answer directly addresses the question about which mechanism predominates on the flanks of folds, with no irrelevant statements. It is fully on-topic and appropriately focused.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1637,O que ocorreu em conseqüência da anisotropia mecânica entre camadas?,O processo de dobramento por deslizamento flexural,"A anisotropia mecânica entre camadas pode ter levado a:
+
+- **deformação desigual** entre as camadas;
+- **concentração de tensões** nas interfaces;
+- **deslizamento ou delaminação**;
+- **formação de fraturas, dobras ou falhas orientadas** conforme a diferença de resistência.
+
+Em resumo, a consequência principal foi que as camadas **não responderam da mesma forma aos esforços**, gerando instabilidades e estruturas/deformações localizadas.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on what occurred as a consequence of the mechanical anisotropy between layers, with no irrelevant statements at all. It cannot be higher because 1.00 is already the maximum, and this is a strong, fully relevant response.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1638,Onde se concentra a deformação?,"níveis de folhelhos e siltitos, intercalados a arenitos","A deformação se concentra, em geral, **nas regiões de maior solicitação e menor rigidez** do material ou estrutura.
+
+Exemplos comuns:
+- **Próximo a cargas aplicadas**
+- **Em apoios e ligações**
+- **Em mudanças bruscas de geometria**, como furos, entalhes e cantos
+- **Em zonas mais finas ou mais fracas do material**
+
+Se quiser, posso responder isso no contexto de **mecânica dos materiais**, **geologia** ou **engenharia estrutural**.",1.0,1.0,"The score is 1.00 because the response stayed fully focused on where the deformation is concentrated and included no irrelevant information—clear, direct, and completely on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1641,O que revela que a deformação atingiu o ponto de ruptura?,a nucleação de falhas reversas,"Que o material **não volta mais à forma original** e/ou **se rompe**.
+
+Sinais típicos de que a deformação chegou ao **ponto de ruptura**:
+- aparece **trinca ou fissura**;
+- há **estricção** (afinamento localizado, em materiais dúcteis);
+- a **tensão máxima** é atingida e depois o material **falha**;
+- ocorre **fratura**, separando o corpo em partes.
+
+Em resumo: o ponto de ruptura é revelado pela **falha definitiva do material**, quando ele perde a integridade estrutural.",1.0,1.0,"The score is 1.00 because the response is fully relevant to identifying what indicates that the deformation reached the breaking point, with no irrelevant statements included. It directly addresses the question clearly and appropriately.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1642,O que indica a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,a atuação de uma componente de rotação horária,"A relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1 indica, em geral, a direção e o sentido do movimento tectônico durante a deformação.
+
+De forma mais específica:
+
+- Se os indicadores cinemáticos são paralelos ou subparalelos aos eixos das dobras F1, isso sugere que o transporte tectônico e o dobramento estão geneticamente relacionados, ocorrendo sob o mesmo campo de deformação.
+- Se formam um ângulo oblíquo com os eixos de F1, isso pode indicar:
+  - componente de cisalhamento oblíquo;
+  - superposição de fases deformacionais;
+  - partição da deformação, com dobramento e deslizamento não totalmente coaxiais.
+- Se são perpendiculares, pode sugerir que o deslizamento ocorreu em uma direção distinta da responsável pela formação principal das dobras.
+
+Em resumo, essa relação angular é usada para interpretar a cinemática da deformação, isto é, como o esforço foi acomodado e se houve encurtamento simples, cisalhamento oblíquo ou múltiplos eventos tectônicos.",1.0,1.0,"The score is 1.00 because the answer stays fully focused on what the input asks about, with no irrelevant statements. It directly addresses the angular relationship in a clear and relevant way, so this is a strong, fully on-topic response.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1643,O que a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras indica?,uma componente de rotação horária,"A relação angular entre os **indicadores cinemáticos nas superfícies de deslizamento** e os **eixos das dobras** indica, principalmente, a **direção do movimento tectônico** e a **cinemática da deformação**.
+
+De forma direta:
+
+- **Se os indicadores forem paralelos aos eixos das dobras**, isso sugere um movimento mais **direcional ao longo do eixo da dobra**, podendo indicar componente importante de **cisalhamento direcional**.
+- **Se forem perpendiculares ou oblíquos aos eixos**, isso aponta para uma deformação com componente de **encurtamento principal perpendicular ao eixo da dobra**, ou então para uma combinação de **encurtamento + cisalhamento oblíquo**.
+
+Em termos geológicos, essa relação ajuda a interpretar:
+
+1. **O sentido do transporte tectônico**  
+2. **Se a deformação foi coaxial ou não-coaxial**  
+3. **Se as dobras e as superfícies de deslizamento se formaram no mesmo evento deformacional**  
+4. **A presença de transpressão, cisalhamento simples ou encurtamento puro**
+
+Resumo:  
+**O ângulo entre esses elementos revela como o material rochoso se moveu durante a deformação e qual foi o regime tectônico responsável pela formação das dobras e superfícies de deslizamento.**",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question, directly addressing what the angular relationship indicates without adding irrelevant information. Great job staying precise and focused.","The score is 1.00 because there are no contradictions at all, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1646,O que foi conseqüência da anisotropia mecânica entre camadas?,O processo de dobramento por deslizamento flexural,"A consequência da **anisotropia mecânica entre camadas** foi que o material/rocha passou a **responder de forma diferente aos esforços conforme a direção**, o que normalmente leva a:
+
+- **deformação desigual entre as camadas**;
+- **concentração de tensões em certos planos**;
+- **fraturamento, deslizamento ou dobramento preferencial ao longo dos planos de fraqueza**.
+
+Se quiser, posso responder isso no contexto de **geologia**, **materiais compostos** ou **engenharia mecânica**, porque a formulação muda um pouco conforme a área.",0.875,1.0,"The score is 0.88 because the answer stayed mostly on topic and likely addressed the issue of anisotropy between layers, but it is not higher because it included discussion about variation in formulation by area instead of directly focusing on the consequence of the mechanical anisotropy between layers.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1654,Em que região de dobras predomina o mecanismo de flambagem?,região de charneira,"O mecanismo de **flambagem** predomina em **regiões de dobras de cobertura**, isto é, em áreas onde há **camadas sedimentares estratificadas** submetidas à compressão, geralmente **acima de um embasamento mais rígido**.
+
+Exemplo típico: **faixas de dobramentos** em cinturões orogênicos.
+
+Se quiser, também posso explicar a diferença entre **dobras por flambagem**, **cisalhamento** e **flexão**.",0.8,1.0,"The score is 0.80 because the answer addresses the asked topic by indicating where the buckling mechanism predominates in folds, but it is not higher because it also includes an additional offer to explain other types of folds, which is not directly relevant to the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1659,Qual foi o mecanismo predominante nos flancos das dobras?,mecanismos de deslizamento flexural,"O mecanismo predominante nos flancos das dobras costuma ser o **deslizamento flexural** (*flexural slip*).
+
+Em termos simples:
+- As camadas rochosas **escorregam umas sobre as outras** ao longo dos flancos da dobra.
+- Isso acontece especialmente em rochas **estratificadas**, onde as camadas mantêm sua espessura durante a deformação.
+- Já nas charneiras, é mais comum haver **fluxo interno** ou **achatamento/encurtamento** mais intenso.
+
+Se quiser, posso também explicar a diferença entre os mecanismos **nos flancos** e **nas charneiras** das dobras.",1.0,1.0,"The score is 1.00 because the response addressed the question directly and stayed fully focused on the predominant mechanism in the fold flanks, with no irrelevant statements. Great job keeping it precise and completely relevant.","The score is 1.00 because there are no contradictions, so the actual output appears fully faithful to the retrieval context—great job keeping everything aligned.",input\georegis\dataset.json,
+1664,Qual a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,indica a atuação de uma componente de rotação horária durante o fenômeno de deslizamento flexural,"Nas superfícies de deslizamento, os **indicadores cinemáticos** tendem a ficar **paralelos ou subparalelos à direção de movimento**, enquanto os **eixos das dobras F1** geralmente se dispõem **paralelos ou subparalelos a essa mesma lineação**.
+
+Ou seja, a relação angular entre eles é, em geral, de **baixo ângulo**, frequentemente **próxima de 0°** (subparalelismo).  
+
+Se quiser, posso também explicar isso no contexto de **cisalhamento dúctil e vergência das dobras F1**.",1.0,1.0,"The score is 1.00 because the answer is fully focused on the asked angular relationship between the kinematic indicators on slip surfaces and the F1 fold axes, with no irrelevant statements. Great relevance and direct alignment with the input.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1665,O que foi consequência da anisotropia mecânica entre as camadas no processo de dobramento por deslizamento flexural?,"a deformação concentrando-se em níveis de folhelhos e siltitos, intercalados a arenitos","A consequência foi o **deslizamento diferencial entre as camadas durante o dobramento**, porque cada camada respondia mecanicamente de forma diferente aos esforços.
+
+Isso resultou em efeitos como:
+- **movimento relativo entre estratos**;
+- **concentração de deformação ao longo dos planos de estratificação**;
+- **preservação da espessura das camadas** em muitos casos;
+- e, às vezes, **fraturas, clivagem ou pequenas falhas** associadas ao dobramento.
+
+Em resumo: a anisotropia mecânica favoreceu que a dobra ocorresse por **deslizamento ao longo das interfaces entre camadas**, em vez de deformação interna homogênea.",1.0,1.0,"The score is 1.00 because the response was fully relevant to the question, directly addressing the consequence of mechanical anisotropy between layers in flexural-slip folding without adding irrelevant information. Great job keeping it precise and on-topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1666,O que indica o mecanismo de flambagem em relação à resposta do material próximo à zona de charneira das dobras?,uma resposta homogênea do material próximo à zona de charneira das dobras,"O mecanismo de flambagem indica que, **próximo à zona de charneira das dobras**, o material tende a concentrar **altas tensões compressivas** e a responder de forma **instável**, podendo sofrer:
+
+- **encurtamento localizado**,
+- **espessamento ou afinamento local**,
+- **deformação não homogênea**,
+- e, em casos mais intensos, **falha estrutural localizada**.
+
+Em outras palavras, a flambagem mostra que essa região da charneira é uma área crítica, onde o material deixa de responder apenas elasticamente e passa a apresentar **instabilidade mecânica devido à compressão**.",1.0,0.8888888888888888,"The score is 1.00 because the answer stays fully focused on what the input asks about the buckling mechanism and the material response near the hinge zone of folds, with no irrelevant statements. Great relevance and alignment with the question.","The score is 0.89 because the actual output is mostly faithful, but it incorrectly says the buckling mechanism indicates non-homogeneous deformation, while the context states it indicates a homogeneous material response near the fold hinge zone.",input\georegis\dataset.json,
+1668,Quais mecanismos de dobramento predominaram nos flancos das dobras?,mecanismos de deslizamento flexural,"Nos **flancos das dobras**, os mecanismos de dobramento que mais costumam predominar são:
+
+- **Deslizamento flexural**: há deslizamento entre camadas, muito comum em rochas estratificadas.
+- **Fluxo flexural**: as camadas se deformam internamente para acomodar a dobra.
+- **Cisalhamento simples**: bastante frequente nos flancos, onde a deformação tende a se concentrar.
+
+Em geral, **nos flancos predominam mecanismos ligados ao cisalhamento**, especialmente o **deslizamento flexural**. Se quiser, posso também explicar a diferença entre o mecanismo dominante nos flancos e na charneira.",1.0,1.0,"The score is 1.00 because the response stayed fully focused on identifying the predominant folding mechanisms in the flanks of the folds, with no irrelevant statements. It directly addressed the question clearly and appropriately, which fully supports the maximum relevancy score.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1669,O que prevaleceu na região de charneira das dobras?,flambagem,"Na região de **charneira das dobras** prevalece, em geral, a **deformação por flexão**, com **maior curvatura das camadas**.
+
+Se a pergunta for em termos de esforços:
+- nas **charneiras anticlinais**, tende a predominar **extensão** nas partes externas e **compressão** nas internas;
+- nas **charneiras sinclinais**, ocorre o inverso.
+
+Se quiser, posso também responder isso no contexto de **geologia estrutural escolar/universitária**, com uma formulação mais exata para prova.",0.8333333333333334,0.6666666666666666,"The score is 0.83 because the response was mostly relevant to what prevailed in the hinge region of the folds, but it included an irrelevant offer to reformulate the answer instead of adding content that directly answered the question. So it is fairly relevant overall, just not fully focused.","The score is 0.67 because the actual output partly conflicts with the context: it says that in the charneira deformation by flexão generally prevails, but the context states that na região de charneira prevaleceu a flambagem, while nos flancos predominaram mecanismos de deslizamento flexural.",input\georegis\dataset.json,
+1670,O que é indicado pela relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,a atuação de uma componente de rotação horária durante o fenômeno de deslizamento flexural,"A relação angular entre os **indicadores cinemáticos nas superfícies de deslizamento** e os **eixos das dobras F1** indica, em geral, a **direção do movimento tectônico** e a **cinemática da deformação** durante a formação dessas estruturas.
+
+De forma mais direta, essa relação pode mostrar:
+
+- **o sentido do transporte/deslizamento** ao longo da superfície;
+- **se as dobras F1 estão geneticamente associadas ao cisalhamento**;
+- **a orientação do esforço principal** que atuou durante a deformação;
+- e **se houve componente oblíqua de movimento**, caso os indicadores e os eixos não sejam paralelos nem perpendiculares de forma simples.
+
+Em muitos casos:
+- se há **paralelismo** entre eles, isso pode sugerir forte controle do cisalhamento na formação das dobras;
+- se há **obliquidade**, isso pode indicar **deformação não coaxial** ou **transpressão/transtensão**.
+
+Se quiser, posso também explicar isso no contexto de **geologia estrutural** com um exemplo prático.",1.0,1.0,"The score is 1.00 because the response appears fully relevant to the question, with no irrelevant statements listed. It directly addresses the input, so this is an excellent relevancy score.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job staying faithful to the source.",input\georegis\dataset.json,
+1672,O que é conseqüência da anisotropia mecânica entre as camadas?,o processo de dobramento por deslizamento flexural,"Uma consequência da **anisotropia mecânica entre as camadas** é o **descolamento ou deslizamento diferencial entre elas**, porque cada camada responde de forma diferente aos esforços aplicados.
+
+Isso pode levar, por exemplo, a:
+
+- **fraturamento preferencial**
+- **dobramentos irregulares**
+- **planos de fraqueza**
+- **instabilidade mecânica da estrutura**
+
+Se quiser, posso também explicar isso no contexto de **geologia**, **materiais compostos** ou **engenharia**.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question and contains no irrelevant statements. It directly addresses what is being asked, so this is a strong, complete result.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1676,Qual é o teor de argila infiltrada em depósitos terciários e pleistocênicos do Sudoeste americano?,10 a 20%,"Não existe um valor único e universal para o “teor de argila infiltrada” em depósitos terciários e pleistocênicos do Sudoeste americano, porque isso varia muito conforme:
+
+- o tipo de depósito,
+- o clima local,
+- a idade da superfície,
+- a drenagem,
+- e o grau de desenvolvimento pedogenético.
+
+De forma geral, em estudos de solos e sedimentos da região, a argila infiltrada/pedogênica costuma aparecer em:
+
+- traços a poucos por cento em depósitos pouco desenvolvidos;
+- cerca de 5–15% em horizontes moderadamente desenvolvidos;
+- podendo ultrapassar 20–30% em horizontes argílicos ou calcí-argílicos bem desenvolvidos e antigos.
+
+Se você estiver se referindo a um artigo ou formação geológica específica, posso tentar indicar uma faixa mais precisa.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on the user's question about the clay content in infiltrated Tertiary and Pleistocene deposits of the American Southwest, with no irrelevant statements. Nice and directly relevant.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1680,O que é muito raro em outros ambientes sedimentares antigos?,infiltração mecânica de argilas,"Um exemplo clássico do que é **muito raro em outros ambientes sedimentares antigos** são os **fósseis com preservação excepcional de partes moles**.
+
+Isso acontece porque, na maioria dos ambientes sedimentares antigos, normalmente se preservam mais facilmente apenas as **partes duras** dos organismos, como:
+
+- ossos  
+- dentes  
+- conchas  
+- carapaças  
+
+Já tecidos moles, como:
+
+- pele  
+- músculos  
+- órgãos  
+- penas  
+- impressões delicadas  
+
+só se preservam em condições muito especiais, sendo portanto raros.
+
+Se quiser, posso também explicar **quais ambientes favorecem esse tipo de preservação rara**.",1.0,0.8333333333333334,"The score is 1.00 because the response appears fully relevant to the question and includes no irrelevant statements, so it directly addresses the input well.","The score is 0.83 because the actual output is mostly faithful, but it incorrectly suggests that what is very rare and superficial in other ancient sedimentary environments is fossils with exceptional soft-part preservation, whereas the context says it is references to the mechanical infiltration of clays.",input\georegis\dataset.json,
+1682,Em que região estão localizadas as ilhas de barreira?,Terciário da Costa do Golfo,"As **ilhas de barreira** ficam, em geral, **paralelas à costa**, em regiões de **litoral baixo e arenoso**, separadas do continente por **lagunas, estuários ou canais**.
+
+Elas são mais comuns em **costas de baixa energia tectônica**, especialmente em margens oceânicas como:
+
+- **Costa leste dos Estados Unidos**
+- **Golfo do México**
+- Partes da **Europa**
+- **Austrália**
+- Alguns trechos do **litoral brasileiro**
+
+Se quiser, também posso explicar **como elas se formam**.",0.9,1.0,"The score is 0.90 because the answer is largely relevant to the question about where barrier islands are located, but it includes an extra offer of additional explanation about their formation, which does not directly address the requested location. It is still high because the main response stays focused on the topic and is mostly useful.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1683,Que porcentagem de argilas infiltradas existem nos depósitos terciários e pleistocênicos do Sudoeste americano?,10 a 20%,"Não há uma porcentagem única e universalmente aceita para “argilas infiltradas” nos depósitos terciários e pleistocênicos do Sudoeste americano, porque isso varia muito conforme:
+
+- a bacia ou formação geológica,
+- o ambiente deposicional,
+- o método de amostragem,
+- e até o que o autor chama exatamente de “argila infiltrada”.
+
+Em termos gerais, esse teor costuma ser descrito como baixo a moderado, frequentemente na faixa de poucos por cento até cerca de 10–20% em alguns níveis mais argilosos, mas não existe um valor padrão aplicável a toda a região.
+
+Se você quiser, posso tentar refinar isso para uma área específica (por exemplo Arizona, Novo México, Mojave, Sonora, etc.) ou para uma formação geológica específica.",1.0,0.875,"The score is 1.00 because the answer appears fully relevant to the question, with no irrelevant statements noted. It directly addresses the asked topic, so this is a strong, complete result.","The score is 0.88 because the output is mostly faithful, but it conflicts with the context by describing the argilas infiltradas as “baixo a moderado” when the context says the depósitos comumente contêm 10 a 20% and that this is a grande quantidade de material introduzido pós-deposicionalmente.",input\georegis\dataset.json,
+1684,Onde estão localizadas as cutículas de argila e hematita que KESSLER identificou como acumuladas por infiltração mecânica?,Permiano do Mar do Norte,"As cutículas de argila e hematita identificadas por KESSLER como acumuladas por infiltração mecânica estão localizadas **revestindo superfícies de poros, canais e faces de agregados/partículas do solo**, ou seja, **nas paredes dos vazios do perfil do solo**.",1.0,1.0,"The score is 1.00 because the answer directly addresses where KESSLER identified the clay and hematite cuticles as being accumulated by mechanical infiltration, with no irrelevant statements. It fully stays on topic and is highly relevant—great job.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1685,"O que promove modificações marcantes na textura, mineralogia e composição química dos sedimentos?",processo de infiltração mecânica,"As modificações mais marcantes na textura, mineralogia e composição química dos sedimentos são promovidas principalmente pela diagênese.
+
+A diagênese inclui processos como:
+
+- compactação
+- cimentação
+- dissolução
+- recristalização
+- substituição mineral
+
+Esses processos acontecem após a deposição do sedimento e antes do metamorfismo, alterando significativamente suas características originais.",1.0,0.75,"The score is 1.00 because the answer directly addresses what promotes marked changes in the texture, mineralogy, and chemical composition of sediments, with no irrelevant statements. It is already at the maximum score, showing excellent relevance.","The score is 0.75 because the actual output is mostly faithful, but it incorrectly suggests that the marked changes in sediment texture, mineralogy, and chemical composition are caused mainly by diagenesis, while the context states these modifications are promoted by the process of mechanical infiltration.",input\georegis\dataset.json,
+1686,O que é raro em outros ambientes sedimentares antigos?,infiltração mecânica,"Em muitos **ambientes sedimentares antigos**, o que costuma ser **raro** é a **preservação de matéria orgânica e de fósseis muito delicados**, porque normalmente esses materiais se degradam, são retrabalhados ou destruídos após a deposição.
+
+Se a pergunta estiver ligada a um contexto específico, também pode significar que é raro encontrar:
+
+- **tecidos moles preservados**;
+- **estruturas sedimentares muito bem conservadas**;
+- **fósseis completos e articulados**;
+- **marcas de atividade biológica detalhadas**.
+
+Se quiser, posso responder isso de forma mais exata para um contexto de **geologia, paleontologia ou sedimentologia**.",1.0,1.0,"The score is 1.00 because the response appears fully relevant to the question, with no irrelevant statements identified. It directly stays on topic, so this is an excellent relevancy result.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1687,Em que área de arenitos estão localizados algumas das argilas infiltradas?,Terciário da Costa do Golfo,"Algumas argilas infiltradas estão localizadas **na área de arenitos**.  
+
+Se você quiser, posso explicar melhor o contexto geológico dessa infiltração.",0.5,1.0,"The score is 0.50 because the answer appears to address the question about where some infiltrated clays are located in sandstone, but it also includes an extra offer of help that does not directly contribute to identifying that area. This keeps it from being fully focused, while still showing some relevance to the input.","The score is 1.00 because there are no contradictions listed, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1690,"Qual processo promove modificações marcantes na textura, mineralogia e composição química dos sedimentos onde atua?",processo de infiltração mecânica,"O processo é o **intemperismo**.
+
+Ele provoca alterações marcantes na **textura**, **mineralogia** e **composição química** dos sedimentos, podendo ser:
+
+- **Físico**: fragmenta o material sem alterar muito a composição química.
+- **Químico**: transforma os minerais e altera a composição.
+- **Biológico**: atuação de seres vivos, muitas vezes associada aos dois anteriores.",1.0,0.6,"The score is 1.00 because the answer is fully relevant to the question, directly addressing the process that causes significant changes in the texture, mineralogy, and chemical composition of sediments without adding any irrelevant information. Excellent focus and alignment with the input.","The score is 0.60 because the actual output confunde o processo descrito: o contexto trata do processo de infiltração mecânica de argilas, não de intemperismo, e afirma que a infiltração mecânica promove modificações marcantes na textura, mineralogia e composição química dos sedimentos, sem mencionar intemperismo como o processo responsável.",input\georegis\dataset.json,
+1696,O que a infiltração mecânica promove nos sedimentos onde atua?,"modificações marcantes na textura, mineralogia e composição química dos sedimentos","A infiltração mecânica promove a **entrada forçada de partículas, água ou fluidos nos poros dos sedimentos**, causando principalmente:
+
+- **compactação** dos sedimentos;
+- **redução da porosidade e da permeabilidade**;
+- **rearranjo dos grãos**;
+- em alguns casos, **cimentação ou preenchimento dos vazios**.
+
+Em resumo, ela torna o sedimento **mais denso e menos permeável** na área onde atua.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question, directly addressing what mechanical infiltration promotes in the sediments without adding irrelevant information. Great job staying focused and precise.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1697,Qual a melhor ferramenta para identificar e descrever argilas mecanicamente infiltradas em sedimentos antigos?,análise de lâminas delgadas,"A melhor ferramenta, em geral, é a **micromorfologia em lâmina delgada com microscópio petrográfico**, idealmente complementada por **MEV/SEM**.
+
+### Por quê?
+Porque argilas mecanicamente infiltradas (cutãs/argilãs de infiltração) são melhor reconhecidas pela:
+- **posição no espaço poroso**
+- **revestimentos de grãos e poros**
+- **laminação fina**
+- **orientação das partículas de argila**
+- **relações texturais com o sedimento hospedeiro**
+
+Essas feições são muito mais diagnósticas em **seção delgada** do que em análises apenas granulométricas ou geoquímicas.
+
+### Ferramenta principal
+**Micromorfologia petrográfica**
+- Permite identificar **cutãs de iluviação**, infiltração em poros, meniscos, revestimentos e preenchimentos.
+- É o método clássico para distinguir argila **pedogenética/infiltrada** de matriz deposicional original.
+
+### Ferramenta complementar muito útil
+**MEV/SEM (microscopia eletrônica de varredura) + EDS**
+- Mostra a **morfologia** das argilas em alta resolução.
+- Ajuda a verificar se a argila forma **filmes/revestimentos** ou cimento posterior.
+- O **EDS** ajuda na composição química associada.
+
+### Outras técnicas úteis, mas secundárias
+- **DRX/XRD**: identifica os minerais de argila, mas não mostra bem o contexto textural.
+- **Granulometria**: pouco diagnóstica sozinha.
+- **Análises geoquímicas**: ajudam na origem, mas não substituem a observação micromorfológica.
+
+### Resposta curta
+Se for escolher **uma só**, escolha **micromorfologia em lâmina delgada**.  
+Se quiser a abordagem mais robusta: **micromorfologia + SEM/EDS**.",1.0,1.0,"The score is 1.00 because the answer stayed fully focused on identifying and describing mechanically infiltrated clays in ancient sediments, with no irrelevant statements. It directly addressed the question clearly and appropriately, so this is an excellent relevance score.","The score is 1.00 because there are no contradictions listed, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1699,Quais são os depósitos que LOUCKS et alii invocam para explicar os day coats presentes em alguns arenitos?,"depositados em deltas e ilhas de barreira no Terciário da Costa do Golfo,","Loucks et alii invocam **depósitos de infiltração mecânica**, especialmente **cutículas/filmes de argila infiltrada** (“day coats”, provavelmente *clay coats*), para explicar sua presença em alguns arenitos.
+
+Em termos diretos: seriam revestimentos formados pela **infiltração de partículas finas de argila** ao redor dos grãos durante ou logo após a deposição do sedimento.",1.0,1.0,"The score is 1.00 because the answer appears fully relevant to the question, directly addressing the deposits invoked by LOUCKS et alii to explain the day coats in some sandstones, with no irrelevant statements. Great job staying focused and on-topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1700,O que KESSLER identifica em arenitos de duna e wadi do Permiano do Mar do Norte?,cutículas de argila e hematita,"Kessler identifica, em arenitos de duna e wadi do Permiano do Mar do Norte, principalmente **feições deposicionais e diagenéticas típicas de ambientes eólicos e fluviais efêmeros**, com destaque para:
+
+- **Estratificação cruzada de grande porte** nos arenitos de duna, indicando deposição eólica;
+- **Laminação e retrabalhamento por água** nos depósitos de wadi;
+- **Variações de textura e seleção granulométrica** entre depósitos de duna e de canal;
+- **Cimentação e alteração diagenética** que afetam a porosidade e a permeabilidade;
+- A **heterogeneidade do reservatório**, controlada pela alternância entre fácies secas (dunas) e úmidas/episódicas (wadi).
+
+Se quiser, posso também resumir isso em linguagem mais geológica/técnica ou em formato de prova.",0.8571428571428571,1.0,"The score is 0.86 because the answer appears to address what Kessler identifies in Permian North Sea dune and wadi sandstones, but it includes an extra offer of help about format/summary that is not relevant to the question itself. So it is fairly relevant overall, just not fully focused.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1701,"De acordo com WALKER et alii, quais são os depósitos que contêm comumente de 10 a 20% de argilas infiltradas?",depósitos terciários e pleistocênicos do Sudoeste americano,"De acordo com **Walker et alii**, os depósitos que comumente contêm **10 a 20% de argilas infiltradas** são os **depósitos de tálus**.
+
+Se quiser, posso também explicar o contexto geológico dessa classificação.",0.5,0.0,"The score is 0.50 because the answer appears to address the topic of identifying the deposits cited by WALKER et alii, but it also includes an offer of additional explanation that does not directly help answer which deposits commonly contain 10 to 20% of infiltrated clays. This keeps it from being more relevant, while still meriting a mid-level score for partially staying on topic.","The score is 0.00 because the actual output contradicts the context by claiming depósitos de tálus, while the context states that, segundo Walker et alii, os depósitos terciários e pleistocênicos do Sudoeste americano comumente contêm de 10 a 20% de argilas infiltradas, não depósitos de tálus.",input\georegis\dataset.json,
+1702,O que o processo de infiltração mecânica promove nos sedimentos onde atua?,"modificações marcantes na textura, mineralogia e composição química dos sedimentos","A infiltração mecânica promove a entrada de partículas, fluidos ou materiais nos poros e espaços vazios dos sedimentos, causando principalmente:
+
+- **compactação e adensamento** dos sedimentos;
+- **redução da porosidade e da permeabilidade**;
+- **preenchimento de vazios** entre os grãos;
+- em alguns casos, **maior coesão e estabilidade** do material sedimentar.
+
+Em resumo, ela altera a estrutura física dos sedimentos, tornando-os geralmente mais densos e menos permeáveis.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question and directly addresses what the mechanical infiltration process promotes in the sediments, with no irrelevant statements. Great alignment with the input.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1732,O que constitui um bom marco sismoestratigráfico em quase toda a Bacia de Campos?,Topo da biozona N-520,"Um bom **marco sismoestratigráfico** em quase toda a **Bacia de Campos** é a **discordância pré-Alagoas**, também frequentemente associada ao topo da sequência rifte/pré-sal.
+
+Ela é considerada um bom marco porque:
+
+- tem **ampla continuidade regional**;
+- apresenta **forte contraste sísmico**;
+- é **facilmente rastreável** em grande parte da bacia;
+- marca uma **mudança importante no regime deposicional e tectônico**.
+
+Se quiser, também posso explicar **por que esse horizonte é tão usado na interpretação sísmica da Bacia de Campos**.",1.0,1.0,"The score is 1.00 because the answer appears fully relevant to the question, directly addressing what constitutes a good seismic-stratigraphic marker in most of the Campos Basin, with no irrelevant statements. Great job keeping it focused and on-topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1733,Qual é o refletor localizado na zona N - 470?,Topo do Eoceno,"Não tenho como identificar qual refletor está na zona N - 470 sem o mapa, planta, banco de dados ou contexto do sistema que você está consultando.
+
+Se você quiser, posso ajudar a encontrar isso se você enviar:
+- a planta/mapa da área,
+- a lista de refletores por zona,
+- ou mais contexto sobre o sistema.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on identifying the reflector in zone N - 470, with no irrelevant statements. It is at the maximum score since nothing in the output strays from the user’s request—great job keeping it directly on topic.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1734,O que fez com que o topo do Eoceno Superior não fosse encontrado?,erosão,"Porque ele foi removido ou mascarado por eventos posteriores — normalmente por erosão e/ou por uma discordância estratigráfica. Em outras palavras, o registro do topo do Eoceno Superior não foi preservado no local estudado, ou ficou indistinguível devido a retrabalhamento, falhas tectônicas ou ausência de deposição.  
+
+Se quiser, posso também explicar isso em linguagem mais técnica ou mais simples.",0.75,1.0,"The score is 0.75 because the response is partly relevant to the question about why the topo do Eoceno Superior não foi encontrado, but it does not directly state the specific cause and instead gives an alternative explanation. It is not lower because the answer still stays broadly on topic and attempts to address the geological context.","The score is 1.00 because there are no contradictions at all, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1735,O que mostra o mapeamento de detalhe realizado para confirmar essa afirmação?,rochas magmáticas intrusivas e extrusivas,"Ele mostra, em nível detalhado, **quais elementos específicos sustentam a afirmação** — normalmente identificando **onde**, **como** e **em que extensão** ela se confirma.
+
+Em geral, esse tipo de mapeamento evidencia:
+- **os pontos analisados**;
+- **as correspondências encontradas**;
+- **os indícios ou evidências concretas**;
+- **eventuais divergências ou lacunas**;
+- **a relação direta entre os dados levantados e a conclusão apresentada**.
+
+Se você quiser, posso também te ajudar a **reescrever essa resposta de forma mais técnica, acadêmica ou objetiva**, dependendo do contexto.",0.9,1.0,"The score is 0.90 because the response likely addressed what o mapeamento de detalhe mostra para confirmar a afirmação, staying mostly focused on the question. It is not higher because it also included an additional offer to help reescrever the answer, which is irrelevant to explaining the mapping evidence itself.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1737,Qual refletor datado do Oligoceno Inferior constitui um excelente marco sismoestratigráfico em quase toda a Bacia de Campos?,Topo da biozona N-520,O refletor **Marco Azul** (também conhecido em alguns contextos como um refletor regional do **Oligoceno Inferior**) é considerado um excelente **marco sismoestratigráfico** em quase toda a **Bacia de Campos**.,1.0,1.0,"The score is 1.00 because the response fully addresses the question with no irrelevant statements, staying directly focused on the requested Oligoceno Inferior reflector. Excellent relevance and precision.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1740,O que o mapeamento de detalhe indica a presença no Cretáceo Superior?,rochas magmáticas intrusivas e extrusivas,"No contexto geológico, o **mapeamento de detalhe** no **Cretáceo Superior** indica a **presença e distribuição precisa de unidades geológicas**, como:
+
+- **camadas sedimentares específicas**;
+- **fósseis característicos da época**;
+- **estruturas tectônicas locais**;
+- **variações litológicas** que ajudam a reconhecer ambientes antigos.
+
+Em outras palavras, ele mostra **com mais precisão o que existia naquela área durante o Cretáceo Superior**, permitindo identificar evidências de mares, rios, desertos, vegetação e fauna desse período.
+
+Se quiser, posso também responder isso em uma versão **mais curta** ou **mais técnica**.",0.7777777777777778,1.0,"The score is 0.78 because the response appears to stay fairly close to the topic, but it is not higher since it includes irrelevant offers to reformulate the answer, including a technical version, instead of adding information that directly answers what the detailed mapping indicates for the Upper Cretaceous.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,
+1743,Por que a seção correspondente ao Eoceno Superior está ausente?,erosão na região próxima à Falha de Charneira de Campos,"A ausência da seção correspondente ao **Eoceno Superior** pode acontecer por alguns motivos principais:
+
+1. **Erosão** — os sedimentos que haviam sido depositados nesse intervalo foram removidos depois.
+2. **Não deposição** — durante esse período, não houve acúmulo de sedimentos naquela área.
+3. **Discordância estratigráfica** — existe uma lacuna no registro geológico entre camadas mais antigas e mais jovens.
+4. **Tectonismo ou variação do nível do mar** — mudanças ambientais podem ter interrompido a sedimentação ou exposto a área à erosão.
+
+Em resumo: a seção está ausente porque houve uma **lacuna no registro sedimentar**, causada por **erosão** ou **falta de deposição** durante o Eoceno Superior.",1.0,1.0,"The score is 1.00 because the answer appears fully focused on explaining why the Upper Eocene section is absent, with no irrelevant statements. Nice, direct relevance throughout.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it accurate and faithful.",input\georegis\dataset.json,
+1745,O que constitui um excelente marco sismoestratigráfico em quase toda a Bacia de Campos?,"N-520 : esse refletor, datado do Oligoceno Inferior, constitui um","Um excelente **marco sismoestratigráfico** em quase toda a **Bacia de Campos** é a **base do sal**, especialmente pela forte continuidade e contraste sísmico que ela apresenta.  
+
+Em muitos estudos, o **topo do sal** também é usado como horizonte regional importante, mas a **base do sal** costuma ser destacada como um dos melhores marcadores.",1.0,0.5,"The score is 1.00 because the answer appears fully focused on identifying what constitutes an excellent seismic-stratigraphic marker across most of the Campos Basin, with no irrelevant statements included. Great job staying directly on topic and completely relevant.","The score is 0.50 because the actual output incorrectly identifies the base of salt as the excellent seismic-stratigraphic marker across most of the Campos Basin and adds continuity/strong seismic contrast details, while the context states that this marker is the reflector associated with the top of the Eocene/top of biozone N-520 and does not mention the base of salt or those seismic characteristics.",input\georegis\dataset.json,
+1746,O que aconteceu com a seção correspondente ao Eoceno Superior na região próxima à Falha de Charneira de Campos?,está ausente por erosão,"Na região próxima à Falha de Charneira de Campos, a seção correspondente ao **Eoceno Superior** foi **erodida ou não depositada**, resultando em sua **ausência no registro estratigráfico** local. Isso normalmente é interpretado como efeito de **soerguimento tectônico e/ou hiato deposicional** associado à atuação da falha.",1.0,1.0,"The score is 1.00 because the answer directly addresses what happened to the Eoceno Superior section near the Falha de Charneira de Campos and includes no irrelevant statements. It is fully focused, clear, and responsive to the question.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and aligned.",input\georegis\dataset.json,
+1747,O que foi utilizado na interpretação das seções sísmicas e perfis de poços disponíveis para o presente trabalho?,Os resultados dos mapeamentos acima descritos,"Na interpretação das seções sísmicas e dos perfis de poços disponíveis para este trabalho, foram utilizados **dados sísmicos e informações de poços**, analisados de forma integrada para **reconhecer horizontes, falhas e características estratigráficas**, além de permitir a **correlação entre as unidades geológicas**.
+
+Se quiser, posso também reformular isso em linguagem mais acadêmica ou mais técnica.",0.8,1.0,"The score is 0.80 because the answer appears somewhat related to the topic, but it is not higher since it includes a text-reformulation offer instead of directly stating what was used in the interpretation of the seismic sections and well logs.","The score is 1.00 because there are no contradictions, so the actual output appears fully aligned with the retrieval context—great job keeping it faithful and consistent.",input\georegis\dataset.json,
+1748,Em que período geológico ocorreu a presença de rochas magmáticas intrusivas e extrusivas na Bacia de Campos?,Cretáceo Superior,"Na **Bacia de Campos**, a presença de **rochas magmáticas intrusivas e extrusivas** está associada principalmente ao **Cretáceo Inferior**, especialmente durante a fase de rifte ligada à abertura do Atlântico Sul.
+
+Se quiser, posso também explicar a diferença entre **intrusivas** e **extrusivas** nesse contexto geológico.",0.6666666666666666,1.0,"The score is 0.67 because the response appears to address the topic of rochas magmáticas na Bacia de Campos, but it is not higher since it includes an offer of additional explanation instead of directly informing the geological period asked for.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job.",input\georegis\dataset.json,
+1750,Qual é a importância do topo da bio-zona N-470?,coincide com o topo da bio-zona N-470 e também constitui um excelente refletor,"O topo da biozona **N-470** é importante porque marca um **horizonte bioestratigráfico de referência**, usado para:
+
+- **Definir idade relativa** das camadas sedimentares;
+- **Correlacionar estratos** entre poços e áreas diferentes;
+- **Identificar mudanças paleoambientais** e possíveis eventos geológicos;
+- Servir como **marco estratigráfico** em estudos de exploração, especialmente em bacias sedimentares.
+
+Em termos práticos, o topo dessa biozona indica o **último aparecimento ou limite superior** do conjunto fósseis que caracteriza a N-470, ajudando a posicionar essa camada no tempo geológico.
+
+Se quiser, posso também explicar **qual grupo fóssil define a N-470** e em **que intervalo geológico ela ocorre**.",1.0,1.0,"The score is 1.00 because the answer is fully relevant to the question about a importância do topo da bio-zona N-470, with no irrelevant statements included. Ótimo foco e aderência total ao tema.","The score is 1.00 because there are no contradictions, so the actual output appears fully consistent with the retrieval context—great job keeping it faithful and accurate.",input\georegis\dataset.json,

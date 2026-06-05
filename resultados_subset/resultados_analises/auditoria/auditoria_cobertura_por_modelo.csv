@@ -1,0 +1,7 @@
+﻿modelo,Answer,RAG,GraphRAG,GraphRAG + Ontologia,total_linhas,comparacao_h1_ok,comparacao_ontologia_ok,status
+GPT-4o,146,146,146,146,730,True,True,OK
+GPT-4.1,146,146,146,146,730,True,True,OK
+GPT-5-mini,146,146,146,146,730,True,True,OK
+GPT-5.2,146,146,146,146,730,True,True,OK
+GPT-5.4,146,146,146,146,730,True,True,OK
+GPT-o3,146,146,146,146,730,True,True,OK
