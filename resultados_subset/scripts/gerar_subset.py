@@ -220,6 +220,15 @@ def run_generators(output_dir: Path, filtered_results_dir: Path) -> None:
         output_dir / "tabelas" / "tabela_9.csv",
     )
     run_script(
+        "gerar_comparacao_5_2_ontologia.py",
+        "--antes-dir",
+        filtered_results_dir / "petrobras-5-2-com-ontologia-antes-adaptacao",
+        "--adaptado-dir",
+        filtered_results_dir / "petrobras-5-2-com-ontologia-adaptatado",
+        "--output",
+        output_dir / "tabelas" / "comparacao_5_2_ontologia_antes_vs_adaptado.csv",
+    )
+    run_script(
         "auditar_resultados_avaliacao.py",
         "--resultados-dir",
         filtered_results_dir,
