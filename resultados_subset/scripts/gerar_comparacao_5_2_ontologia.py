@@ -13,7 +13,7 @@ ANALISES_DIR = SUBSET_ROOT / "resultados_analises"
 RESULTADOS_DIR = ANALISES_DIR / "resultados_filtrados"
 
 DEFAULT_ANTES_DIR = RESULTADOS_DIR / "petrobras-5-2-com-ontologia-antes-adaptacao"
-DEFAULT_ADAPTADO_DIR = RESULTADOS_DIR / "petrobras-5-2-com-ontologia-adaptatado"
+DEFAULT_ADAPTADO_DIR = RESULTADOS_DIR / "petrobras-5-2-com-ontologia"
 DEFAULT_OUTPUT = (
     ANALISES_DIR
     / "tabelas"
