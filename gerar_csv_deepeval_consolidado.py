@@ -18,6 +18,14 @@ DEFAULT_OUTPUT_FIELDS = [
     "llm_answer",
 ]
 
+DATASET_REQUIRED_COLUMNS = ("id", "question", "context")
+DATASET_EXPECTED_ANSWER_COLUMNS = (
+    "answer_text",
+    "expected_answer",
+    "expected_question",
+)
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description=(
@@ -40,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dataset",
         type=Path,
-        default=Path("dataset/georegis.csv"),
+        default=Path("dataset/geopetrollm.csv"),
         help="CSV do dataset usado para buscar o campo de contexto.",
     )
     parser.add_argument(
@@ -184,14 +192,41 @@ def discover_result_csvs(
 
 def load_dataset_index(dataset_path: Path) -> dict[str, dict[str, str]]:
     dataset_index: dict[str, dict[str, str]] = {}
-    for row in read_csv_rows(dataset_path):
+    rows = read_csv_rows(dataset_path)
+    if not rows:
+        raise ValueError(f"Dataset vazio: {dataset_path}")
+
+    fieldnames = set(rows[0])
+    missing = [column for column in DATASET_REQUIRED_COLUMNS if column not in fieldnames]
+    if missing:
+        raise ValueError(
+            f"{dataset_path} nao possui as colunas obrigatorias: {', '.join(missing)}"
+        )
+
+    expected_answer_column = next(
+        (
+            column
+            for column in DATASET_EXPECTED_ANSWER_COLUMNS
+            if column in fieldnames
+        ),
+        None,
+    )
+    if expected_answer_column is None:
+        raise ValueError(
+            f"{dataset_path} precisa possuir uma destas colunas de resposta esperada: "
+            + ", ".join(DATASET_EXPECTED_ANSWER_COLUMNS)
+        )
+
+    for row in rows:
         question_id = (row.get("id") or "").strip()
         if not question_id:
             continue
+        if question_id in dataset_index:
+            raise ValueError(f"ID duplicado no dataset: {question_id}")
         dataset_index[question_id] = {
             "question": sanitize_text(row.get("question")),
             "context": sanitize_text(row.get("context")),
-            "answer_text": sanitize_text(row.get("answer_text")),
+            "answer_text": sanitize_text(row.get(expected_answer_column)),
         }
     return dataset_index
 
@@ -286,8 +321,8 @@ def main() -> int:
         sys.stderr.write(f"Erro: configuracao de pastas nao encontrada em {folder_config_path}\n")
         return 1
 
-    dataset_index = load_dataset_index(dataset_path)
     try:
+        dataset_index = load_dataset_index(dataset_path)
         folder_context = load_folder_context_config(folder_config_path)
         source_entries = discover_result_csvs(
             root,
@@ -319,6 +354,10 @@ def main() -> int:
 
     attached_context_rows = sum(1 for row in output_rows if (row["context"] or "").strip())
     empty_context_rows = len(output_rows) - attached_context_rows
+    expected_answer_rows = sum(
+        1 for row in output_rows if (row["expected_question"] or "").strip()
+    )
+    empty_expected_answer_rows = len(output_rows) - expected_answer_rows
     print_folder_context_summary(root, results_dir, folder_context)
     print(f"Arquivo gerado: {output_path}")
     print(f"Configuracao usada: {folder_config_path}")
@@ -326,6 +365,8 @@ def main() -> int:
     print(f"Linhas geradas: {len(output_rows)}")
     print(f"Linhas com contexto: {attached_context_rows}")
     print(f"Linhas sem contexto: {empty_context_rows}")
+    print(f"Linhas com resposta esperada: {expected_answer_rows}")
+    print(f"Linhas sem resposta esperada: {empty_expected_answer_rows}")
     return 0
 
 
