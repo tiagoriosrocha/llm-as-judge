@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dataset",
         type=Path,
-        default=Path("dataset/geopetrollm.csv"),
+        default=Path("dataset/geopetrollm-hard.csv"),
         help="CSV do dataset usado para buscar o campo de contexto.",
     )
     parser.add_argument(
