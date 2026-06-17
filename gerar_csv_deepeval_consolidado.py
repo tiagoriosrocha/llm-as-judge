@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dataset",
         type=Path,
-        default=Path("dataset/geopetrollm-hard.csv"),
+        default=Path("dataset/graphrag_bench_converted_full.csv"),
         help="CSV do dataset usado para buscar o campo de contexto.",
     )
     parser.add_argument(
@@ -81,7 +81,7 @@ def sniff_dialect(path: Path) -> csv.Dialect:
 def read_csv_rows(path: Path) -> list[dict[str, str]]:
     dialect = sniff_dialect(path)
     with path.open("r", encoding="utf-8-sig", newline="") as handle:
-        reader = csv.DictReader(handle, dialect=dialect)
+        reader = csv.DictReader(handle, dialect=dialect, doublequote=True)
         return list(reader)
 
 
