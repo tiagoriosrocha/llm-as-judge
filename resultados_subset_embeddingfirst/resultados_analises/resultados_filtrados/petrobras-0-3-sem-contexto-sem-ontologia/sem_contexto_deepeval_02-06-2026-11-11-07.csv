@@ -1,0 +1,312 @@
+﻿question_id,question,expected_answer,answer,source_file,error
+1292,O que representa a fácies sísmica interpretada?,sedimentos clásticos finos,"A fácies sísmica interpretada representa um pacote estratigráfico delimitado nos dados sísmicos que exibe padrões homogêneos de amplitude, frequência, continuidade e geometria de refletores; esses padrões são usados para inferir a litologia, a arquitetura interna e o ambiente deposicional desse corpo rochoso.",input\georegis\dataset.json,
+1304,O que guia a curva vertical de proporções na matriz de proporções para a unidade genética superior do reservatório de Namorado?,respectiva fácies sísmica,"Ela é guiada pelos dados de poço (testemunhos e perfis), que indicam a distribuição vertical das fácies na unidade genética superior; esses dados definem as proporções de cada fácies em cada nível estratigráfico e, consequentemente, moldam a curva vertical de proporções na matriz.",input\georegis\dataset.json,
+1305,Qual fácies sísmica é interpretada como sedimentos clásticos finos na matriz de proporções?,verde,"Na matriz de proporções, sedimentos clásticos finos correspondem à fácies de reflexões paralelas (ou sub-paralelas), muito contínuas e de baixa amplitude.",input\georegis\dataset.json,
+1306,O que é utilizado para distribuir no volume do reservatório as CPVs conhecidas somente nos poços?,conceito de fácies sísmicas,"Emprega-se a krigagem (interpolação geoestatística baseada no variograma) para propagar, dentro de todo o volume do reservatório, os valores de CPV medidos apenas nos poços.",input\georegis\dataset.json,
+1309,O que é a matriz de proporções na construção de uma matriz de proporções de litotipos?,uma ferramenta muito importante para capturar o comportamento espacial dos litotipos,"Uma “matriz de proporções” é simplesmente uma tabela, organizada na forma matricial, que registra quanto cada litotipo participa das amostras ou dos cenários de mistura estudados. Em termos práticos:
+
+• Linhas (ou colunas) = litotipos definidos no estudo (arenito, folhelho, calcário, etc.).  
+• Colunas (ou linhas) = amostras, pixels, furos de sonda, modelos de mistura, etc.  
+• Elemento da matriz pij = fração, porcentagem ou proporção do litotipo i na amostra j.  
+• Cada coluna (ou linha) normalmente soma 1 (ou 100 %), garantindo que a composição total da amostra esteja fechada.
+
+Essa matriz é a base para cálculos de balanço de massa, modelagem de mistura, estatística composicional ou algoritmos de “unmixing” espectral, porque transforma a descrição qualitativa dos litotipos em números comparáveis entre si e adequados a processos matemáticos.",input\georegis\dataset.json,
+1320,Qual é a área da Bacia do Espírito Santo?,41.500 km2,A Bacia do Espírito Santo tem área aproximada de 220 mil km² (somando as partes onshore e offshore).,input\georegis\dataset.json,
+1325,Qual é o limite leste da Bacia do Espírito Santo?,crosta continental/oceânica,O limite leste da Bacia do Espírito Santo é o oceano Atlântico.,input\georegis\dataset.json,
+1327,Qual é a largura da plataforma continental?,240 km na porção centro-norte,"Em termos físicos, a plataforma continental costuma ter cerca de 70–80 km de largura em média, embora possa variar de poucos quilômetros até mais de 1 500 km, dependendo da região costeira.",input\georegis\dataset.json,
+1333,A que se refere a fronteira leste da Bacia do Espírito Santo?,crosta continental/oceânica,"Ela designa o limite oceânico da Bacia do Espírito Santo, ou seja, a linha onde a margem continental se encerra e a crosta continental cede lugar à crosta oceânica do Atlântico, marcada por feições como o alto externo/Vitória-Trindade e a zona de transição para o assoalho oceânico profundo.",input\georegis\dataset.json,
+1338,Quantos quilômetros de área a Bacia do Espírito Santo tem a ver com a bacia terrestre?,3.000,"A Bacia Sedimentar do Espírito Santo abrange, no total, cerca de 220 mil km². Desse total, em torno de 80 mil km² correspondem à sua porção terrestre (onshore).",input\georegis\dataset.json,
+1339,O que evidencia a fisiografia do Banco de Abrolhos?,alargamento da plataforma continental,"Ela se torna aparente pela grande saliência da plataforma continental (um extenso platô raso que avança cerca de 200 km mar adentro, com profundidades geralmente inferiores a 50 m), sobre a qual emergem recifes – sobretudo os chapeirões – e as pequenas ilhas vulcânicas do arquipélago de Abrolhos. Esses recifes e ilhas que irrompem à superfície do mar revelam a fisiografia singular do Banco de Abrolhos.",input\georegis\dataset.json,
+1346,O que atribui à bacia uma fisiografia particular?,"A existência do Banco de Abrolhos,","A fisiografia singular de uma bacia é determinada pela interação de:
+
+1. Estrutura tectônica (falhas, dobras, subsidência ou soerguimento).
+2. Litologia (tipo e resistência das rochas).
+3. Clima (chuvas, temperatura, variação sazonal).
+4. Cobertura de solos e vegetação, que controlam infiltração e erosão.
+5. Tempo de atuação desses processos.
+
+A combinação desses fatores — principalmente a estrutura geológica e o clima — é o que confere à bacia sua forma e relevo característicos.",input\georegis\dataset.json,
+1349,O que este trabalho enfatiza em relação à Bacia do Espírito Santo?,a cronoestratigrafia,"Não há informações suficientes para identificar qual trabalho você está mencionando; portanto, não é possível dizer o que ele enfatiza sobre a Bacia do Espírito Santo. Se puder fornecer mais detalhes do trabalho, ficarei feliz em ajudar.",input\georegis\dataset.json,
+1352,Onde a Bacia do Espírito Santo está situada?,no Estado do Espírito Santo,"Ela localiza-se no litoral leste do Brasil, na margem continental do estado do Espírito Santo, estendendo-se em águas rasas a profundas do Atlântico entre o sul da Bahia e o norte do Rio de Janeiro.",input\georegis\dataset.json,
+1353,Quais são os limites da Bacia do Espírito Santo?,"a sul com a Bacia de Campos, através do Alto de Vitória, e a norte com a Bacia de Mucuri","A Bacia do Espírito Santo está limitada por:
+
+• Norte – Alto de Abrolhos, que a separa da Bacia de Mucuri (Jequitinhonha).  
+• Sul – Alto de Vitória (ou Alto de Mabuya/Alves), que a separa da Bacia de Campos.  
+• Oeste (setor em terra) – Embasamento cristalino do escudo sudeste–baiano, incluindo a faixa de cisalhamento Vitória–Colatina.  
+• Leste – Quebra da plataforma continental e o talude atlântico, onde a bacia se abre para o oceano Atlântico Sul Ocidental.",input\georegis\dataset.json,
+1390,O que poderia ser considerado compatível com a cinemática definida pelos outros elementos estruturais?,a condição de obliqüidade constante,"Considera-se compatível com a cinemática estabelecida pelos demais elementos qualquer componente que:
+
+• compartilhe exatamente os mesmos nós dos elementos adjacentes;  
+• não crie novos graus de liberdade nem introduza distorções relativas;  
+• transmita às suas extremidades os mesmos deslocamentos e rotações que os elementos vizinhos.
+
+Na prática, isso é obtido, por exemplo, com:
+
+– corpos ou links rígidos (rigid links);  
+– vínculos “master–slave” (multipoint constraints) que amarram os DOFs dos nós;  
+– diafragmas rígidos de laje ou painéis de contraventamento modelados com nós coincidentes.
+
+Todos esses artifícios impõem à peça os deslocamentos dos outros elementos sem alterar a distribuição de esforços, atendendo, portanto, ao requisito de compatibilidade cinemática.",input\georegis\dataset.json,
+1391,O que sugere que a evolução direcional posterior à nucleação frontal da zona de falha desenvolva uma evolução direcional posterior à nucleação frontal?,secciona-mento da zona de falha de Perimbó,"O principal indício é a migração sistemática dos sinais de ruptura (micro-sismos, hipocentros, estrias e outros indicadores de dano) que, logo após a nucleação frontal, passam a alinhar-se e a propagar-se num mesmo sentido ao longo do plano de falha. Esse deslocamento ordenado mostra que, a partir do ponto de nucleação, a zona de falha não cresce mais de forma simétrica, mas sim se alonga preferencialmente naquela direção, caracterizando uma evolução direcional posterior à nucleação frontal.",input\georegis\dataset.json,
+1398,Quais regimes produziriam uma rotação progressiva dos indicadores cinemáticos?,oblíquo ou transpressivo,"Ela ocorre nos regimes de fluxo não-coaxial, isto é, em cisalhamento simples (ou “general shear” com componente de vorticidade). Nesses regimes há rotação progressiva dos marcadores em torno do eixo normal ao plano de cisalhamento; já no puro cisalhamento (fluxo coaxial) essa rotação não acontece.",input\georegis\dataset.json,
+1401,Qual é a base para quantificar o encurtamento?,"um marcador linear, paralelo à direção de compressão máxima","Usa-se o comprimento inicial (comprimento de referência, em repouso ou sem carga) como base. A partir dele calcula-se:
+
+1. Encurtamento absoluto: ΔL = L₀ − L.  
+2. Encurtamento relativo (deformação): ε = ΔL / L₀, normalmente expresso em porcentagem.
+
+Portanto, a referência é sempre o comprimento original da peça, músculo ou material antes de qualquer contração ou carga.",input\georegis\dataset.json,
+1402,Quais são os dois regimes que produziriam uma rotação progressiva dos indicadores cinemáticos?,oblíquo ou transpressivo,"A rotação progressiva dos indicadores cinemáticos ocorre apenas em regimes de deformação não-coaxial, ou seja:
+
+1. Cisalhamento simples (simple shear);  
+2. Cisalhamento geral (general shear, que combina cisalhamento simples com componente de cisalhamento puro).
+
+No cisalhamento puro (regime coaxial) não há rotação progressiva dos marcadores.",input\georegis\dataset.json,
+1406,Qual é a direção do vetor tectônico na primeira fase de deformação?,de SE para NW,"Na maioria dos estudos estruturais, a primeira fase de deformação é caracterizada por um vetor tectônico com direção predominante NE–SW.",input\georegis\dataset.json,
+1407,O que sugere o seccionamento da zona de falha de Perimbó pelas falhas transcorrentes?,uma evolução direcional posterior à nucleação frontal da referida zona de falha,"Esse seccionamento indica que a Zona de Falha de Perimbó é mais antiga e foi posteriormente cortada e deslocada por eventos transcorrentes, revelando uma reativação tardia em regime cisalhante que fracionou e deslocou segmentos da falha original.",input\georegis\dataset.json,
+1412,O que a hipótese b sugere que deveria ocorrer também?,uma dispersão dos valores de acamamento,Ela sugere que o mesmo efeito (ou relação) previsto para a condição principal deve também manifestar-se nas demais condições ou grupos comparáveis do estudo.,input\georegis\dataset.json,
+1413,Qual é a condição que a hipótese c considera constante em toda a área?,a condição de obliqüidade,"Ela supõe que a precipitação (intensidade de chuva) é uniforme, ou seja, a mesma em todos os pontos da área considerada.",input\georegis\dataset.json,
+1414,Qual é o nome da descontinuidade crustal?,"Arco de São Mateus,",Descontinuidade de Mohorovičić (Moho).,input\georegis\dataset.json,
+1415,Qual é a idade do fragmento máfico?,"69,4 ± 1,3 Ma, geocro-nologicamente compatível","Aproximadamente 4,28 bilhões de anos.",input\georegis\dataset.json,
+1416,Qual é a sequência vulcanoclástica da Fm. Rio Doce?,Abrolhos,"Da base para o topo, a sequência vulcanoclástica da Formação Rio Doce é normalmente descrita nos três subconjuntos abaixo.
+
+1. Subsequência basal  
+   • Brechas e tufobrechas vulcânicas maciças, com fragmentos líticos centimétricos a métricos, localmente acompanhadas de derrames basáltico-andesíticos.  
+   • Interpretação: fluxos piroclásticos muito próximos da fonte e lahares primários.
+
+2. Subsequência intermediária  
+   • Camadas de tufos, lapilli-tufos e ignimbritos estratificados ou parcialmente soldadas, com níveis de cinza fina e queda de bombas.  
+   • Interpretação: fase explosiva dominante, com produtos de queda e fluxos piroclásticos de média a longa distância.
+
+3. Subsequência superior  
+   • Arenitos e conglomerados vulcanogênicos retrabalhados, turbiditos e lahares secundários, intercalados por tufos finos.  
+   • Interpretação: declínio da atividade vulcânica e transição para sedimentação essencialmente siliciclástica que encerra a formação.
+
+A espessura total típica da sequência varia de 800 a 1 200 m, e a idade atribuída é Aptiano–Albiano (Cretáceo Inferior) na Bacia do Espírito Santo.",input\georegis\dataset.json,
+1426,Qual foi a data de um fragmento mafico de uma rocha?,"69,4 ± 1,3 Ma","Não é possível responder sem saber a qual fragmento máfico específico você se refere, pois cada amostra pode ter uma idade diferente. Para determinar a data de um fragmento de rocha máfica, é necessário conhecer detalhes da amostra e o método de datação utilizado.",input\georegis\dataset.json,
+1429,Como é chamada a descontinuidade crustal?,Arco de São Mateus,"A descontinuidade crustal é chamada de Descontinuidade de Mohorovičić, ou simplesmente Moho.",input\georegis\dataset.json,
+1430,Qual é a área das rochas piroclásticas ácidas encontradas na região nordeste de Minas Gerais?,75km de comprimento por 25km de largura,A área mapeada dessas rochas é de cerca de 2 500 km² no nordeste de Minas Gerais.,input\georegis\dataset.json,
+1436,Qual a idade geocronológica indicada pela datação Ar-Ar de um fragmento máfico?,"69,4 ± 1,3 Ma",A datação ^40Ar/^39Ar indica cerca de 79 ± 2 milhões de anos.,input\georegis\dataset.json,
+1439,"O que controlaria os fenômenos neotectônicos, o padrão de drenagem e a circulação de fluidos na região?","a uma descontinuidade crustal denominada Arco de São Mateus,","Esses três elementos são essencialmente controlados pelo grande lineamento de falhas NE–SW (zona de cisalhamento/Lineamento Transbrasiliano) que corta a área: ele concentra o estresse tectônico (gerando atividade neotectônica), dita o encaixe e o desvio dos rios e funciona como conduto preferencial para a migração de fluidos subterrâneos.",input\georegis\dataset.json,
+1440,Qual é a idade do fragmento máfico mencionado no texto?,"69,4 ± 1,3 Ma","Desculpe, não há informação suficiente para determinar a idade do fragmento máfico.",input\georegis\dataset.json,
+1441,O que é a Fm. Rio Doce?,"arenitos médios a muito grossos, quartzozos, feldspáticos, com cores cinza-esverdeadas, maciços ou com estratificações cruzadas","“Fm. Rio Doce” é a sigla empregada em geologia para designar a Formação Rio Doce, uma unidade estratigráfica de idade quaternária (Pleistoceno–Holoceno) exposta na planície costeira associada ao delta do rio Doce, no norte do Espírito Santo (e áreas vizinhas do sul da Bahia). Trata-se de uma sucessão de sedimentos pouco consolidados – principalmente areias finas a médias, siltes, argilas, níveis orgânicos (turfas) e cascalhos – depositados em ambientes fluviais, deltaicos, lagunares e marinhos rasos durante a evolução recente do sistema deposicional do rio. Esses depósitos sustentam importantes aquíferos, influenciam a geomorfologia regional e constituem o substrato de grande parte das planícies e cordões litorâneos da região.",input\georegis\dataset.json,
+1442,Como são os sedimentos da Fm. Rio Doce?,"mal selecionados, pouco lamosos e extremamente litificados, com os grãos cimentados por sílica criptocristalina","Os depósitos da Formação Rio Doce são dominados por:
+
+• Arenitos médios a finos, bem a moderadamente selecionados, quartzo‐ricos, de coloração amarelada a avermelhada.  
+• Intercalações subordinadas de siltitos e argilitos vermelhos a acastanhados.  
+• Lentes ou níveis basais de conglomerados com clastos de quartzo e, localmente, fragmentos de rocha metamórfica.  
+• Estruturas sedimentares frequentes: estratificação cruzada em escala métrica, laminação paralela, marcas de onda e canais erosivos, além de bioturbação pontual.  
+
+Conjunto deposicional: sistema fluvial predominantemente trançado a entrelaçado, com pulsos de inundação em planície de inundação e eventuais influências deltaico-lacustres.",input\georegis\dataset.json,
+1443,Qual é a direção das rochas piroclásticas ácidas mencionadas por Raposo et al.?,NE-SW,"Segundo Raposo et al., essas rochas piroclásticas ácidas apresentam direção NE–SW (nordeste-sudoeste).",input\georegis\dataset.json,
+1445,Qual é a coluna de hidrocarbonetos constatada?,"255 m,",Foi constatada uma coluna de hidrocarbonetos de aproximadamente 470 metros.,input\georegis\dataset.json,
+1446,O que foi adotado para identificar a constância dos reservatórios?,a subdivisão em zonas produtoras diferenciadas,Utilizou-se o coeficiente de variação (CV) das séries históricas de armazenamento; valores baixos de CV indicam maior constância dos reservatórios.,input\georegis\dataset.json,
+1449,Qual é o tamanho da coluna de hidrocarbonetos constatada?,255 m,Não há dados suficientes para determinar o tamanho da coluna de hidrocarbonetos; seria preciso que você informasse o valor obtido na medição ou a fonte que o descreve.,input\georegis\dataset.json,
+1451,Qual foi o valor preditivo de porosidade previsto?,7%,"Não foi fornecido nenhum valor preditivo de porosidade, portanto não é possível informar.",input\georegis\dataset.json,
+1454,O que a PETROBRÁS descobriu com o poço pioneiro 1 - PRS - 4?,a acumulação de hidrocarbonetos do Campo de Tubarão,"Esse poço pioneiro revelou a presença de xisto betuminoso (folhelho pirobetuminoso) na Formação Irati, na Bacia do Paraná, dando origem ao aproveitamento do “xisto” em São Mateus do Sul (PR).",input\georegis\dataset.json,
+1456,Onde as rochas do reservatório de Tubarão se encontram?,Guarujá Inferior,"As rochas do reservatório de Tubarão ocorrem na Bacia do Paraná, aflorando sobretudo no Sul do Brasil (Rio Grande do Sul, Santa Catarina e parte do Paraná) e estendendo-se também ao Paraguai e ao Uruguai.",input\georegis\dataset.json,
+1458,Qual foi o valor preditivo de porosidade?,7%,Esse valor não foi informado.,input\georegis\dataset.json,
+1464,O que a continuidade do processo de exploração permitiu identificar a constância?,reservatórios,"Ele possibilitou reconhecer a constância dos ventos e correntes marítimas (especialmente os ventos alísios e as correntes oceânicas), fundamentais para a navegação.",input\georegis\dataset.json,
+1468,A que profundidade foram identificadas as rochas-reservatório do Campo de Tubarão?,a partir de -4 540 m,As rochas-reservatório do Campo de Tubarão foram identificadas a aproximadamente 2 800 m de profundidade.,input\georegis\dataset.json,
+1469,Qual foi a coluna de hidrocarbonetos constatada no Campo de Tubarão?,255 m,No Campo de Tubarão constatou-se uma coluna de hidrocarbonetos de aproximadamente 110 metros.,input\georegis\dataset.json,
+1471,"Quais códigos foram utilizados para os reservatórios da porção superior, média e inferior da acumulação no Campo de Tubarão?","B1, B2 e B3","Porção superior: TB-A  
+Porção média: TB-B  
+Porção inferior: TB-C",input\georegis\dataset.json,
+1473,Em que profundidade foi identificada a seqüência carbonática Guarujá Inferior?,-4 540 m,Em torno de 5 000 m de profundidade.,input\georegis\dataset.json,
+1474,Qual é a extensão da coluna de hidrocarbonetos encontrada no Campo de Tubarão?,255 m,A coluna de hidrocarbonetos do Campo de Tubarão tem cerca de 110 metros de espessura.,input\georegis\dataset.json,
+1475,Quais são os valores preditivos de porosidade para as rochas-reservatório do Campo de Tubarão?,em torno de 7%,"Para o Campo de Tubarão, os modelos preditivos de porosidade para as rochas-reservatório indicam:
+
+• Faixa esperada: 18 % – 32 %  
+• Valor médio: ~24 %  
+• Moda (valor mais frequente): ~26 %
+
+Esses números correspondem à porosidade efetiva estimada para os arenitos turbidíticos que compõem o principal reservatório do campo.",input\georegis\dataset.json,
+1476,Como os reservatórios do Campo de Tubarão foram subdivididos?,"Utilizaram-se os códigos B1, B2 e B3,","Eles foram divididos em quatro intervalos principais de arenitos, designados TUC-1, TUC-2, TUC-3 e TUC-4.",input\georegis\dataset.json,
+1477,Qual é o termo usado para descrever a geologia das seqüências fanerozóicas ocorrentes dentro das fronteiras da Bacia do São Francisco?,Bacia Sanfranciscana,Chama-se de “cobertura fanerozóica” (ou “cobertura sedimentar fanerozóica”) da Bacia do São Francisco.,input\georegis\dataset.json,
+1479,Quantas unidades cretácicas formam chapadas e tabuleiros na Bacia do São Francisco?,Três,"Duas: os grupos/ formações Areado e Urucuia, ambos de idade cretácica, que afloram sob a forma de chapadas e tabuleiros na Bacia do São Francisco.",input\georegis\dataset.json,
+1482,Qual é o termo usado para descrever o registro geológico fanerozóico da Bacia do São Francisco?,Bacia Sanfranciscana,Ele é denominado “cobertura fanerozóica” da Bacia do São Francisco.,input\georegis\dataset.json,
+1485,Qual é a única seqüência erosional paleozóica que existe em toda a bacia?,O Grupo Santa Fé,"É a sequência glaciogênica do Grupo Itararé, do Carbonífero-Permiano.",input\georegis\dataset.json,
+1487,Qual é o nome da seqüência fanerozóica da Bacia do São Francisco?,Bacia Sanfranciscana,Ela é denominada Sequência (ou Supersequência) Sanfranciscana.,input\georegis\dataset.json,
+1489,Que tipo de ambiente tectônico prevalecia durante a sedimentação do Grupo Areado?,distensional,"Predominava um regime tectônico distensivo de rifte continental intracratônico, com subsidência controlada por falhas normais e desenvolvimento de meia-grábenes que abrigaram sistemas fluvio-lacustres.",input\georegis\dataset.json,
+1493,Qual é o termo para o registro sedimentar fanerozóico da Bacia do São Francisco?,Bacia Sanfranciscana,Esse registro fanerozóico é denominado Sequência Sanfranciscana.,input\georegis\dataset.json,
+1495,Qual foi o ambiente tectônico prevalente durante a sedimentação do Grupo Areado?,distensional,"A sedimentação do Grupo Areado ocorreu num ambiente de rifte continental, controlado por tectônica extensional intracratônica (fase sin-rifte inicial da Bacia Sanfranciscana).",input\georegis\dataset.json,
+1497,Qual é o único remanescente erosional paleozóico de coberturas intracratônicas mais amplas que eventualmente existiu na Bacia do São Francisco?,O Grupo Santa Fé,"O remanescente é o Grupo Una (aflorante na Chapada Diamantina, BA).",input\georegis\dataset.json,
+1500,O que o Grupo Santa Fé representa na geologia da Bacia do São Francisco?,o único remanescente erosional paleozóico de coberturas intracratônicas mais amplas,"O Grupo Santa Fé é a porção mais antiga do registro sedimentar da Bacia do São Francisco; ele marca a fase inicial de instalação da bacia sobre o embasamento do Cráton do São Francisco, registrando os primeiros depósitos siliciclásticos (conglomerados, arenitos e pelitos) gerados em ambientes predominantemente continentais a transicionais para marinhos rasos.",input\georegis\dataset.json,
+1501,Qual a natureza das três unidades cretácicas que formam chapadas e tabuleiros na Bacia do São Francisco?,de natureza continental,"São três grupos estratigráficos cretácicos:
+
+1. Grupo Areado – sedimentos siliciclásticos continentais: arenitos fluviais, conglomerados e folhelhos/argilitos lacustres.
+2. Grupo Mata da Corda – rochas vulcânicas básicas a intermediárias: derrames de basaltos/andesitos e material piroclástico.
+3. Grupo Urucuia – arenitos quartzosos muito pouco cementados, de origem fluvial-eólica, com raras intercalações areno-argilosas.
+
+Essas unidades, pela disposição sub-horizontal e pela resistência diferencial dos arenitos e basaltos, originam as chapadas e tabuleiros que caracterizam a morfologia da Bacia do São Francisco.",input\georegis\dataset.json,
+1502,Qual o ambiente tectônico prevalente durante a sedimentação do Grupo Areado na Bacia do São Francisco?,distensional,"O Grupo Areado se acumulou em um contexto de subsidência térmica pós-rifte, típico de uma bacia sag intracratônica (tectonicamente estável, com deformação mínima e afundamento amplo e suave do embasamento).",input\georegis\dataset.json,
+1506,O que os diamictitos/tilitos/fácies tilóides e folhelhos com dropstones basais do Grupo Santa Fé apontam?,para uma unidade crono-correlata aos sedimentos permocarboníferos glaciais do Grupo Itararé da Bacia do Paraná,"Eles registram deposição claramente ligada a condições glaciais: os diamictitos/tilitos (fácies tilóide) são sedimentos lançados e retrabalhados por geleiras, e os folhelhos com dropstones indicam gelo flutuante que liberou clastos à medida que derretia. Portanto, esses níveis basais do Grupo Santa Fé apontam para a ocorrência de um episódio de glaciação (glacio-continental a glacio-marinho) na área durante a sua sedimentação.",input\georegis\dataset.json,
+1508,Em que ambiente tectônico ocorreu a sedimentação do Grupo Areado?,"distensional, provável reflexo intracontinental do quebramento do Supercontinente Gondwana","A deposição do Grupo Areado ocorreu num ambiente tectônico de rifte continental intracratônico (fase sin-rifte da Bacia Sanfranciscana, no início do Cretáceo).",input\georegis\dataset.json,
+1542,O que não permite discriminar padrões de terminação de refletores sísmicos na 4a e 5a ordens?,as seções sísmicas disponíveis,"A resolução vertical dos dados sísmicos: os ciclos de 4ª e 5ª ordem têm espessuras menores que a espessura-de-sintonia da sísmica convencional, o que impede a identificação dos padrões de terminação dos refletores.",input\georegis\dataset.json,
+1543,Quais são as duas ordens que não apresentam conteúdo de resolução suficientemente alto para permitir discriminar padrões de terminação de refletores sísmicos?,4a e 5a,As sequências de 4ª e 5ª ordem.,input\georegis\dataset.json,
+1544,"Qual foi a dificuldade de rastrear os refletores e marcadores de um rollover para outro, principalmente no sentido dlp?",intensa halocinese,"Essencialmente, perdiam-se as correspondências porque, de um rollover para o outro, os refletores e marcadores:
+
+1. Saíam momentaneamente do campo de visão e voltavam numa posição ligeiramente diferente, quebrando a continuidade temporal.
+2. Sofriam deslocamentos ao longo do eixo DLP que, embora pequenos em espaço real, provocavam grande variação na projeção 2-D e na iluminação, mudando brilho e contorno do reflexo.
+3. Eram geometricamente idênticos; sem “assinatura” própria, o algoritmo não conseguia saber qual esfera era qual depois de reaparecer.
+4. Passavam por oclusões parciais (cabos, mãos, peças) justamente no ponto de giro, gerando lacunas de dados.
+5. Dependiam de uma estimativa de pose que acumulava erro; quando o conjunto reaparecia, a predição já estava fora da tolerância de correspondência.
+
+O resultado era perda do ID dos marcadores e reinicialização do rastreamento a cada rollover, tornando o acompanhamento no sentido DLP a parte mais crítica.",input\georegis\dataset.json,
+1547,O que as seções sísmicas disponíveis não permitiram discriminar?,padrões de terminação de refletores sísmicos,As seções sísmicas disponíveis não permitiram discriminar com clareza as diferentes unidades/litologias estratigráficas presentes na área.,input\georegis\dataset.json,
+1552,O que as seções sísmicas disponíveis não permitem discriminar?,padrões de terminação de refletores sísmicos,"Elas não permitem discriminar com segurança as diferentes litologias/fácies (isto é, distinguir os tipos de rocha ou unidades estratigráficas detalhadas).",input\georegis\dataset.json,
+1555,O que foi dificultado para traçar sequências de alta frequência?,rastreamento dos refletores e marcadores,"A principal dificuldade foi a baixa resolução/taxa de amostragem dos instrumentos, que impediu registrar com clareza e, portanto, traçar as sequências de sinais de alta frequência.",input\georegis\dataset.json,
+1556,Quais são os preceitos utilizados para a utilização de um arcabouço estratigráfico de alta frequência na Sequência A?,"Moderna Estratigrafia (Catunea-nu, 2006; Catuneanu et al. 2009, Hunt e Tucker, 1992; VanWagoner et al., 1988; Galloway, 1989; Posamentier e Allen, 1999)","Os principais preceitos adotados para construir e aplicar um arcabouço estratigráfico de alta frequência na Sequência A são:
+
+1. Identificação de superfícies-chave  
+   • Sequência limite (SB), superfície de inundação máxima (MFS) e superfície de regressão forçada (FSR).  
+   • Reconhecimento de contactos abruptos, hiatos, retrabalhos ou mudanças bruscas de fácies nos testemunhos, perfis elétricos e sísmica.
+
+2. Hierarquização de ciclos  
+   • Definição de parassequências (5ª ordem) e conjuntos de parassequências (4ª ordem) dentro da sequência de 3ª ordem já mapeada.  
+   • Uso de empilhamento progradacional, retrogradacional ou aggradacional para separar tratos de sistemas (LST, TST, HST, FSST).
+
+3. Correlação de alta resolução  
+   • Integração de perfis de raio gama, fotoelétrico, FMI e dados de testemunhos para amarrar as superfícies em escala de decímetro-metro.  
+   • Ajuste à sísmica 3-D de alta resolução, garantindo continuidade lateral e coerência temporal.
+
+4. Controle de tempo e calibração  
+   • Aplicação de bioestratigrafia (nanofósseis, palinomorfos) ou datações radiométricas para amarrar cronoestratigrafia.  
+   • Conversão para idade absoluta e cálculo de taxas de sedimentação.
+
+5. Avaliação de acomodação versus suprimento sedimentar  
+   • Construção de curvas de empilhamento (A/S ratio) para discriminar fases de criação ou redução de espaço de acomodação.  
+   • Uso de espessuras isócronos (isopachs descompactados) e análise de subsidência/eustasia.
+
+6. Validação de modelo deposicional  
+   • Compatibilizar interpretação com Lei de Walther, direções de paleocorrente, fácies sísmicas e geometrias deposicionais.  
+   • Ajuste iterativo com mapas de fácies, isópacos e atributos sísmicos para conferir coerência interna.
+
+7. Integração multidisciplinar  
+   • Cruzar petrofísica (porosidade, permeabilidade), geoquímica (TOC, biomarcadores) e dados de produção para testar o arcabouço como modelo de reservatório.  
+   • Manter rastreabilidade de incertezas e versões do modelo.
+
+Aplicando esses preceitos à Sequência A obtém-se um arcabouço que reflete ciclos de alta frequência (de dezenas a poucas centenas de milhares de anos), permitindo correlações finas, previsão de fácies e melhor caracterização petrofísica dos reservatórios contidos nessa sequência.",input\georegis\dataset.json,
+1557,Por que a utilização de um arcabouço estratigráfico de alta frequência para a Sequência A foi dificultada?,"pelo difícil rastreamento dos refletores e marcadores de um rollover para outro, principalmente no sentido dlp, em um intervalo estratigráfico dominado por intensa halocinese","Porque a Sequência A apresenta registros incompletos e pouco resolvidos: hiatos erosivos, forte retrabalhamento e diagenização apagaram parte dos marcadores-chave, e a densidade/qualidade dos dados (perfis de poço e sísmica) não permite rastrear com segurança os ciclos de curta duração. Esses fatores impedem a identificação e correlação das superfícies deposicionais necessárias para construir um arcabouço estratigráfico de alta frequência.",input\georegis\dataset.json,
+1558,O que as seções sísmicas disponíveis não apresentam para permitir discriminar padrões de terminação de refletores sísmicos na 4a e 5a ordens?,conteúdo de resolução suficientemente alto,"Elas não possuem resolução temporal/vertical (conteúdo de alta frequência) suficiente; sem essa resolução fina, os terminais dos refletores de 4ª e 5ª ordem não podem ser distinguidos.",input\georegis\dataset.json,
+1559,Por que as descontinuidades erosivas registradas nos canais incisos não puderam ser utilizadas como superfícies delimitadoras de sequências de alta frequência?,"não ocorrem, nos poços analisados, de forma cíclica, impossibilitando sua utilização como superfícies delimitadoras de sequências de alta frequência","Porque os planos de erosão que limitam os canais incisos são muito locais e descontínuos: eles se apagam lateralmente em poucos quilômetros, mudam rapidamente de profundidade/idade e não podem ser seguidos nem correlacionados de forma confiável no intervalo sísmico-estratigráfico. Por não constituírem superfícies regionais e cronoestratigraficamente equivalentes, não servem como marcadores para dividir sequências de alta frequência.",input\georegis\dataset.json,
+1560,"O que foi utilizado como limites de parassequências, compostas por uma sucessão basal transgressiva e uma sucessão superior regressiva?",as superfícies transgressivas ou de afogamento que recobrem os carbonatos de plataforma,Utilizaram-se superfícies de inundação marinha (flooding surfaces) como limites das parassequências constituídas por uma sucessão basal transgressiva e uma sucessão superior regressiva.,input\georegis\dataset.json,
+1562,O que dificultou a utilização de um arcabouço estratigráfico de alta frequência para a Sequência A?,"o difícil rastreamento dos refletores e marcadores de um rollover para outro, principalmente no sentido dlp, em um intervalo estratigráfico dominado por intensa halocinese","Porque, na Sequência A, faltam marcadores estratigráficos nítidos (superfícies de inundação, variações log-sísmicas, controle bioestratigráfico e cronológico) que permitam reconhecer ciclos de quarta-/quinta-ordem; as camadas são espessas, bastante amalgamadas e sofreram truncamentos erosivos, de modo que não há resolução suficiente para subdividir a sequência em pacotes de alta frequência.",input\georegis\dataset.json,
+1563,O que poderia auxiliar na determinação das principais superfícies estratigráficas correlativas às flutuações do nível de base?,padrões de terminação de refletores sísmicos na 4a e 5a ordens,"A análise dos padrões de empilhamento de fácies/parassequências (progradação, retrogradação e agradação) – ou seja, como os estratos se organizam verticalmente e lateralmente – é o principal elemento que auxilia na identificação das superfícies-chave de estratigrafia de sequências associadas às oscilações do nível de base (p.ex., limites de sequência, superfície de inundação máxima, superfície regressiva máxima).",input\georegis\dataset.json,
+1564,O que não ocorrem de forma cíclica nos poços analisados?,descontinuidades erosivas registradas nos canais incisos,As variações no nível da água (abatimentos e recuperações) não ocorrem de forma cíclica nos poços analisados.,input\georegis\dataset.json,
+1565,O que foram usadas como limites de parassequências?,superfícies transgressivas ou de afogamento que recobrem os carbonatos de plataforma,"Usaram-se superfícies de inundação marinha abruptas (flooding surfaces), isto é, contatos que marcam uma mudança súbita para fácies de águas mais profundas, como limites das parassequências.",input\georegis\dataset.json,
+1566,Qual é a parte mais superior da Formação Pendência?,a Seqüência K40,A porção mais superior da Formação Pendência é o Membro Alagamar.,input\georegis\dataset.json,
+1568,Qual sistema é o limite proximal de ocorrência da Seqüência K40?,sistema de falhas de Pescada,O limite proximal da sequência K40 corresponde ao sistema deltaico.,input\georegis\dataset.json,
+1569,Quando começa a deposição da megasseqüência proto-oceânica?,Neo-aptiano,"Ela inicia-se no Aptiano (início do Cretáceo Inferior, por volta de 120 Ma), logo após o fim da fase rifte.",input\georegis\dataset.json,
+1571,Em que período começa a deposição da megasseqüência proto - oceânica?,Neo-aptiano,"Ela tem início no Cretáceo Inferior, a partir do Aptiano (cerca de 125–113 Ma).",input\georegis\dataset.json,
+1572,Qual é a direção geral do sistema de falhas de Pescada?,WNW-ESE,"Ele se desenvolve, em termos gerais, na direção NE–SW (nordeste-sudoeste).",input\georegis\dataset.json,
+1573,Quais são os materiais da Seqüência K40?,arenitos grossos e pelitos,"Na classificação ISO 513 para usinagem, a sequência (ou grupo) K é destinada aos ferros fundidos.  
+Dentro dela, o sub-grupo K40 abrange, em linhas gerais, ferros fundidos de menor dureza/maior ductilidade, tipicamente entre 130 e 200 HB. São eles:
+
+• Ferro fundido nodular (ou dúctil) de matriz ferrítica ou ferrítico-perlítica  
+• Ferro fundido cinzento de baixa dureza  
+• Ferro fundido maleável ferrítico  
+• Ferro fundido vermicular de baixa dureza (CGI, Compacted Graphite Iron)
+
+Portanto, quando se fala em “materiais da sequência K40”, está-se referindo a esses tipos de ferros fundidos.",input\georegis\dataset.json,
+1574,O que está geneticamente relacionado à atividade da Seqüência K40?,aumento da taxa de subsidência,"A “sequência K40” refere-se ao resíduo de lisina 40 (K40) da α-tubulina; sua atividade é geneticamente vinculada:
+
+1. Aos genes que codificam α-tubulinas (por exemplo, TUBA1A), pois eles fornecem o próprio sítio K40.
+2. Ao gene αTAT1 (também chamado MEC-17), que codifica a α-tubulina-N-acetiltransferase responsável por acetilar o resíduo K40.
+3. Aos genes de desacetilases HDAC6 e SIRT2, que removem essa modificação.
+
+Portanto, a regulação genética da atividade da sequência K40 envolve principalmente α-tubulina (TUBA), αTAT1/MEC-17, HDAC6 e SIRT2, que controlam o estado de acetilação e, consequentemente, a estabilidade e a função dos microtúbulos.",input\georegis\dataset.json,
+1577,Quais são as duas rochas que constituem a Seqüência K40?,arenitos grossos e pelitos,A Seqüência K40 é formada por duas litologias principais: folhelho (rocha argilosa laminada) e calcário (rocha carbonática).,input\georegis\dataset.json,
+1579,A que está geneticamente relacionada a atividade da Seqüência K40?,um aumento da taxa de subsidência,"A seqüência K40 corresponde ao gene que codifica a aminoglicosídeo-3´-fosfotransferase, estando portanto geneticamente relacionada à resistência ao antibiótico canamicina (kanamicina).",input\georegis\dataset.json,
+1580,O que constitui a parte mais superior da Formação Pendência?,A Seqüência K40,"A parte mais superior da Formação Pendência é composta por evaporitos, principalmente gipsita, anidrita e halita (sal).",input\georegis\dataset.json,
+1582,O que preenche o sistema de falhas de Pescada?,"sistemas deposicionais continentais, dominados por leques aluviais e sistemas fluviais de alta energia","O espaço gerado pelo sistema de falhas de Pescada é ocupado por sedimentos siliciclásticos, essencialmente arenitos (com intercalações de conglomerados e lamitos) da Formação Pescada, de idade Albiana, que preenchem os grabens e servem como rocha-reservatório.",input\georegis\dataset.json,
+1583,Qual é a unidade litoestratigráfica correspondente à seção de rochas dominada por sistemas deposicionais continentais?,Formação Pescada,Grupo Bauru,input\georegis\dataset.json,
+1584,Quando inicia-se a deposição da megasseqüência proto-oceânica?,A partir do Neo-aptiano,"Ela tem início no Aptiano (início do Cretáceo Médio), logo após o fim da fase de rifte.",input\georegis\dataset.json,
+1585,Qual é a direção geral das falhas de Pescada?,direção geral WNW-ESE,"As falhas de Pescada apresentam, em geral, orientação nordeste–sudoeste (NE-SW).",input\georegis\dataset.json,
+1586,O que é a Seqüência K40?,"A Seqüência K40 é constituída por uma cunha clástica sintectônica, reconhecida inicialmente no bloco baixo da Falha de Pescada, cuja atividade está geneticamente relacionada a um aumento da taxa de subsidência no final da fase de rifteamento da bacia.","Não existe, na literatura técnica ou acadêmica usual, nenhum conceito bem estabelecido chamado “seqüência K40”. Se essa expressão apareceu em algum texto ou conversa, provavelmente é:
+
+1.  Um erro de digitação ou de grafia.  
+2.  Uma sigla ou denominação criada apenas para uso interno de uma empresa, curso, exercício etc.  
+3.  Uma forma abreviada de se referir ao isótopo radioativo potássio-40 (K-40), mas aí não se fala em “seqüência” e sim em “isótopo K-40” ou “40K”.
+
+Em outras palavras, não há definição padronizada para “seqüência K40”. Será preciso saber o contexto (matemática, computação, telecomunicações, educação física, aeronáutica, etc.) para identificar do que se trata.",input\georegis\dataset.json,
+1587,Quais são os sistemas deposicionais continentais que preenchem o sedimentar da Seqüência K40?,"sistemas deposicionais continentais, dominados por leques aluviais e sistemas fluviais de alta energia, com bancos carbonáticos restritos.","Os pacotes sedimentares da Seqüência K40 são de origem continental e resultam basicamente da superposição de quatro grandes sistemas deposicionais:
+
+• Leques aluviais (alluvial-fan) – depósitos proximais, conglomeráticos, formados junto aos altos estruturais;  
+• Sistemas fluviais entrelaçados (rios trançados) – canais arenosos de alta energia;  
+• Sistemas fluviais meandrantes – canais e planícies de inundação argilo-arenosas de menor energia;  
+• Ambientes lacustres e eólicos associados – sedimentos finos de lago raso intercalados a folhas de areia e dunas eólicas.
+
+Esses sistemas, interdigitados, constituem o principal preenchimento continental da Seqüência K40.",input\georegis\dataset.json,
+1588,Qual é a unidade litoestratigráfica que corresponde à seção de rochas da Seqüência K40?,Formação Pescada,Formação Ubatuba.,input\georegis\dataset.json,
+1632,O que causou o processo de dobramento por deslizamento flexural?,anisotropia mecânica,"Ele ocorre quando um esforço compressivo encurta e dobra um pacote de rochas estratificadas; para acomodar a curvatura das camadas mais rígidas, desenvolve-se cisalhamento paralelo aos planos de acamamento, de modo que as camadas escorregam umas sobre as outras (deslizamento flexural).",input\georegis\dataset.json,
+1634,Que mecanismo predomina nos flancos das dobras?,mecanismos de deslizamento flexural,"O mecanismo dominante nos flancos das dobras é o deslizamento flexural (flexural slip), em que as camadas escorregam umas sobre as outras ao longo dos seus planos de estratificação durante a flexão.",input\georegis\dataset.json,
+1637,O que ocorreu em conseqüência da anisotropia mecânica entre camadas?,O processo de dobramento por deslizamento flexural,"Ela fez com que as tensões se concentrassem na interface dos estratos, levando ao escorregamento/ separação (delaminação) entre eles e, por consequência, à formação de fraturas e deslocamentos diferenciales nas camadas.",input\georegis\dataset.json,
+1638,Onde se concentra a deformação?,"níveis de folhelhos e siltitos, intercalados a arenitos","Normalmente ela se concentra nas zonas de maior tensão: cantos vivos, entalhes, furos, mudanças bruscas de seção ou exatamente onde a carga é aplicada, pois ali o material suporta esforços maiores e se deforma mais.",input\georegis\dataset.json,
+1641,O que revela que a deformação atingiu o ponto de ruptura?,a nucleação de falhas reversas,Ele é denunciado pelo surgimento de trincas/fraturas acompanhadas de uma queda brusca da tensão suportada; esse colapso indica que o material não consegue mais resistir e atingiu o ponto de ruptura.,input\georegis\dataset.json,
+1642,O que indica a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,a atuação de uma componente de rotação horária,"Ela revela a direção do movimento relacionado à dobra: o ângulo constante entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1 mostra que o cisalhamento ocorreu durante o dobramento, com componente de transporte paralelo aos eixos das dobras (mecanismo de deslizamento flexural), indicando que falha e dobra são sin‐cinemáticas e resultam do mesmo campo de esforços.",input\georegis\dataset.json,
+1643,O que a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras indica?,uma componente de rotação horária,"Ela revela o modo e o sentido do deslocamento que acompanhou o dobramento:
+
+• Se as estrias (ou outros indicadores cinemáticos) forem paralelas ao eixo da dobra (ângulo ≈ 0°), o dobramento resultou principalmente de deslizamento flexural (flexural-slip) ‑ o deslocamento é longitudinal ao eixo e indica encurtamento frontal simples.
+
+• Quanto maior o desvio desse alinhamento, maior a componente de cisalhamento oblíquo ou transversal ao eixo, indicando vergência específica, rotação do eixo ou participação de outros mecanismos (p.ex., flexural-flow, dobramento por cisalhamento simples).
+
+Portanto, o ângulo entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras serve para diagnosticar o mecanismo de dobra e o sentido do transporte (vergência) associado.",input\georegis\dataset.json,
+1646,O que foi conseqüência da anisotropia mecânica entre camadas?,O processo de dobramento por deslizamento flexural,"Ela resultou em partição de deformação: camadas com competências diferentes passaram a deformar de modos distintos, gerando dobras (frequentemente disharmônicas) e/ou fraturas concentradas nas camadas mais rígidas.",input\georegis\dataset.json,
+1654,Em que região de dobras predomina o mecanismo de flambagem?,região de charneira,"O mecanismo de flambagem (buckle folding) domina na parte mais externa e rasa dos cinturões de dobramento – isto é, na zona externa/na crosta superior, onde as camadas ainda estão relativamente frias, preservam sua estratificação e apresentam alto contraste de competência. Nessa região, a compressão perpendicular às camadas leva-as a “flambar”, gerando dobras de flambagem.",input\georegis\dataset.json,
+1659,Qual foi o mecanismo predominante nos flancos das dobras?,mecanismos de deslizamento flexural,"O processo dominante nos flancos das dobras é o escorregamento flexural (cisalhamento camada-paralela), no qual as camadas escorregam umas sobre as outras durante a flexão.",input\georegis\dataset.json,
+1664,Qual a relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,indica a atuação de uma componente de rotação horária durante o fenômeno de deslizamento flexural,"Os estriamentos que marcam o sentido de deslizamento são praticamente paralelos aos eixos das dobras F1, formando entre eles apenas um ângulo agudo muito pequeno (sub-paralelo, tipicamente <10–15°).",input\georegis\dataset.json,
+1665,O que foi consequência da anisotropia mecânica entre as camadas no processo de dobramento por deslizamento flexural?,"a deformação concentrando-se em níveis de folhelhos e siltitos, intercalados a arenitos","Ela fez com que, durante a dobra, as camadas escorregassem umas sobre as outras ao longo dos planos de estratificação, preservando a espessura das camadas e produzindo dobras de flexural-slip com flancos retilíneos e charneiras marcadas.",input\georegis\dataset.json,
+1666,O que indica o mecanismo de flambagem em relação à resposta do material próximo à zona de charneira das dobras?,uma resposta homogênea do material próximo à zona de charneira das dobras,"O fato de a dobra ter-se formado por flambagem indica que, na região da charneira, a camada se comportou como um material relativamente competente (rígido). Sob o encurtamento paralelo às camadas, ela respondeu por instabilidade de encurvamento: concentrou a compressão na charneira, onde a rocha se espessou e sofreu pouca deformação interna por cisalhamento, enquanto os flancos afinam ou se estiram. Portanto, o mecanismo de flambagem revela que, próximo à charneira, a resposta do material foi essencialmente “elástica/viscosa” e competente, acomodando a deformação por engrossamento na zona comprimida em vez de por fraturamento ou fluxo homogêneo.",input\georegis\dataset.json,
+1668,Quais mecanismos de dobramento predominaram nos flancos das dobras?,mecanismos de deslizamento flexural,"Nos flancos das dobras, o tipo de deformação que prevalece é, em geral, o mecanismo de flexural-slip (deslizamento flexural) – isto é, deslizamentos camada-a-camada paralelos ao acamamento que acomodam a curvatura da dobra. Quando existe contraste elevado de competência entre as camadas, esse deslizamento pode ser complementado por flexural-flow, no qual camadas mais dúcteis fluem enquanto as mais rígidas se dobram. Portanto, os flancos das dobras costumam registrar predominantemente flexural-slip, com participação subordinada de flexural-flow.",input\georegis\dataset.json,
+1669,O que prevaleceu na região de charneira das dobras?,flambagem,"Na charneira concentra-se o encurtamento da rocha; portanto, ali prevaleceu a compressão.",input\georegis\dataset.json,
+1670,O que é indicado pela relação angular entre os indicadores cinemáticos nas superfícies de deslizamento e os eixos das dobras F1?,a atuação de uma componente de rotação horária durante o fenômeno de deslizamento flexural,"Ela define o vetor de deslocamento que acompanhou a geração das dobras F1: o ângulo constante entre as estrias/slickenlines das superfícies de deslizamento e os eixos das dobras mostra a direção do cisalhamento responsável pelo encurtamento que formou essas dobras, indicando que o dobramento ocorreu em regime de flexão-deslizamento com transporte paralelo às estrias (quando o ângulo é agudo e sistemático) ou, se houver variação, que houve rotação posterior ou componente de cisalhamento não coaxial.",input\georegis\dataset.json,
+1672,O que é conseqüência da anisotropia mecânica entre as camadas?,o processo de dobramento por deslizamento flexural,"Ela gera planos preferenciais de fraqueza, de modo que a rocha (ou o material estratificado) tende a fraturar, deslizar ou delaminar justamente ao longo dos contatos entre as camadas.",input\georegis\dataset.json,
+1676,Qual é o teor de argila infiltrada em depósitos terciários e pleistocênicos do Sudoeste americano?,10 a 20%,"Os estudos pedogeoquímicos para o Sudoeste dos EUA indicam que:
+
+• Depósitos pleistocênicos (≈10–100 ka): 15 % a 25 % em massa de argila iluvada (ocasionalmente chegando a 30 %).  
+• Depósitos terciários (≥2 Ma): 25 % a 35 % em massa, com picos locais ligeiramente superiores em paleossolos bem desenvolvidos.
+
+Portanto, o teor típico de argila infiltrada nesses depósitos varia, em média, entre cerca de 15 % e 35 %, aumentando com a idade do material.",input\georegis\dataset.json,
+1680,O que é muito raro em outros ambientes sedimentares antigos?,infiltração mecânica de argilas,"A preservação de fósseis com partes moles bem conservadas (tecidos, estruturas delicadas, etc.) é algo muito raro em outros ambientes sedimentares antigos.",input\georegis\dataset.json,
+1682,Em que região estão localizadas as ilhas de barreira?,Terciário da Costa do Golfo,"As ilhas de barreira localizam-se ao longo da planície costeira dos Estados Unidos, estendendo-se da costa atlântica (de Nova Jérsei até a Flórida) e continuando pelo litoral do golfo do México.",input\georegis\dataset.json,
+1683,Que porcentagem de argilas infiltradas existem nos depósitos terciários e pleistocênicos do Sudoeste americano?,10 a 20%,"As argilas iluviais representam, em média, cerca de 2 % a 3 % do volume dos depósitos terciários e pleistocênicos do Sudoeste dos Estados Unidos; raramente ultrapassam 5 %.",input\georegis\dataset.json,
+1684,Onde estão localizadas as cutículas de argila e hematita que KESSLER identificou como acumuladas por infiltração mecânica?,Permiano do Mar do Norte,"Segundo Kessler, essas cutículas apareciam como finas películas que recobrem as paredes de fissuras, poros e faces dos agregados (peds) do horizonte subsuperficial do solo; ou seja, localizam-se nas superfícies internas dos poros e nas faces dos blocos estruturais, onde se acumulam por infiltração mecânica.",input\georegis\dataset.json,
+1685,"O que promove modificações marcantes na textura, mineralogia e composição química dos sedimentos?",processo de infiltração mecânica,A diagênese.,input\georegis\dataset.json,
+1686,O que é raro em outros ambientes sedimentares antigos?,infiltração mecânica,A preservação excepcional de fósseis – especialmente com tecidos moles ou esqueletos articulados – é algo muito raro em outros ambientes sedimentares antigos.,input\georegis\dataset.json,
+1690,"Qual processo promove modificações marcantes na textura, mineralogia e composição química dos sedimentos onde atua?",processo de infiltração mecânica,Diagênese.,input\georegis\dataset.json,
+1696,O que a infiltração mecânica promove nos sedimentos onde atua?,"modificações marcantes na textura, mineralogia e composição química dos sedimentos","Ela faz com que partículas finas (sobretudo argila e silte) penetrem nos espaços intergranulares do depósito, preenchendo os poros; com isso o sedimento fica mais compacto, com menor porosidade e permeabilidade.",input\georegis\dataset.json,
+1697,Qual a melhor ferramenta para identificar e descrever argilas mecanicamente infiltradas em sedimentos antigos?,análise de lâminas delgadas,"A ferramenta mais eficaz é a microscopia eletrônica de varredura (SEM) em modo de elétrons retroespalhados, associada a EDS para química pontual; ela permite visualizar a microfábrica, distinguir argilas infiltradas de neoformadas e caracterizar sua composição mineralógica. Difração de raios X pode ser usada como apoio quantitativo, mas o SEM é o instrumento-chave.",input\georegis\dataset.json,
+1699,Quais são os depósitos que LOUCKS et alii invocam para explicar os day coats presentes em alguns arenitos?,"depositados em deltas e ilhas de barreira no Terciário da Costa do Golfo,","De acordo com Loucks et al., esses “day coats” (películas finas de argila que recobrem os grãos do arenito) são explicados como resultado da infiltração de lama muito fina oriunda de três tipos principais de depósitos:
+
+1. Depósitos de poças ou lagos rasos em áreas interdunares;  
+2. Depósitos de planície de inundação (flood-plain) de sistemas fluviais;  
+3. Depósitos de sabkha / planície de maré supratidal.
+
+A lama depositada nesses ambientes, ainda pouco consolidada, infiltra-se nos poros do arenito e reveste os grãos, originando os “day coats”.",input\georegis\dataset.json,
+1700,O que KESSLER identifica em arenitos de duna e wadi do Permiano do Mar do Norte?,cutículas de argila e hematita,Ele mostra que esses arenitos contêm finas películas de argila de infiltração (principalmente illita/caulinita) que recobrem os grãos; esses revestimentos preservam a porosidade primária e constituem a principal heterogeneidade diagenética dos depósitos de duna e wadi do Permiano do Mar do Norte.,input\georegis\dataset.json,
+1701,"De acordo com WALKER et alii, quais são os depósitos que contêm comumente de 10 a 20% de argilas infiltradas?",depósitos terciários e pleistocênicos do Sudoeste americano,"Segundo WALKER et alii, esse teor de 10 – 20 % de argila infiltrada é característico dos depósitos eólicos de dunas arenosas (arenitos eólicos).",input\georegis\dataset.json,
+1702,O que o processo de infiltração mecânica promove nos sedimentos onde atua?,"modificações marcantes na textura, mineralogia e composição química dos sedimentos","Ele faz com que as partículas mais finas penetrem e se acomodem nos poros entre os grãos maiores, preenchendo esses espaços; com isso o sedimento torna-se mais compacto e menos poroso (reduz a porosidade e a permeabilidade).",input\georegis\dataset.json,
+1732,O que constitui um bom marco sismoestratigráfico em quase toda a Bacia de Campos?,Topo da biozona N-520,"O horizonte do topo dos carbonatos albiano-cenomanianos da Formação Macaé (a grande discordância que marca a transição dos carbonatos para os siliciclásticos), pois gera um refletor forte e contínuo que pode ser seguido quase por toda a Bacia de Campos.",input\georegis\dataset.json,
+1733,Qual é o refletor localizado na zona N - 470?,Topo do Eoceno,"Desculpe, não existe registro de nenhum refletor designado como estando na zona “N - 470”. Se você possuir outra referência (nome do sistema, coordenadas, tipo de refletor etc.), por favor forneça mais detalhes para que seja possível identificá-lo.",input\georegis\dataset.json,
+1734,O que fez com que o topo do Eoceno Superior não fosse encontrado?,erosão,"Porque as camadas mais jovens do Eoceno foram completamente removidas (ou nunca chegaram a se depositar) por um hiato erosivo/tectônico; assim, há uma inconformidade que elimina o intervalo correspondente ao topo do Eoceno Superior, tornando-o ausente na coluna estratigráfica.",input\georegis\dataset.json,
+1735,O que mostra o mapeamento de detalhe realizado para confirmar essa afirmação?,rochas magmáticas intrusivas e extrusivas,"O mapeamento de detalhe evidenciou que:
+
+1. A maior parte das ocorrências (cerca de 80 %) concentra-se na área indicada pela hipótese original.  
+2. Os valores medidos apresentam um gradiente decrescente à medida que se afastam desse núcleo, confirmando a tendência esperada.  
+3. Foram identificadas pequenas anomalias adicionais que seguem o mesmo alinhamento estrutural, reforçando o padrão principal.  
+
+Esses três resultados – concentração, gradiente e alinhamento de anomalias – confirmam a veracidade da afirmação.",input\georegis\dataset.json,
+1737,Qual refletor datado do Oligoceno Inferior constitui um excelente marco sismoestratigráfico em quase toda a Bacia de Campos?,Topo da biozona N-520,"O refletor R1, datado do Oligoceno Inferior, é o principal marco sismoestratigráfico regional em quase toda a Bacia de Campos.",input\georegis\dataset.json,
+1740,O que o mapeamento de detalhe indica a presença no Cretáceo Superior?,rochas magmáticas intrusivas e extrusivas,"Ele mostra que há ocorrências de rochas vulcânicas máficas (diques, soleiras/basalto), evidenciando episódios de magmatismo que ocorreram durante o Cretáceo Superior.",input\georegis\dataset.json,
+1743,Por que a seção correspondente ao Eoceno Superior está ausente?,erosão na região próxima à Falha de Charneira de Campos,"Porque, nesse intervalo de tempo, ocorreu uma lacuna estratigráfica: ou os sedimentos do Eoceno Superior nunca chegaram a ser depositados (não deposição), ou foram posteriormente removidos por erosão, geralmente associada a rebaixamento do nível do mar ou a soerguimento tectônico. Por isso, a sequência desse andar desaparece e as camadas mais jovens passam a repousar diretamente sobre rochas mais antigas.",input\georegis\dataset.json,
+1745,O que constitui um excelente marco sismoestratigráfico em quase toda a Bacia de Campos?,"N-520 : esse refletor, datado do Oligoceno Inferior, constitui um",O topo dos carbonatos albianos da Formação/Grupo Macaé – o horizonte que marca o contato entre esses carbonatos e os sedimentos siliciclásticos suprjacentes – é o excelente marco sismoestratigráfico que pode ser rastreado em quase toda a Bacia de Campos.,input\georegis\dataset.json,
+1746,O que aconteceu com a seção correspondente ao Eoceno Superior na região próxima à Falha de Charneira de Campos?,está ausente por erosão,Ela foi removida por erosão: o intervalo do Eoceno Superior está truncado/ausente logo a oeste da Falha de Charneira de Campos em razão da discordância que se instalou no fim do Eoceno.,input\georegis\dataset.json,
+1748,Em que período geológico ocorreu a presença de rochas magmáticas intrusivas e extrusivas na Bacia de Campos?,Cretáceo Superior,"Essas rochas aparecem na fase rifte do Atlântico Sul, no Cretáceo Inferior (aproximadamente entre o Valanginiano-Barremiano e o Aptiano, cerca de 140 – 120 Ma).",input\georegis\dataset.json,
+1750,Qual é a importância do topo da bio-zona N-470?,coincide com o topo da bio-zona N-470 e também constitui um excelente refletor,"O topo da bio-zona N-470 é considerado um horizonte-chave porque:
+
+1. Marca a última ocorrência (LO) de uma espécie-guia de foraminífero planctônico usada como índice estratigráfico.  
+2. Coincide com a passagem do Mioceno Médio para o Mioceno Superior (≈12 Ma), funcionando como um datum cronológico preciso.  
+3. Permite correlação regional entre poços e seções sísmicas, ajudando a amarrar perfis de poço, identificar superfícies de máxima inundação e limites de sequências.  
+4. Serve de referência para modelos de bacia, maturação e migração de hidrocarbonetos, influenciando diretamente a avaliação de sistemas petrolíferos (reservatórios, selos e rochas geradoras).  
+
+Em resumo, o topo da N-470 é importante porque fornece um marcador biocronoestratigráfico confiável que sustenta a correlação estratigráfica e a interpretação geológica em projetos de exploração e produção.",input\georegis\dataset.json,

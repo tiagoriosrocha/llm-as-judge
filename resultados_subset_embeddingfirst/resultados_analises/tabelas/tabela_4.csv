@@ -1,0 +1,4 @@
+﻿Configuração,Correctness ↑,Faithfulness ↑,Geological Adequacy ↑,Ontology Alignment ↑
+GraphRAG,0.9301,0.9758,0.9312,0.9441
+GraphRAG + Ontologia,0.9369,0.9757,0.9297,0.9475
+Δ (%),0.7348,-0.0088,-0.1545,0.3556
