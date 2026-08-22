@@ -48,7 +48,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--dataset",
         type=Path,
-        default=Path("dataset/graphrag_bench_converted_full.csv"),
+        default=Path("dataset/georegis.csv"),
         help="CSV do dataset usado para buscar o campo de contexto.",
     )
     parser.add_argument(
